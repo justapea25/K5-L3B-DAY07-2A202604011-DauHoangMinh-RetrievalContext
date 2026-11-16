@@ -1,7 +1,7 @@
 """Index the advanced-challenge chunks and expose dense / BM25 / hybrid retrievers.
 
 Dense: the same e5-small model as the main lab ("passage: " / "query: " prefixes, L2-normalised),
-stored as a NumPy matrix in playground/advanced_build/ (no Day 6 DB needed for this document).
+stored as a NumPy matrix in pdf_docs/build/ (no Day 6 DB needed for this document).
 BM25 and hybrid RRF reuse src/retrievers.py unchanged.
 
 Usage: python -m advanced.index   (builds/refreshes the embedding matrix)

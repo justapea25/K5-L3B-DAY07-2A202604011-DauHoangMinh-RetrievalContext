@@ -14,7 +14,7 @@
 ```bash
 # cần GEMINI_API_KEY trong .env (đọc biểu đồ và trang phiếu điều tra bằng vision model)
 python -m advanced.fetch      # tải PDF + kiểm tra SHA-256
-python -m advanced.ingest     # chunk text/bảng/biểu đồ/phiếu → playground/advanced_build/
+python -m advanced.ingest     # chunk text/bảng/biểu đồ/phiếu → pdf_docs/build/
 python -m advanced.index      # dựng index dense + BM25 cho 490 chunk
 python -m advanced.run --validate                                          # kiểm tra benchmark với tài liệu
 python -m advanced.run --split dev --only adv_hybrid_multi_v4_gpt-6-luna

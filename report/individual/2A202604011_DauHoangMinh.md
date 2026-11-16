@@ -199,7 +199,7 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
     ```bash
     # cần OPENAI_API_KEY và GEMINI_API_KEY trong .env
     python -m advanced.fetch      # tải PDF + kiểm tra SHA-256
-    python -m advanced.ingest     # chunk text/bảng/biểu đồ/phiếu → playground/advanced_build/
+    python -m advanced.ingest     # chunk text/bảng/biểu đồ/phiếu → pdf_docs/build/
     python -m advanced.index      # index dense + BM25
     python -m advanced.run --validate
     python -m advanced.run --split dev     --only adv_hybrid_multi_v4_gpt-6-luna

@@ -1,4 +1,4 @@
-"""Download the source PDF into playground/advanced_source/ and verify its SHA-256.
+"""Download the source PDF into pdf_docs/ and verify its SHA-256.
 
 Falls back to DNS-over-HTTPS (curl --doh-url) when the local resolver cannot resolve *.gov.vn.
 Usage: python -m advanced.fetch

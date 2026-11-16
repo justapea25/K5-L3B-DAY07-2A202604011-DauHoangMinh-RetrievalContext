@@ -1,7 +1,7 @@
 """Advanced challenge: source document, paths and model settings.
 
 The PDF and everything derived from it (page text, chunks, figure crops, Gemini descriptions)
-live under playground/ (gitignored): the publisher's reuse terms were not confirmed, so the repo
+live under pdf_docs/ (gitignored): the publisher's reuse terms were not confirmed, so the repo
 ships only the link, the checksum and the scripts that rebuild everything.
 """
 from __future__ import annotations
@@ -21,9 +21,9 @@ SHA256 = "d2178d7b8fb71699c67eed4c4382d10c8658ea0bca06793ae4d2abeee706c2fe"
 PAGES = 237
 PRINTED_OFFSET = 1  # printed page number = PDF page - 1
 
-SRC_DIR = ROOT / "playground/advanced_source"
+SRC_DIR = ROOT / "pdf_docs"
 PDF_PATH = SRC_DIR / "ket-qua-dieu-tra-bien-dong-dan-so-2025.pdf"
-BUILD = ROOT / "playground/advanced_build"
+BUILD = SRC_DIR / "build"
 FIG_DIR = BUILD / "figures"
 CACHE_DIR = BUILD / "gemini_cache"
 
