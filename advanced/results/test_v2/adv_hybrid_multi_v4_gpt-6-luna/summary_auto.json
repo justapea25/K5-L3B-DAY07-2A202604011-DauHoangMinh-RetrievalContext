@@ -1,0 +1,29 @@
+{
+  "model": "gpt-6-luna",
+  "config": "adv_hybrid_multi_v4",
+  "split": "test_v2",
+  "pass_auto": "24/30",
+  "by_group": {
+    "anh_so_do": "5/5",
+    "bang": "5/6",
+    "bieu_do": "3/5",
+    "multi_hop": "1/4",
+    "text": "4/4",
+    "thieu_bang_chung": "6/6"
+  },
+  "errors": 0,
+  "tokens_in": 211493,
+  "tokens_out": 4495,
+  "median_latency_s": 4.0649999999999995,
+  "pass_strict": "27/30",
+  "pass_lenient_borderline_ok": "29/30",
+  "by_group_strict": {
+    "anh_so_do": "5/5",
+    "bang": "6/6",
+    "bieu_do": "3/5",
+    "multi_hop": "3/4",
+    "text": "4/4",
+    "thieu_bang_chung": "6/6"
+  },
+  "labels": "người chấm đã xác nhận"
+}

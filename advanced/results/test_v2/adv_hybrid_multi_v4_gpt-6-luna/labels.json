@@ -1,0 +1,355 @@
+[
+ {
+  "query_id": "v01",
+  "group": "bang",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   37
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v02",
+  "group": "bang",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   41
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v03",
+  "group": "bang",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   76
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v04",
+  "group": "bang",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": false,
+  "cited_printed_pages": [
+   75
+  ],
+  "reason": "Đoạn văn PDF 76 ghi 'IMR thấp nhất là ở Đông Nam Bộ với tỷ suất là 7,6‰'.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v05",
+  "group": "bang",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   83
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v06",
+  "group": "bang",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   90
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v07",
+  "group": "bieu_do",
+  "pass": false,
+  "borderline": true,
+  "pass_auto": false,
+  "cited_printed_pages": [
+   83
+  ],
+  "reason": "RANH GIỚI: đúng 20-24; citation là đoạn văn mô tả Hình 7.1 (PDF 84), không trỏ vùng hình. Chấm chặt: không đạt.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v08",
+  "group": "bieu_do",
+  "pass": false,
+  "borderline": false,
+  "pass_auto": false,
+  "cited_printed_pages": [
+   49
+  ],
+  "reason": "Sai: '35–39 và 40–44 đồng mức cực đại'; Hình 4.1 chỉ 40-44 cao nhất.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v09",
+  "group": "bieu_do",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   65,
+   66
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v10",
+  "group": "bieu_do",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   74
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v11",
+  "group": "bieu_do",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   69
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v12",
+  "group": "anh_so_do",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   200
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v13",
+  "group": "anh_so_do",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   200
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v14",
+  "group": "anh_so_do",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   202
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v15",
+  "group": "anh_so_do",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   207
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v16",
+  "group": "anh_so_do",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   205
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v17",
+  "group": "text",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   17
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v18",
+  "group": "text",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   25
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v19",
+  "group": "text",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   67
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v20",
+  "group": "text",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   18
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v21",
+  "group": "multi_hop",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": false,
+  "cited_printed_pages": [
+   64,
+   75
+  ],
+  "reason": "TDMNPB 2,41 (Biểu 5.3, PDF 65) + IMR 15,1‰ (đoạn văn PDF 76) — đủ nguồn cho cả hai ý.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v22",
+  "group": "multi_hop",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": false,
+  "cited_printed_pages": [
+   75,
+   76
+  ],
+  "reason": "10,9 (Biểu 6.4, PDF 77) và 7,2 (dòng 2025 | 11,2 | 7,2 trong đoạn PDF 76); calculator 3,7.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v23",
+  "group": "multi_hop",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [
+   37,
+   64
+  ],
+  "reason": "Đúng số/đơn vị; citation chỉ đúng trang và vùng chứa evidence.",
+  "human_verified": true
+ },
+ {
+  "query_id": "v24",
+  "group": "multi_hop",
+  "pass": false,
+  "borderline": true,
+  "pass_auto": false,
+  "cited_printed_pages": [
+   30,
+   65
+  ],
+  "reason": "RANH GIỚI: '13,8 triệu người' (số làm tròn trong văn bản PDF 31) thay vì 13.775.109; TFR 1,51 đúng (Biểu 5.4). Chấm chặt: không đạt.",
+  "human_verified": true
+ },
+ {
+  "query_id": "w01",
+  "group": "thieu_bang_chung",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [],
+  "reason": "Từ chối đúng, không khẳng định thiếu căn cứ.",
+  "human_verified": true
+ },
+ {
+  "query_id": "w02",
+  "group": "thieu_bang_chung",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [],
+  "reason": "Từ chối đúng, không khẳng định thiếu căn cứ.",
+  "human_verified": true
+ },
+ {
+  "query_id": "w03",
+  "group": "thieu_bang_chung",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [],
+  "reason": "Từ chối đúng, không khẳng định thiếu căn cứ.",
+  "human_verified": true
+ },
+ {
+  "query_id": "w04",
+  "group": "thieu_bang_chung",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [],
+  "reason": "Từ chối đúng, không khẳng định thiếu căn cứ.",
+  "human_verified": true
+ },
+ {
+  "query_id": "w05",
+  "group": "thieu_bang_chung",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [],
+  "reason": "Từ chối đúng, không khẳng định thiếu căn cứ.",
+  "human_verified": true
+ },
+ {
+  "query_id": "w06",
+  "group": "thieu_bang_chung",
+  "pass": true,
+  "borderline": false,
+  "pass_auto": true,
+  "cited_printed_pages": [],
+  "reason": "Từ chối đúng, không khẳng định thiếu căn cứ.",
+  "human_verified": true
+ }
+]

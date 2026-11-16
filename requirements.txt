@@ -8,3 +8,5 @@ torch==2.15.0
 transformers==5.23.0
 python-dotenv>=1,<2
 openai>=1.50
+# Advanced challenge: PDF parsing
+pymupdf>=1.24

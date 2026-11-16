@@ -1,0 +1,4628 @@
+[
+  {
+    "query_id": "v01",
+    "group": "bang",
+    "question": "Năm 2025, vùng nào có tuổi kết hôn trung bình lần đầu của nữ cao nhất và là bao nhiêu tuổi?",
+    "status": "answered",
+    "answer": "Năm 2025, **Đông Nam Bộ** có tuổi kết hôn trung bình lần đầu của nữ cao nhất, ở mức **28,1 tuổi**. [bdds2025:p038:text:0] [bdds2025:p038:table:0]",
+    "citations": [
+      "bdds2025:p038:text:0",
+      "bdds2025:p038:table:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Năm 2025 tuổi kết hôn trung bình lần đầu của nữ theo vùng, vùng nào cao nhất và giá trị bao nhiêu tuổi?"
+        },
+        "llm_ms": 2349,
+        "tokens_in": 963,
+        "tokens_out": 47,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Năm 2025 tuổi kết hôn trung bình lần đầu của nữ theo vùng, vùng nào cao nhất và giá trị bao nhiêu tuổi?",
+        "filter": null,
+        "retrieval_ms": 45.5,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p037:text:1",
+            "score": 0.0323,
+            "pages": [
+              37
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p038:text:0",
+            "score": 0.0315,
+            "pages": [
+              38
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p039:table:0",
+            "score": 0.0305,
+            "pages": [
+              39
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p038:table:0",
+            "score": 0.0301,
+            "pages": [
+              38
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p037:text:1",
+          "bdds2025:p038:text:0",
+          "bdds2025:p039:table:0",
+          "bdds2025:p038:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p037:text:1": "S1",
+          "bdds2025:p038:text:0": "S2",
+          "bdds2025:p039:table:0": "S3",
+          "bdds2025:p038:table:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Năm 2025, **Đông Nam Bộ** có tuổi kết hôn trung bình lần đầu của nữ cao nhất, ở mức **28,1 tuổi**. [S2] [S4]",
+          "citations": [
+            "S2",
+            "S4"
+          ]
+        },
+        "llm_ms": 2528,
+        "tokens_in": 2341,
+        "tokens_out": 68,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S2",
+          "S4"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p037:text:1",
+      "bdds2025:p038:text:0",
+      "bdds2025:p039:table:0",
+      "bdds2025:p038:table:0"
+    ],
+    "final_context_chars": 3286,
+    "tokens_in": 3304,
+    "tokens_out": 115,
+    "cost_usd": NaN,
+    "elapsed_s": 4.92,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      37
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v02",
+    "group": "bang",
+    "question": "Tỷ lệ đi học chung cấp trung học phổ thông năm 2025 của khu vực thành thị và nông thôn là bao nhiêu?",
+    "status": "answered",
+    "answer": "Năm 2025, tỷ lệ đi học chung cấp THPT là **89,9% ở thành thị** và **80,8% ở nông thôn**. [bdds2025:p042:table:0]",
+    "citations": [
+      "bdds2025:p042:table:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ đi học chung cấp trung học phổ thông năm 2025 phân theo thành thị nông thôn; tìm bảng tỷ lệ đi học chung theo cấp học và khu vực thành thị, nông thôn."
+        },
+        "llm_ms": 2271,
+        "tokens_in": 965,
+        "tokens_out": 62,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ đi học chung cấp trung học phổ thông năm 2025 phân theo thành thị nông thôn; tìm bảng tỷ lệ đi học chung theo cấp học và khu vực thành thị, nông thôn.",
+        "filter": null,
+        "retrieval_ms": 39.9,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p042:table:0",
+            "score": 0.0325,
+            "pages": [
+              42
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p042:text:0",
+            "score": 0.0325,
+            "pages": [
+              42
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p041:text:2",
+            "score": 0.031,
+            "pages": [
+              41
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p007:table:6",
+            "score": 0.0304,
+            "pages": [
+              7
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p042:table:0",
+          "bdds2025:p042:text:0",
+          "bdds2025:p041:text:2",
+          "bdds2025:p007:table:6"
+        ],
+        "context_labels": {
+          "bdds2025:p042:table:0": "S1",
+          "bdds2025:p042:text:0": "S2",
+          "bdds2025:p041:text:2": "S3",
+          "bdds2025:p007:table:6": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Năm 2025, tỷ lệ đi học chung cấp THPT là **89,9% ở thành thị** và **80,8% ở nông thôn**. [S1]",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1471,
+        "tokens_in": 2219,
+        "tokens_out": 63,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p042:table:0",
+      "bdds2025:p042:text:0",
+      "bdds2025:p041:text:2",
+      "bdds2025:p007:table:6"
+    ],
+    "final_context_chars": 2906,
+    "tokens_in": 3184,
+    "tokens_out": 125,
+    "cost_usd": NaN,
+    "elapsed_s": 3.78,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      41
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v03",
+    "group": "bang",
+    "question": "Tỷ suất chết trẻ em dưới 5 tuổi của bé trai và bé gái trên toàn quốc năm 2025 là bao nhiêu?",
+    "status": "answered",
+    "answer": "Năm 2025, trên toàn quốc, tỷ suất chết trẻ em dưới 5 tuổi là **22,1 bé trai** và **11,1 bé gái chết trên 1.000 trẻ sinh sống**. [bdds2025:p077:table:0]",
+    "citations": [
+      "bdds2025:p077:table:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ suất chết trẻ em dưới 5 tuổi theo giới tính bé trai bé gái toàn quốc năm 2025; bảng tỷ suất chết dưới 5 tuổi nam nữ, đơn vị"
+        },
+        "llm_ms": 1703,
+        "tokens_in": 963,
+        "tokens_out": 54,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ suất chết trẻ em dưới 5 tuổi theo giới tính bé trai bé gái toàn quốc năm 2025; bảng tỷ suất chết dưới 5 tuổi nam nữ, đơn vị",
+        "filter": null,
+        "retrieval_ms": 43.4,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p013:text:0",
+            "score": 0.0323,
+            "pages": [
+              13
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p077:table:0",
+            "score": 0.032,
+            "pages": [
+              77
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p077:text:0",
+            "score": 0.0313,
+            "pages": [
+              77
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p078:text:0",
+            "score": 0.031,
+            "pages": [
+              78
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p013:text:0",
+          "bdds2025:p077:table:0",
+          "bdds2025:p077:text:0",
+          "bdds2025:p078:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p013:text:0": "S1",
+          "bdds2025:p077:table:0": "S2",
+          "bdds2025:p077:text:0": "S3",
+          "bdds2025:p078:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Năm 2025, trên toàn quốc, tỷ suất chết trẻ em dưới 5 tuổi là **22,1 bé trai** và **11,1 bé gái chết trên 1.000 trẻ sinh sống**. [S2]",
+          "citations": [
+            "S2"
+          ]
+        },
+        "llm_ms": 1820,
+        "tokens_in": 2651,
+        "tokens_out": 71,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p013:text:0",
+      "bdds2025:p077:table:0",
+      "bdds2025:p077:text:0",
+      "bdds2025:p078:text:0"
+    ],
+    "final_context_chars": 4425,
+    "tokens_in": 3614,
+    "tokens_out": 125,
+    "cost_usd": NaN,
+    "elapsed_s": 3.57,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      76
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v04",
+    "group": "bang",
+    "question": "Vùng nào có tỷ suất chết trẻ em dưới 1 tuổi thấp nhất năm 2025 và là bao nhiêu phần nghìn?",
+    "status": "answered",
+    "answer": "Vùng Đông Nam Bộ có tỷ suất chết trẻ em dưới 1 tuổi thấp nhất năm 2025, ở mức 7,6‰. [bdds2025:p076:text:0]",
+    "citations": [
+      "bdds2025:p076:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ suất chết trẻ em dưới 1 tuổi năm 2025 theo vùng, đơn vị phần nghìn; vùng nào thấp nhất?"
+        },
+        "llm_ms": 1723,
+        "tokens_in": 963,
+        "tokens_out": 45,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ suất chết trẻ em dưới 1 tuổi năm 2025 theo vùng, đơn vị phần nghìn; vùng nào thấp nhất?",
+        "filter": null,
+        "retrieval_ms": 35.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p075:text:0",
+            "score": 0.0318,
+            "pages": [
+              75
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p076:text:0",
+            "score": 0.0318,
+            "pages": [
+              76
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p077:text:1",
+            "score": 0.0313,
+            "pages": [
+              77
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p077:text:0",
+            "score": 0.031,
+            "pages": [
+              77
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p075:text:0",
+          "bdds2025:p076:text:0",
+          "bdds2025:p077:text:1",
+          "bdds2025:p077:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p075:text:0": "S1",
+          "bdds2025:p076:text:0": "S2",
+          "bdds2025:p077:text:1": "S3",
+          "bdds2025:p077:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Vùng Đông Nam Bộ có tỷ suất chết trẻ em dưới 1 tuổi thấp nhất năm 2025, ở mức 7,6‰. [S2]",
+          "citations": [
+            "S2"
+          ]
+        },
+        "llm_ms": 1546,
+        "tokens_in": 2416,
+        "tokens_out": 56,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p075:text:0",
+      "bdds2025:p076:text:0",
+      "bdds2025:p077:text:1",
+      "bdds2025:p077:text:0"
+    ],
+    "final_context_chars": 3605,
+    "tokens_in": 3379,
+    "tokens_out": 101,
+    "cost_usd": NaN,
+    "elapsed_s": 3.3,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      75
+    ],
+    "pass_auto": false,
+    "groups_cited": [
+      false
+    ],
+    "groups_in_context": [
+      false
+    ]
+  },
+  {
+    "query_id": "v05",
+    "group": "bang",
+    "question": "Trong các luồng di cư năm 2025, luồng nào có tỷ lệ nữ cao nhất và tỷ lệ đó là bao nhiêu?",
+    "status": "answered",
+    "answer": "Trong các luồng di cư năm 2025, **nông thôn – nông thôn** có tỷ lệ nữ cao nhất, ở mức **60,2%**. [bdds2025:p084:table:1]",
+    "citations": [
+      "bdds2025:p084:table:1"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Điều tra biến động dân số 2025 tỷ lệ nữ trong các luồng di cư: di cư giữa các vùng, thành thị nông thôn, tỉnh/thành; tỷ lệ nữ cao nhất"
+        },
+        "llm_ms": 1616,
+        "tokens_in": 964,
+        "tokens_out": 59,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Điều tra biến động dân số 2025 tỷ lệ nữ trong các luồng di cư: di cư giữa các vùng, thành thị nông thôn, tỉnh/thành; tỷ lệ nữ cao nhất",
+        "filter": null,
+        "retrieval_ms": 37.9,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p083:text:0",
+            "score": 0.0328,
+            "pages": [
+              83
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p084:text:1",
+            "score": 0.0313,
+            "pages": [
+              84
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p029:text:0",
+            "score": 0.0303,
+            "pages": [
+              29
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p084:table:1",
+            "score": 0.03,
+            "pages": [
+              84
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p083:text:0",
+          "bdds2025:p084:text:1",
+          "bdds2025:p029:text:0",
+          "bdds2025:p084:table:1"
+        ],
+        "context_labels": {
+          "bdds2025:p083:text:0": "S1",
+          "bdds2025:p084:text:1": "S2",
+          "bdds2025:p029:text:0": "S3",
+          "bdds2025:p084:table:1": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Trong các luồng di cư năm 2025, **nông thôn – nông thôn** có tỷ lệ nữ cao nhất, ở mức **60,2%**. [S4]",
+          "citations": [
+            "S4"
+          ]
+        },
+        "llm_ms": 1451,
+        "tokens_in": 2189,
+        "tokens_out": 64,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S4"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p083:text:0",
+      "bdds2025:p084:text:1",
+      "bdds2025:p029:text:0",
+      "bdds2025:p084:table:1"
+    ],
+    "final_context_chars": 3160,
+    "tokens_in": 3153,
+    "tokens_out": 123,
+    "cost_usd": NaN,
+    "elapsed_s": 3.1,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      83
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v06",
+    "group": "bang",
+    "question": "Theo bảng số liệu tổng hợp (Biểu 1), dân số thành phố Đà Nẵng thời điểm 01/4/2025 là bao nhiêu người?",
+    "status": "answered",
+    "answer": "Theo Biểu 1, dân số thành phố Đà Nẵng thời điểm 01/4/2025 là **2.844.754 người**. [bdds2025:p091:table:1]",
+    "citations": [
+      "bdds2025:p091:table:1"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Biểu 1 bảng số liệu tổng hợp dân số thành phố Đà Nẵng thời điểm 01/4/2025 dân số người"
+        },
+        "llm_ms": 2084,
+        "tokens_in": 971,
+        "tokens_out": 47,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Biểu 1 bảng số liệu tổng hợp dân số thành phố Đà Nẵng thời điểm 01/4/2025 dân số người",
+        "filter": null,
+        "retrieval_ms": 37.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0305,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p084:table:0",
+            "score": 0.0301,
+            "pages": [
+              84
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p217:text:0",
+            "score": 0.03,
+            "pages": [
+              217
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p009:table:3",
+            "score": 0.0286,
+            "pages": [
+              9
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p023:text:0",
+          "bdds2025:p084:table:0",
+          "bdds2025:p217:text:0",
+          "bdds2025:p009:table:3"
+        ],
+        "context_labels": {
+          "bdds2025:p023:text:0": "S1",
+          "bdds2025:p084:table:0": "S2",
+          "bdds2025:p217:text:0": "S3",
+          "bdds2025:p009:table:3": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Biểu 1 quy mô dân số tổng số dân số thành phố Đà Nẵng 01/4/2025 người bảng tổng hợp"
+        },
+        "llm_ms": 1370,
+        "tokens_in": 2577,
+        "tokens_out": 47,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Biểu 1 quy mô dân số tổng số dân số thành phố Đà Nẵng 01/4/2025 người bảng tổng hợp",
+        "filter": null,
+        "retrieval_ms": 34.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p026:text:0",
+            "score": 0.0318,
+            "pages": [
+              26
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p028:table:0",
+            "score": 0.029,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0284,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p091:table:1",
+            "score": 0.0279,
+            "pages": [
+              91
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p023:text:0",
+          "bdds2025:p084:table:0",
+          "bdds2025:p217:text:0",
+          "bdds2025:p009:table:3",
+          "bdds2025:p026:text:0",
+          "bdds2025:p028:table:0",
+          "bdds2025:p091:table:1"
+        ],
+        "context_labels": {
+          "bdds2025:p023:text:0": "S1",
+          "bdds2025:p084:table:0": "S2",
+          "bdds2025:p217:text:0": "S3",
+          "bdds2025:p009:table:3": "S4",
+          "bdds2025:p026:text:0": "S5",
+          "bdds2025:p028:table:0": "S6",
+          "bdds2025:p091:table:1": "S7"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "answer",
+        "args": {
+          "answer": "Theo Biểu 1, dân số thành phố Đà Nẵng thời điểm 01/4/2025 là **2.844.754 người**. [S7]",
+          "citations": [
+            "S7"
+          ]
+        },
+        "llm_ms": 1534,
+        "tokens_in": 5540,
+        "tokens_out": 60,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S7"
+        ]
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p023:text:0",
+      "bdds2025:p084:table:0",
+      "bdds2025:p217:text:0",
+      "bdds2025:p009:table:3",
+      "bdds2025:p026:text:0",
+      "bdds2025:p028:table:0",
+      "bdds2025:p091:table:1"
+    ],
+    "final_context_chars": 6354,
+    "tokens_in": 9088,
+    "tokens_out": 154,
+    "cost_usd": NaN,
+    "elapsed_s": 5.06,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      90
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v07",
+    "group": "bieu_do",
+    "question": "Theo Hình 7.1, nhóm tuổi nào có tỷ lệ người di cư ngoại tỉnh cao nhất?",
+    "status": "answered",
+    "answer": "Nhóm tuổi 20–24 có tỷ lệ người di cư ngoại tỉnh cao nhất. [bdds2025:p084:text:2]",
+    "citations": [
+      "bdds2025:p084:text:2"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Hình 7.1 tỷ lệ người di cư ngoại tỉnh theo nhóm tuổi nhóm tuổi nào cao nhất"
+        },
+        "llm_ms": 1572,
+        "tokens_in": 957,
+        "tokens_out": 38,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Hình 7.1 tỷ lệ người di cư ngoại tỉnh theo nhóm tuổi nhóm tuổi nào cao nhất",
+        "filter": null,
+        "retrieval_ms": 25.9,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p084:text:2",
+            "score": 0.0325,
+            "pages": [
+              84
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p085:figure:0",
+            "score": 0.0325,
+            "pages": [
+              85
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p085:text:0",
+            "score": 0.0317,
+            "pages": [
+              85
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p086:table:0",
+            "score": 0.0306,
+            "pages": [
+              86
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p084:text:2",
+          "bdds2025:p085:figure:0",
+          "bdds2025:p085:text:0",
+          "bdds2025:p086:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p084:text:2": "S1",
+          "bdds2025:p085:figure:0": "S2",
+          "bdds2025:p085:text:0": "S3",
+          "bdds2025:p086:table:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Nhóm tuổi 20–24 có tỷ lệ người di cư ngoại tỉnh cao nhất. [S1]",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1547,
+        "tokens_in": 2672,
+        "tokens_out": 44,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p084:text:2",
+      "bdds2025:p085:figure:0",
+      "bdds2025:p085:text:0",
+      "bdds2025:p086:table:0"
+    ],
+    "final_context_chars": 4195,
+    "tokens_in": 3629,
+    "tokens_out": 82,
+    "cost_usd": NaN,
+    "elapsed_s": 3.15,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      83
+    ],
+    "pass_auto": false,
+    "groups_cited": [
+      false
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v08",
+    "group": "bieu_do",
+    "question": "Theo Hình 4.1, tỷ lệ sử dụng biện pháp tránh thai bất kỳ của phụ nữ hiện có chồng đạt cao nhất ở nhóm tuổi nào?",
+    "status": "answered",
+    "answer": "Tỷ lệ sử dụng biện pháp tránh thai bất kỳ đạt cao nhất ở nhóm tuổi 35–39 và 40–44 tuổi (đồng mức cực đại). [bdds2025:p050:text:0]",
+    "citations": [
+      "bdds2025:p050:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Hình 4.1 tỷ lệ sử dụng biện pháp tránh thai bất kỳ của phụ nữ hiện có chồng theo nhóm tuổi"
+        },
+        "llm_ms": 1575,
+        "tokens_in": 969,
+        "tokens_out": 44,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Hình 4.1 tỷ lệ sử dụng biện pháp tránh thai bất kỳ của phụ nữ hiện có chồng theo nhóm tuổi",
+        "filter": null,
+        "retrieval_ms": 38.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p050:text:0",
+            "score": 0.0328,
+            "pages": [
+              50
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p055:text:0",
+            "score": 0.0313,
+            "pages": [
+              55
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p054:text:0",
+            "score": 0.0304,
+            "pages": [
+              54
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p049:table:0",
+            "score": 0.0301,
+            "pages": [
+              49
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p050:text:0",
+          "bdds2025:p055:text:0",
+          "bdds2025:p054:text:0",
+          "bdds2025:p049:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p050:text:0": "S1",
+          "bdds2025:p055:text:0": "S2",
+          "bdds2025:p054:text:0": "S3",
+          "bdds2025:p049:table:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Tỷ lệ sử dụng biện pháp tránh thai bất kỳ đạt cao nhất ở nhóm tuổi 35–39 và 40–44 tuổi (đồng mức cực đại). [S1]",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1534,
+        "tokens_in": 2579,
+        "tokens_out": 61,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p050:text:0",
+      "bdds2025:p055:text:0",
+      "bdds2025:p054:text:0",
+      "bdds2025:p049:table:0"
+    ],
+    "final_context_chars": 4102,
+    "tokens_in": 3548,
+    "tokens_out": 105,
+    "cost_usd": NaN,
+    "elapsed_s": 3.15,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      49
+    ],
+    "pass_auto": false,
+    "groups_cited": [
+      false
+    ],
+    "groups_in_context": [
+      false
+    ]
+  },
+  {
+    "query_id": "v09",
+    "group": "bieu_do",
+    "question": "Theo Hình 5.2, tỷ suất sinh đặc trưng theo tuổi đạt đỉnh ở nhóm tuổi nào, và ở nhóm 20-24 thì thành thị hay nông thôn cao hơn?",
+    "status": "answered",
+    "answer": "Tỷ suất sinh đặc trưng theo tuổi đạt đỉnh ở nhóm 25–29 tuổi [bdds2025:p066:text:1]. Ở nhóm 20–24 tuổi, nông thôn cao hơn thành thị [bdds2025:p067:figure:0].",
+    "citations": [
+      "bdds2025:p067:figure:0",
+      "bdds2025:p066:text:1"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Hình 5.2 tỷ suất sinh đặc trưng theo tuổi nhóm tuổi đỉnh thành thị nông thôn nhóm 20-24"
+        },
+        "llm_ms": 1327,
+        "tokens_in": 977,
+        "tokens_out": 46,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Hình 5.2 tỷ suất sinh đặc trưng theo tuổi nhóm tuổi đỉnh thành thị nông thôn nhóm 20-24",
+        "filter": null,
+        "retrieval_ms": 38.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p067:figure:0",
+            "score": 0.0325,
+            "pages": [
+              67
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p007:text:0",
+            "score": 0.0317,
+            "pages": [
+              7
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p066:text:1",
+            "score": 0.0305,
+            "pages": [
+              66
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p067:text:0",
+            "score": 0.028,
+            "pages": [
+              67
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p067:figure:0",
+          "bdds2025:p007:text:0",
+          "bdds2025:p066:text:1",
+          "bdds2025:p067:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p067:figure:0": "S1",
+          "bdds2025:p007:text:0": "S2",
+          "bdds2025:p066:text:1": "S3",
+          "bdds2025:p067:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Tỷ suất sinh đặc trưng theo tuổi đạt đỉnh ở nhóm 25–29 tuổi [S3]. Ở nhóm 20–24 tuổi, nông thôn cao hơn thành thị [S1].",
+          "citations": [
+            "S1",
+            "S3"
+          ]
+        },
+        "llm_ms": 1500,
+        "tokens_in": 2967,
+        "tokens_out": 69,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1",
+          "S3"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p067:figure:0",
+      "bdds2025:p007:text:0",
+      "bdds2025:p066:text:1",
+      "bdds2025:p067:text:0"
+    ],
+    "final_context_chars": 5082,
+    "tokens_in": 3944,
+    "tokens_out": 115,
+    "cost_usd": NaN,
+    "elapsed_s": 2.87,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      65,
+      66
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v10",
+    "group": "bieu_do",
+    "question": "Theo Hình 6.2, ở nhóm tuổi 80+, tỷ suất chết đặc trưng của nam hay nữ cao hơn?",
+    "status": "answered",
+    "answer": "Ở nhóm tuổi 80+, tỷ suất chết đặc trưng của **nam cao hơn nữ** (theo Hình 6.2). [bdds2025:p075:figure:0]",
+    "citations": [
+      "bdds2025:p075:figure:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Hình 6.2 tỷ suất chết đặc trưng theo nhóm tuổi 80+ nam nữ, so sánh tỷ suất chết đặc trưng của nam và nữ ở nhóm tuổi 80 trở lên"
+        },
+        "llm_ms": 1596,
+        "tokens_in": 962,
+        "tokens_out": 58,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Hình 6.2 tỷ suất chết đặc trưng theo nhóm tuổi 80+ nam nữ, so sánh tỷ suất chết đặc trưng của nam và nữ ở nhóm tuổi 80 trở lên",
+        "filter": null,
+        "retrieval_ms": 41.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p074:text:1",
+            "score": 0.0328,
+            "pages": [
+              74
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p007:text:0",
+            "score": 0.032,
+            "pages": [
+              7
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p075:figure:0",
+            "score": 0.032,
+            "pages": [
+              75
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p035:text:0",
+            "score": 0.0295,
+            "pages": [
+              35
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p074:text:1",
+          "bdds2025:p007:text:0",
+          "bdds2025:p075:figure:0",
+          "bdds2025:p035:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p074:text:1": "S1",
+          "bdds2025:p007:text:0": "S2",
+          "bdds2025:p075:figure:0": "S3",
+          "bdds2025:p035:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Ở nhóm tuổi 80+, tỷ suất chết đặc trưng của **nam cao hơn nữ** (theo Hình 6.2). [S3]",
+          "citations": [
+            "S3"
+          ]
+        },
+        "llm_ms": 1263,
+        "tokens_in": 3607,
+        "tokens_out": 55,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S3"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p074:text:1",
+      "bdds2025:p007:text:0",
+      "bdds2025:p075:figure:0",
+      "bdds2025:p035:text:0"
+    ],
+    "final_context_chars": 6553,
+    "tokens_in": 4569,
+    "tokens_out": 113,
+    "cost_usd": NaN,
+    "elapsed_s": 2.9,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      74
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v11",
+    "group": "bieu_do",
+    "question": "Theo Hình 5.3, vùng nào có tỷ lệ phụ nữ trả lời 'con nào cũng được' cao nhất và là bao nhiêu phần trăm?",
+    "status": "answered",
+    "answer": "Đông Nam Bộ có tỷ lệ phụ nữ trả lời “con nào cũng được” cao nhất, ở mức 79,9%. [bdds2025:p070:figure:0]",
+    "citations": [
+      "bdds2025:p070:figure:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Hình 5.3 tỷ lệ phụ nữ trả lời “con nào cũng được” theo vùng; lựa chọn giới tính con mong muốn"
+        },
+        "llm_ms": 1419,
+        "tokens_in": 969,
+        "tokens_out": 45,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Hình 5.3 tỷ lệ phụ nữ trả lời “con nào cũng được” theo vùng; lựa chọn giới tính con mong muốn",
+        "filter": null,
+        "retrieval_ms": 36.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p070:figure:0",
+            "score": 0.0325,
+            "pages": [
+              70
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p070:text:0",
+            "score": 0.0325,
+            "pages": [
+              70
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p056:text:0",
+            "score": 0.0317,
+            "pages": [
+              56
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p151:text:0",
+            "score": 0.0156,
+            "pages": [
+              151
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p070:figure:0",
+          "bdds2025:p070:text:0",
+          "bdds2025:p056:text:0",
+          "bdds2025:p151:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p070:figure:0": "S1",
+          "bdds2025:p070:text:0": "S2",
+          "bdds2025:p056:text:0": "S3",
+          "bdds2025:p151:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Đông Nam Bộ có tỷ lệ phụ nữ trả lời “con nào cũng được” cao nhất, ở mức 79,9%. [S1]",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1391,
+        "tokens_in": 3642,
+        "tokens_out": 53,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p070:figure:0",
+      "bdds2025:p070:text:0",
+      "bdds2025:p056:text:0",
+      "bdds2025:p151:text:0"
+    ],
+    "final_context_chars": 6378,
+    "tokens_in": 4611,
+    "tokens_out": 98,
+    "cost_usd": NaN,
+    "elapsed_s": 2.85,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      69
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v12",
+    "group": "anh_so_do",
+    "question": "Trong phiếu điều tra, câu 2 hỏi quan hệ với chủ hộ; phương án 'Cháu nội/ngoại' mang mã số mấy?",
+    "status": "answered",
+    "answer": "Phương án “Cháu nội/ngoại” mang mã số **4**. [bdds2025:p201:form:0]",
+    "citations": [
+      "bdds2025:p201:form:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Phiếu điều tra câu 2 quan hệ với chủ hộ phương án Cháu nội/ngoại mã số mấy?"
+        },
+        "llm_ms": 1449,
+        "tokens_in": 968,
+        "tokens_out": 42,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Phiếu điều tra câu 2 quan hệ với chủ hộ phương án Cháu nội/ngoại mã số mấy?",
+        "filter": null,
+        "retrieval_ms": 38.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p201:form:0",
+            "score": 0.0325,
+            "pages": [
+              201
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p208:form:0",
+            "score": 0.0325,
+            "pages": [
+              208
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p200:form:0",
+            "score": 0.031,
+            "pages": [
+              200
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p017:text:1",
+            "score": 0.0306,
+            "pages": [
+              17
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p201:form:0",
+          "bdds2025:p208:form:0",
+          "bdds2025:p200:form:0",
+          "bdds2025:p017:text:1"
+        ],
+        "context_labels": {
+          "bdds2025:p201:form:0": "S1",
+          "bdds2025:p208:form:0": "S2",
+          "bdds2025:p200:form:0": "S3",
+          "bdds2025:p017:text:1": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Phương án “Cháu nội/ngoại” mang mã số **4**. [S1]",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1185,
+        "tokens_in": 3570,
+        "tokens_out": 45,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p201:form:0",
+      "bdds2025:p208:form:0",
+      "bdds2025:p200:form:0",
+      "bdds2025:p017:text:1"
+    ],
+    "final_context_chars": 5714,
+    "tokens_in": 4538,
+    "tokens_out": 87,
+    "cost_usd": NaN,
+    "elapsed_s": 2.67,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      200
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v13",
+    "group": "anh_so_do",
+    "question": "Trong phiếu điều tra, ở câu 4 (tháng, năm sinh), nếu ghi được tháng và năm sinh thì điều tra viên chuyển sang câu nào?",
+    "status": "answered",
+    "answer": "Nếu ghi được tháng và năm sinh ở câu 4 thì chuyển sang **câu 6**. [bdds2025:p201:form:0]",
+    "citations": [
+      "bdds2025:p201:form:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Phiếu điều tra câu 4 tháng năm sinh ghi được tháng và năm sinh điều tra viên chuyển sang câu nào hướng dẫn chuyển câu"
+        },
+        "llm_ms": 1304,
+        "tokens_in": 968,
+        "tokens_out": 44,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Phiếu điều tra câu 4 tháng năm sinh ghi được tháng và năm sinh điều tra viên chuyển sang câu nào hướng dẫn chuyển câu",
+        "filter": null,
+        "retrieval_ms": 37.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p208:form:0",
+            "score": 0.0325,
+            "pages": [
+              208
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p202:form:0",
+            "score": 0.0318,
+            "pages": [
+              202
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p204:form:0",
+            "score": 0.0313,
+            "pages": [
+              204
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p199:form:0",
+            "score": 0.0299,
+            "pages": [
+              199
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p208:form:0",
+          "bdds2025:p202:form:0",
+          "bdds2025:p204:form:0",
+          "bdds2025:p199:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p208:form:0": "S1",
+          "bdds2025:p202:form:0": "S2",
+          "bdds2025:p204:form:0": "S3",
+          "bdds2025:p199:form:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_form",
+        "args": {
+          "query": "Phiếu điều tra câu 4 tháng năm sinh: nếu ghi được tháng và năm sinh thì chuyển sang câu nào? Hướng dẫn chuyển câu ngay sau câu 4"
+        },
+        "llm_ms": 1381,
+        "tokens_in": 4307,
+        "tokens_out": 50,
+        "event": "search",
+        "search_tool": "search_form",
+        "query": "Phiếu điều tra câu 4 tháng năm sinh: nếu ghi được tháng và năm sinh thì chuyển sang câu nào? Hướng dẫn chuyển câu ngay sau câu 4",
+        "filter": null,
+        "retrieval_ms": 41.0,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p204:form:0",
+            "score": 0.0323,
+            "pages": [
+              204
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p202:form:0",
+            "score": 0.032,
+            "pages": [
+              202
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p208:form:0",
+            "score": 0.032,
+            "pages": [
+              208
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p201:form:0",
+            "score": 0.0313,
+            "pages": [
+              201
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p208:form:0",
+          "bdds2025:p202:form:0",
+          "bdds2025:p204:form:0",
+          "bdds2025:p199:form:0",
+          "bdds2025:p201:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p208:form:0": "S1",
+          "bdds2025:p202:form:0": "S2",
+          "bdds2025:p204:form:0": "S3",
+          "bdds2025:p199:form:0": "S4",
+          "bdds2025:p201:form:0": "S5"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "answer",
+        "args": {
+          "answer": "Nếu ghi được tháng và năm sinh ở câu 4 thì chuyển sang **câu 6**. [S5]",
+          "citations": [
+            "S5"
+          ]
+        },
+        "llm_ms": 1583,
+        "tokens_in": 8302,
+        "tokens_out": 47,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S5"
+        ]
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p208:form:0",
+      "bdds2025:p202:form:0",
+      "bdds2025:p204:form:0",
+      "bdds2025:p199:form:0",
+      "bdds2025:p201:form:0"
+    ],
+    "final_context_chars": 7942,
+    "tokens_in": 13577,
+    "tokens_out": 141,
+    "cost_usd": NaN,
+    "elapsed_s": 4.35,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      200
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v14",
+    "group": "anh_so_do",
+    "question": "Trong phiếu điều tra, câu 14 (trình độ giáo dục phổ thông cao nhất): phương án 'Trung học phổ thông' mang mã mấy và chuyển tới đâu?",
+    "status": "answered",
+    "answer": "Phương án “Trung học phổ thông” mang mã **4** và chuyển tới **KT3.1**. [bdds2025:p203:form:0]",
+    "citations": [
+      "bdds2025:p203:form:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Phiếu điều tra câu 14 trình độ giáo dục phổ thông cao nhất phương án Trung học phổ thông mã số và hướng dẫn chuyển câu"
+        },
+        "llm_ms": 1513,
+        "tokens_in": 973,
+        "tokens_out": 45,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Phiếu điều tra câu 14 trình độ giáo dục phổ thông cao nhất phương án Trung học phổ thông mã số và hướng dẫn chuyển câu",
+        "filter": null,
+        "retrieval_ms": 43.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p203:form:0",
+            "score": 0.0325,
+            "pages": [
+              203
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p202:form:0",
+            "score": 0.0318,
+            "pages": [
+              202
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p017:text:1",
+            "score": 0.0317,
+            "pages": [
+              17
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p009:table:3",
+            "score": 0.0291,
+            "pages": [
+              9
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p203:form:0",
+          "bdds2025:p202:form:0",
+          "bdds2025:p017:text:1",
+          "bdds2025:p009:table:3"
+        ],
+        "context_labels": {
+          "bdds2025:p203:form:0": "S1",
+          "bdds2025:p202:form:0": "S2",
+          "bdds2025:p017:text:1": "S3",
+          "bdds2025:p009:table:3": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Phương án “Trung học phổ thông” mang mã **4** và chuyển tới **KT3.1**. [S1]",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1685,
+        "tokens_in": 3906,
+        "tokens_out": 51,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p203:form:0",
+      "bdds2025:p202:form:0",
+      "bdds2025:p017:text:1",
+      "bdds2025:p009:table:3"
+    ],
+    "final_context_chars": 6230,
+    "tokens_in": 4879,
+    "tokens_out": 96,
+    "cost_usd": NaN,
+    "elapsed_s": 3.24,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      202
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v15",
+    "group": "anh_so_do",
+    "question": "Ngoài phiếu chính, phụ lục có một phiếu thu thập thông tin riêng dành cho loại hộ nào?",
+    "status": "answered",
+    "answer": "Ngoài phiếu chính, phụ lục có phiếu thu thập thông tin dành cho **hộ có toàn bộ thành viên là người nước ngoài**. [bdds2025:p208:form:0]",
+    "citations": [
+      "bdds2025:p208:form:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Phụ lục phiếu thu thập thông tin riêng ngoài phiếu chính dành cho loại hộ nào trong Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025"
+        },
+        "llm_ms": 1541,
+        "tokens_in": 960,
+        "tokens_out": 60,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Phụ lục phiếu thu thập thông tin riêng ngoài phiếu chính dành cho loại hộ nào trong Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025",
+        "filter": null,
+        "retrieval_ms": 42.4,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0325,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p198:form:0",
+            "score": 0.0315,
+            "pages": [
+              198
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p009:table:3",
+            "score": 0.0313,
+            "pages": [
+              9
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0313,
+            "pages": [
+              16
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p198:form:0",
+          "bdds2025:p009:table:3",
+          "bdds2025:p016:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p198:form:0": "S2",
+          "bdds2025:p009:table:3": "S3",
+          "bdds2025:p016:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_form",
+        "args": {
+          "query": "Ngoài phiếu điều tra chính, phụ lục có phiếu thu thập thông tin riêng dành cho loại hộ nào? Tìm tiêu đề phiếu phụ lục và đối tượng hộ được ghi trên phiếu."
+        },
+        "llm_ms": 1453,
+        "tokens_in": 2790,
+        "tokens_out": 61,
+        "event": "search",
+        "search_tool": "search_form",
+        "query": "Ngoài phiếu điều tra chính, phụ lục có phiếu thu thập thông tin riêng dành cho loại hộ nào? Tìm tiêu đề phiếu phụ lục và đối tượng hộ được ghi trên phiếu.",
+        "filter": null,
+        "retrieval_ms": 41.4,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p208:form:0",
+            "score": 0.0323,
+            "pages": [
+              208
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p198:form:0",
+            "score": 0.0311,
+            "pages": [
+              198
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p200:form:0",
+            "score": 0.0274,
+            "pages": [
+              200
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p201:form:0",
+            "score": 0.025,
+            "pages": [
+              201
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p198:form:0",
+          "bdds2025:p009:table:3",
+          "bdds2025:p016:text:0",
+          "bdds2025:p208:form:0",
+          "bdds2025:p200:form:0",
+          "bdds2025:p201:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p198:form:0": "S2",
+          "bdds2025:p009:table:3": "S3",
+          "bdds2025:p016:text:0": "S4",
+          "bdds2025:p208:form:0": "S5",
+          "bdds2025:p200:form:0": "S6",
+          "bdds2025:p201:form:0": "S7"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "answer",
+        "args": {
+          "answer": "Ngoài phiếu chính, phụ lục có phiếu thu thập thông tin dành cho **hộ có toàn bộ thành viên là người nước ngoài**. [S5]",
+          "citations": [
+            "S5"
+          ]
+        },
+        "llm_ms": 1638,
+        "tokens_in": 6766,
+        "tokens_out": 59,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S5"
+        ]
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p198:form:0",
+      "bdds2025:p009:table:3",
+      "bdds2025:p016:text:0",
+      "bdds2025:p208:form:0",
+      "bdds2025:p200:form:0",
+      "bdds2025:p201:form:0"
+    ],
+    "final_context_chars": 9234,
+    "tokens_in": 10516,
+    "tokens_out": 180,
+    "cost_usd": NaN,
+    "elapsed_s": 4.72,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      207
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v16",
+    "group": "anh_so_do",
+    "question": "Trong phiếu điều tra, câu 41 hỏi lý do chính không sử dụng biện pháp tránh thai; phương án 'Muốn có con' mang mã số mấy?",
+    "status": "answered",
+    "answer": "Trong câu 41, phương án “Muốn có con” mang mã số **03**. [bdds2025:p206:form:0]",
+    "citations": [
+      "bdds2025:p206:form:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Phiếu điều tra câu 41 lý do chính không sử dụng biện pháp tránh thai phương án Muốn có con mã số"
+        },
+        "llm_ms": 1586,
+        "tokens_in": 971,
+        "tokens_out": 43,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Phiếu điều tra câu 41 lý do chính không sử dụng biện pháp tránh thai phương án Muốn có con mã số",
+        "filter": null,
+        "retrieval_ms": 36.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p206:form:0",
+            "score": 0.0328,
+            "pages": [
+              206
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p053:text:0",
+            "score": 0.0323,
+            "pages": [
+              53
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p054:text:0",
+            "score": 0.0315,
+            "pages": [
+              54
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p205:form:0",
+            "score": 0.0313,
+            "pages": [
+              205
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p206:form:0",
+          "bdds2025:p053:text:0",
+          "bdds2025:p054:text:0",
+          "bdds2025:p205:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p206:form:0": "S1",
+          "bdds2025:p053:text:0": "S2",
+          "bdds2025:p054:text:0": "S3",
+          "bdds2025:p205:form:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Trong câu 41, phương án “Muốn có con” mang mã số **03**. [S1]",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1285,
+        "tokens_in": 3192,
+        "tokens_out": 46,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p206:form:0",
+      "bdds2025:p053:text:0",
+      "bdds2025:p054:text:0",
+      "bdds2025:p205:form:0"
+    ],
+    "final_context_chars": 4791,
+    "tokens_in": 4163,
+    "tokens_out": 89,
+    "cost_usd": NaN,
+    "elapsed_s": 2.91,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      205
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v17",
+    "group": "text",
+    "question": "Mẫu Điều tra BĐDS hằng năm gồm bao nhiêu hộ, tại bao nhiêu địa bàn điều tra, và mỗi địa bàn chọn bao nhiêu hộ?",
+    "status": "answered",
+    "answer": "Mẫu Điều tra BĐDS hằng năm gồm **305.600 hộ** tại **7.640 địa bàn điều tra**; mỗi địa bàn chọn **40 hộ mẫu**. [bdds2025:p018:text:0]",
+    "citations": [
+      "bdds2025:p018:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Mẫu Điều tra biến động dân số và kế hoạch hóa gia đình hằng năm gồm bao nhiêu hộ, bao nhiêu địa bàn điều tra, mỗi địa bàn chọn bao nhiêu hộ?"
+        },
+        "llm_ms": 1345,
+        "tokens_in": 970,
+        "tokens_out": 57,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Mẫu Điều tra biến động dân số và kế hoạch hóa gia đình hằng năm gồm bao nhiêu hộ, bao nhiêu địa bàn điều tra, mỗi địa bàn chọn bao nhiêu hộ?",
+        "filter": null,
+        "retrieval_ms": 51.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0328,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p018:text:0",
+            "score": 0.0318,
+            "pages": [
+              18
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0313,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p198:form:0",
+            "score": 0.0306,
+            "pages": [
+              198
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p018:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p198:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p018:text:0": "S2",
+          "bdds2025:p023:text:0": "S3",
+          "bdds2025:p198:form:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Mẫu Điều tra BĐDS hằng năm gồm **305.600 hộ** tại **7.640 địa bàn điều tra**; mỗi địa bàn chọn **40 hộ mẫu**. [S2]",
+          "citations": [
+            "S2"
+          ]
+        },
+        "llm_ms": 1391,
+        "tokens_in": 2758,
+        "tokens_out": 64,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p018:text:0",
+      "bdds2025:p023:text:0",
+      "bdds2025:p198:form:0"
+    ],
+    "final_context_chars": 4615,
+    "tokens_in": 3728,
+    "tokens_out": 121,
+    "cost_usd": NaN,
+    "elapsed_s": 2.79,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      17
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v18",
+    "group": "text",
+    "question": "Năm 2025, Việt Nam đứng thứ mấy về quy mô dân số trong khu vực Đông Nam Á và trên thế giới?",
+    "status": "answered",
+    "answer": "Năm 2025, Việt Nam đứng thứ ba về quy mô dân số ở Đông Nam Á (sau In-đô-nê-xi-a và Phi-li-pin) và thứ 16 trên thế giới. [bdds2025:p026:text:0]",
+    "citations": [
+      "bdds2025:p026:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Năm 2025 Việt Nam đứng thứ mấy về quy mô dân số trong khu vực Đông Nam Á và trên thế giới? thứ hạng dân số 2025 Việt Nam"
+        },
+        "llm_ms": 1432,
+        "tokens_in": 963,
+        "tokens_out": 54,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Năm 2025 Việt Nam đứng thứ mấy về quy mô dân số trong khu vực Đông Nam Á và trên thế giới? thứ hạng dân số 2025 Việt Nam",
+        "filter": null,
+        "retrieval_ms": 31.4,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p026:text:0",
+            "score": 0.0325,
+            "pages": [
+              26
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p026:text:1",
+            "score": 0.0325,
+            "pages": [
+              26
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p029:text:0",
+            "score": 0.0308,
+            "pages": [
+              29
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p012:text:0",
+            "score": 0.0301,
+            "pages": [
+              12
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p026:text:0",
+          "bdds2025:p026:text:1",
+          "bdds2025:p029:text:0",
+          "bdds2025:p012:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p026:text:0": "S1",
+          "bdds2025:p026:text:1": "S2",
+          "bdds2025:p029:text:0": "S3",
+          "bdds2025:p012:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Năm 2025, Việt Nam đứng thứ ba về quy mô dân số ở Đông Nam Á (sau In-đô-nê-xi-a và Phi-li-pin) và thứ 16 trên thế giới. [S1]",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1323,
+        "tokens_in": 2439,
+        "tokens_out": 71,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p026:text:0",
+      "bdds2025:p026:text:1",
+      "bdds2025:p029:text:0",
+      "bdds2025:p012:text:0"
+    ],
+    "final_context_chars": 3789,
+    "tokens_in": 3402,
+    "tokens_out": 125,
+    "cost_usd": NaN,
+    "elapsed_s": 2.79,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      25
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v19",
+    "group": "text",
+    "question": "Theo báo cáo, tỷ số giới tính khi sinh thông thường (mức sinh học tự nhiên) nằm trong khoảng nào?",
+    "status": "answered",
+    "answer": "Theo báo cáo, tỷ số giới tính khi sinh thông thường (mức sinh học tự nhiên) là **104–106 bé trai trên 100 bé gái**. [bdds2025:p068:text:1]",
+    "citations": [
+      "bdds2025:p068:text:1"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Báo cáo Điều tra biến động dân số và kế hoạch hóa gia đình 01/4/2025 tỷ số giới tính khi sinh thông thường mức sinh học tự nhiên nằm trong khoảng nào"
+        },
+        "llm_ms": 1238,
+        "tokens_in": 960,
+        "tokens_out": 57,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Báo cáo Điều tra biến động dân số và kế hoạch hóa gia đình 01/4/2025 tỷ số giới tính khi sinh thông thường mức sinh học tự nhiên nằm trong khoảng nào",
+        "filter": null,
+        "retrieval_ms": 63.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0328,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p068:text:0",
+            "score": 0.0317,
+            "pages": [
+              68
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0306,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0302,
+            "pages": [
+              16
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p068:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p016:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p068:text:0": "S2",
+          "bdds2025:p023:text:0": "S3",
+          "bdds2025:p016:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ số giới tính khi sinh thông thường mức sinh học tự nhiên khoảng 103 107 bé trai trên 100 bé gái báo cáo 2025"
+        },
+        "llm_ms": 1568,
+        "tokens_in": 2867,
+        "tokens_out": 48,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ số giới tính khi sinh thông thường mức sinh học tự nhiên khoảng 103 107 bé trai trên 100 bé gái báo cáo 2025",
+        "filter": null,
+        "retrieval_ms": 36.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p068:text:1",
+            "score": 0.0328,
+            "pages": [
+              68
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p069:table:0",
+            "score": 0.0323,
+            "pages": [
+              69
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p068:text:0",
+            "score": 0.0315,
+            "pages": [
+              68
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p029:text:0",
+            "score": 0.0308,
+            "pages": [
+              29
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p068:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p068:text:1",
+          "bdds2025:p069:table:0",
+          "bdds2025:p029:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p068:text:0": "S2",
+          "bdds2025:p023:text:0": "S3",
+          "bdds2025:p016:text:0": "S4",
+          "bdds2025:p068:text:1": "S5",
+          "bdds2025:p069:table:0": "S6",
+          "bdds2025:p029:text:0": "S7"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "answer",
+        "args": {
+          "answer": "Theo báo cáo, tỷ số giới tính khi sinh thông thường (mức sinh học tự nhiên) là **104–106 bé trai trên 100 bé gái**. [S5]",
+          "citations": [
+            "S5"
+          ]
+        },
+        "llm_ms": 1483,
+        "tokens_in": 5733,
+        "tokens_out": 60,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S5"
+        ]
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p068:text:0",
+      "bdds2025:p023:text:0",
+      "bdds2025:p016:text:0",
+      "bdds2025:p068:text:1",
+      "bdds2025:p069:table:0",
+      "bdds2025:p029:text:0"
+    ],
+    "final_context_chars": 7737,
+    "tokens_in": 9560,
+    "tokens_out": 165,
+    "cost_usd": NaN,
+    "elapsed_s": 4.39,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      67
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v20",
+    "group": "text",
+    "question": "Công tác kiểm tra, giám sát, làm sạch và nghiệm thu dữ liệu Điều tra BĐDS 2025 được thực hiện trong khoảng thời gian nào?",
+    "status": "answered",
+    "answer": "Công tác kiểm tra, giám sát, làm sạch và nghiệm thu dữ liệu Điều tra BĐDS 2025 được thực hiện từ tháng 4/2025 đến tháng 7/2025. [bdds2025:p019:text:1]",
+    "citations": [
+      "bdds2025:p019:text:1"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Công tác kiểm tra, giám sát, làm sạch và nghiệm thu dữ liệu Điều tra biến động dân số và kế hoạch hóa gia đình năm 2025 được thực hiện trong khoảng thời gian nào?"
+        },
+        "llm_ms": 1538,
+        "tokens_in": 969,
+        "tokens_out": 59,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Công tác kiểm tra, giám sát, làm sạch và nghiệm thu dữ liệu Điều tra biến động dân số và kế hoạch hóa gia đình năm 2025 được thực hiện trong khoảng thời gian nào?",
+        "filter": null,
+        "retrieval_ms": 47.4,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0323,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p019:text:1",
+            "score": 0.032,
+            "pages": [
+              19
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0313,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0304,
+            "pages": [
+              23
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p019:text:1",
+          "bdds2025:p016:text:0",
+          "bdds2025:p023:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p019:text:1": "S2",
+          "bdds2025:p016:text:0": "S3",
+          "bdds2025:p023:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Công tác kiểm tra, giám sát, làm sạch và nghiệm thu dữ liệu Điều tra BĐDS 2025 được thực hiện từ tháng 4/2025 đến tháng 7/2025. [S2]",
+          "citations": [
+            "S2"
+          ]
+        },
+        "llm_ms": 1400,
+        "tokens_in": 2519,
+        "tokens_out": 69,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p019:text:1",
+      "bdds2025:p016:text:0",
+      "bdds2025:p023:text:0"
+    ],
+    "final_context_chars": 4460,
+    "tokens_in": 3488,
+    "tokens_out": 128,
+    "cost_usd": NaN,
+    "elapsed_s": 2.99,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      18
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "v21",
+    "group": "multi_hop",
+    "question": "Vùng có tổng tỷ suất sinh cao nhất năm 2025 là vùng nào, và tỷ suất chết trẻ em dưới 1 tuổi của vùng đó là bao nhiêu?",
+    "status": "answered",
+    "answer": "Năm 2025, vùng có tổng tỷ suất sinh cao nhất là **Trung du và miền núi phía Bắc** (2,41 con/phụ nữ). [bdds2025:p065:table:0] Tỷ suất chết trẻ em dưới 1 tuổi của vùng này là **15,1‰** (trẻ em dưới 1 tuổi chết trên 1.000 trẻ sinh sống). [bdds2025:p076:text:0]",
+    "citations": [
+      "bdds2025:p065:table:0",
+      "bdds2025:p076:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Năm 2025 tổng tỷ suất sinh theo vùng; tỷ suất chết trẻ em dưới 1 tuổi theo vùng, vùng có tổng tỷ suất sinh cao nhất"
+        },
+        "llm_ms": 1391,
+        "tokens_in": 970,
+        "tokens_out": 49,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Năm 2025 tổng tỷ suất sinh theo vùng; tỷ suất chết trẻ em dưới 1 tuổi theo vùng, vùng có tổng tỷ suất sinh cao nhất",
+        "filter": null,
+        "retrieval_ms": 25.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p077:text:1",
+            "score": 0.0313,
+            "pages": [
+              77
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p076:text:0",
+            "score": 0.0308,
+            "pages": [
+              76
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p075:text:0",
+            "score": 0.0307,
+            "pages": [
+              75
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p077:text:0",
+            "score": 0.0306,
+            "pages": [
+              77
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p077:text:1",
+          "bdds2025:p076:text:0",
+          "bdds2025:p075:text:0",
+          "bdds2025:p077:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p077:text:1": "S1",
+          "bdds2025:p076:text:0": "S2",
+          "bdds2025:p075:text:0": "S3",
+          "bdds2025:p077:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Tổng tỷ suất sinh năm 2025 chia theo vùng kinh tế xã hội, vùng nào cao nhất; tìm bảng số liệu TFR theo vùng"
+        },
+        "llm_ms": 1653,
+        "tokens_in": 2427,
+        "tokens_out": 47,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tổng tỷ suất sinh năm 2025 chia theo vùng kinh tế xã hội, vùng nào cao nhất; tìm bảng số liệu TFR theo vùng",
+        "filter": null,
+        "retrieval_ms": 24.9,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p065:text:0",
+            "score": 0.0323,
+            "pages": [
+              65
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p065:table:0",
+            "score": 0.0318,
+            "pages": [
+              65
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p066:text:0",
+            "score": 0.0317,
+            "pages": [
+              66
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p063:figure:0",
+            "score": 0.0299,
+            "pages": [
+              63
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p077:text:1",
+          "bdds2025:p076:text:0",
+          "bdds2025:p075:text:0",
+          "bdds2025:p077:text:0",
+          "bdds2025:p065:text:0",
+          "bdds2025:p065:table:0",
+          "bdds2025:p066:text:0",
+          "bdds2025:p063:figure:0"
+        ],
+        "context_labels": {
+          "bdds2025:p077:text:1": "S1",
+          "bdds2025:p076:text:0": "S2",
+          "bdds2025:p075:text:0": "S3",
+          "bdds2025:p077:text:0": "S4",
+          "bdds2025:p065:text:0": "S5",
+          "bdds2025:p065:table:0": "S6",
+          "bdds2025:p066:text:0": "S7",
+          "bdds2025:p063:figure:0": "S8"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "answer",
+        "args": {
+          "answer": "Năm 2025, vùng có tổng tỷ suất sinh cao nhất là **Trung du và miền núi phía Bắc** (2,41 con/phụ nữ). [S6] Tỷ suất chết trẻ em dưới 1 tuổi của vùng này là **15,1‰** (trẻ em dưới 1 tuổi chết trên 1.000 trẻ sinh sống). [S2]",
+          "citations": [
+            "S6",
+            "S2"
+          ]
+        },
+        "llm_ms": 1755,
+        "tokens_in": 5746,
+        "tokens_out": 106,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S6",
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p077:text:1",
+      "bdds2025:p076:text:0",
+      "bdds2025:p075:text:0",
+      "bdds2025:p077:text:0",
+      "bdds2025:p065:text:0",
+      "bdds2025:p065:table:0",
+      "bdds2025:p066:text:0",
+      "bdds2025:p063:figure:0"
+    ],
+    "final_context_chars": 7874,
+    "tokens_in": 9143,
+    "tokens_out": 202,
+    "cost_usd": NaN,
+    "elapsed_s": 4.85,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      64,
+      75
+    ],
+    "pass_auto": false,
+    "groups_cited": [
+      true,
+      false
+    ],
+    "groups_in_context": [
+      true,
+      false
+    ]
+  },
+  {
+    "query_id": "v22",
+    "group": "multi_hop",
+    "question": "Ở khu vực thành thị năm 2025, tỷ suất chết trẻ em dưới 5 tuổi cao hơn tỷ suất chết trẻ em dưới 1 tuổi bao nhiêu (phần nghìn)?",
+    "status": "answered",
+    "answer": "Năm 2025, tỷ suất chết trẻ em dưới 5 tuổi ở thành thị là 10,9‰ [bdds2025:p077:table:0], còn tỷ suất chết trẻ em dưới 1 tuổi là 7,2‰ [bdds2025:p076:text:0]. Chênh lệch: 10,9 − 7,2 = **3,7 phần nghìn**.",
+    "citations": [
+      "bdds2025:p077:table:0",
+      "bdds2025:p076:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Năm 2025 khu vực thành thị tỷ suất chết trẻ em dưới 5 tuổi và tỷ suất chết trẻ em dưới 1 tuổi, đơn vị phần nghìn; tìm bảng kết quả chủ yếu Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025"
+        },
+        "llm_ms": 1600,
+        "tokens_in": 974,
+        "tokens_out": 79,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Năm 2025 khu vực thành thị tỷ suất chết trẻ em dưới 5 tuổi và tỷ suất chết trẻ em dưới 1 tuổi, đơn vị phần nghìn; tìm bảng kết quả chủ yếu Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025",
+        "filter": null,
+        "retrieval_ms": 37.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0306,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0303,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p076:text:0",
+            "score": 0.0302,
+            "pages": [
+              76
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p014:text:0",
+            "score": 0.029,
+            "pages": [
+              14
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p076:text:0",
+          "bdds2025:p014:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p076:text:0": "S3",
+          "bdds2025:p014:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ suất chết trẻ em dưới 5 tuổi năm 2025 theo khu vực thành thị, bảng số liệu thành thị nông thôn, đơn vị phần nghìn (U5MR)"
+        },
+        "llm_ms": 1510,
+        "tokens_in": 2423,
+        "tokens_out": 57,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ suất chết trẻ em dưới 5 tuổi năm 2025 theo khu vực thành thị, bảng số liệu thành thị nông thôn, đơn vị phần nghìn (U5MR)",
+        "filter": null,
+        "retrieval_ms": 33.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p077:text:0",
+            "score": 0.032,
+            "pages": [
+              77
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p077:text:1",
+            "score": 0.0313,
+            "pages": [
+              77
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p075:text:0",
+            "score": 0.0311,
+            "pages": [
+              75
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p077:table:0",
+            "score": 0.0305,
+            "pages": [
+              77
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p076:text:0",
+          "bdds2025:p014:text:0",
+          "bdds2025:p077:text:0",
+          "bdds2025:p077:text:1",
+          "bdds2025:p075:text:0",
+          "bdds2025:p077:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p076:text:0": "S3",
+          "bdds2025:p014:text:0": "S4",
+          "bdds2025:p077:text:0": "S5",
+          "bdds2025:p077:text:1": "S6",
+          "bdds2025:p075:text:0": "S7",
+          "bdds2025:p077:table:0": "S8"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "calculator",
+        "args": {
+          "expression": "10.9 - 7.2"
+        },
+        "llm_ms": 1212,
+        "tokens_in": 5157,
+        "tokens_out": 24,
+        "event": "calculator",
+        "expression": "10.9 - 7.2",
+        "result": "10.9 - 7.2 = 3.7  (định dạng Việt Nam: 3,70)"
+      },
+      {
+        "step": 3,
+        "tool": "answer",
+        "args": {
+          "answer": "Năm 2025, tỷ suất chết trẻ em dưới 5 tuổi ở thành thị là 10,9‰ [S8], còn tỷ suất chết trẻ em dưới 1 tuổi là 7,2‰ [S3]. Chênh lệch: 10,9 − 7,2 = **3,7 phần nghìn**.",
+          "citations": [
+            "S8",
+            "S3"
+          ]
+        },
+        "llm_ms": 1568,
+        "tokens_in": 5217,
+        "tokens_out": 97,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S8",
+          "S3"
+        ]
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 4,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p023:text:0",
+      "bdds2025:p076:text:0",
+      "bdds2025:p014:text:0",
+      "bdds2025:p077:text:0",
+      "bdds2025:p077:text:1",
+      "bdds2025:p075:text:0",
+      "bdds2025:p077:table:0"
+    ],
+    "final_context_chars": 6955,
+    "tokens_in": 13771,
+    "tokens_out": 257,
+    "cost_usd": NaN,
+    "elapsed_s": 5.96,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      75,
+      76
+    ],
+    "pass_auto": false,
+    "groups_cited": [
+      false,
+      true
+    ],
+    "groups_in_context": [
+      false,
+      true
+    ]
+  },
+  {
+    "query_id": "v23",
+    "group": "multi_hop",
+    "question": "Đối với vùng Đông Nam Bộ năm 2025: tuổi kết hôn trung bình lần đầu của nữ là bao nhiêu và tổng tỷ suất sinh là bao nhiêu?",
+    "status": "answered",
+    "answer": "Năm 2025, tại vùng Đông Nam Bộ, tuổi kết hôn trung bình lần đầu của nữ là **28,1 năm** [bdds2025:p038:table:0], còn tổng tỷ suất sinh là **1,58 con/phụ nữ** [bdds2025:p065:table:0].",
+    "citations": [
+      "bdds2025:p038:table:0",
+      "bdds2025:p065:table:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Điều tra biến động dân số và kế hoạch hóa gia đình 01/4/2025 vùng Đông Nam Bộ tuổi kết hôn trung bình lần đầu nữ tổng tỷ suất sinh"
+        },
+        "llm_ms": 1379,
+        "tokens_in": 971,
+        "tokens_out": 54,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Điều tra biến động dân số và kế hoạch hóa gia đình 01/4/2025 vùng Đông Nam Bộ tuổi kết hôn trung bình lần đầu nữ tổng tỷ suất sinh",
+        "filter": null,
+        "retrieval_ms": 35.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0317,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0308,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p065:text:0",
+            "score": 0.0301,
+            "pages": [
+              65
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0299,
+            "pages": [
+              16
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p065:text:0",
+          "bdds2025:p016:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p065:text:0": "S3",
+          "bdds2025:p016:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Biểu 5.3 tổng tỷ suất sinh năm 2025 theo vùng kinh tế xã hội Đông Nam Bộ giá trị"
+        },
+        "llm_ms": 1688,
+        "tokens_in": 2812,
+        "tokens_out": 42,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Biểu 5.3 tổng tỷ suất sinh năm 2025 theo vùng kinh tế xã hội Đông Nam Bộ giá trị",
+        "filter": null,
+        "retrieval_ms": 40.7,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p065:table:0",
+            "score": 0.0325,
+            "pages": [
+              65
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p065:text:0",
+            "score": 0.0323,
+            "pages": [
+              65
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p064:table:0",
+            "score": 0.0303,
+            "pages": [
+              64
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p076:table:0",
+            "score": 0.0298,
+            "pages": [
+              76
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p065:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p065:table:0",
+          "bdds2025:p064:table:0",
+          "bdds2025:p076:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p065:text:0": "S3",
+          "bdds2025:p016:text:0": "S4",
+          "bdds2025:p065:table:0": "S5",
+          "bdds2025:p064:table:0": "S6",
+          "bdds2025:p076:table:0": "S7"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "search_law",
+        "args": {
+          "query": "Biểu tuổi kết hôn trung bình lần đầu theo vùng kinh tế xã hội năm 2025 nữ Đông Nam Bộ"
+        },
+        "llm_ms": 1378,
+        "tokens_in": 5357,
+        "tokens_out": 41,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Biểu tuổi kết hôn trung bình lần đầu theo vùng kinh tế xã hội năm 2025 nữ Đông Nam Bộ",
+        "filter": null,
+        "retrieval_ms": 37.5,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p038:table:0",
+            "score": 0.0323,
+            "pages": [
+              38
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p038:text:0",
+            "score": 0.0323,
+            "pages": [
+              38
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p034:text:1",
+            "score": 0.0298,
+            "pages": [
+              34
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p037:text:1",
+            "score": 0.0289,
+            "pages": [
+              37
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p065:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p065:table:0",
+          "bdds2025:p064:table:0",
+          "bdds2025:p076:table:0",
+          "bdds2025:p038:table:0",
+          "bdds2025:p038:text:0",
+          "bdds2025:p034:text:1",
+          "bdds2025:p037:text:1"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p065:text:0": "S3",
+          "bdds2025:p016:text:0": "S4",
+          "bdds2025:p065:table:0": "S5",
+          "bdds2025:p064:table:0": "S6",
+          "bdds2025:p076:table:0": "S7",
+          "bdds2025:p038:table:0": "S8",
+          "bdds2025:p038:text:0": "S9",
+          "bdds2025:p034:text:1": "S10",
+          "bdds2025:p037:text:1": "S11"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "answer",
+        "args": {
+          "answer": "Năm 2025, tại vùng Đông Nam Bộ, tuổi kết hôn trung bình lần đầu của nữ là **28,1 năm** [S8], còn tổng tỷ suất sinh là **1,58 con/phụ nữ** [S5].",
+          "citations": [
+            "S8",
+            "S5"
+          ]
+        },
+        "llm_ms": 1599,
+        "tokens_in": 9319,
+        "tokens_out": 77,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S8",
+          "S5"
+        ]
+      }
+    ],
+    "n_searches": 3,
+    "n_llm_calls": 4,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p023:text:0",
+      "bdds2025:p065:text:0",
+      "bdds2025:p016:text:0",
+      "bdds2025:p065:table:0",
+      "bdds2025:p064:table:0",
+      "bdds2025:p076:table:0",
+      "bdds2025:p038:table:0",
+      "bdds2025:p038:text:0",
+      "bdds2025:p034:text:1",
+      "bdds2025:p037:text:1"
+    ],
+    "final_context_chars": 10076,
+    "tokens_in": 18459,
+    "tokens_out": 214,
+    "cost_usd": NaN,
+    "elapsed_s": 6.16,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      37,
+      64
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true,
+      true
+    ],
+    "groups_in_context": [
+      true,
+      true
+    ]
+  },
+  {
+    "query_id": "v24",
+    "group": "multi_hop",
+    "question": "Thành phố Hồ Chí Minh có bao nhiêu dân thời điểm 01/4/2025 và tổng tỷ suất sinh là bao nhiêu?",
+    "status": "answered",
+    "answer": "Tại thời điểm 01/4/2025, Thành phố Hồ Chí Minh có **13,8 triệu người** [bdds2025:p031:text:0]. Tổng tỷ suất sinh là **1,51 con/phụ nữ** [bdds2025:p066:table:0].",
+    "citations": [
+      "bdds2025:p031:text:0",
+      "bdds2025:p066:table:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Thành phố Hồ Chí Minh dân số thời điểm 01/4/2025 tổng tỷ suất sinh (TFR), bảng dân số và mức sinh theo tỉnh/thành phố"
+        },
+        "llm_ms": 1726,
+        "tokens_in": 966,
+        "tokens_out": 54,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Thành phố Hồ Chí Minh dân số thời điểm 01/4/2025 tổng tỷ suất sinh (TFR), bảng dân số và mức sinh theo tỉnh/thành phố",
+        "filter": null,
+        "retrieval_ms": 31.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p066:text:0",
+            "score": 0.0328,
+            "pages": [
+              66
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p066:table:0",
+            "score": 0.0315,
+            "pages": [
+              66
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p065:text:0",
+            "score": 0.0308,
+            "pages": [
+              65
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p230:text:0",
+            "score": 0.0288,
+            "pages": [
+              230
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p066:text:0",
+          "bdds2025:p066:table:0",
+          "bdds2025:p065:text:0",
+          "bdds2025:p230:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p066:text:0": "S1",
+          "bdds2025:p066:table:0": "S2",
+          "bdds2025:p065:text:0": "S3",
+          "bdds2025:p230:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "dân số Thành phố Hồ Chí Minh tại thời điểm 01/4/2025 quy mô dân số tỉnh thành phố"
+        },
+        "llm_ms": 1524,
+        "tokens_in": 2695,
+        "tokens_out": 43,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "dân số Thành phố Hồ Chí Minh tại thời điểm 01/4/2025 quy mô dân số tỉnh thành phố",
+        "filter": null,
+        "retrieval_ms": 37.9,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p026:text:0",
+            "score": 0.0325,
+            "pages": [
+              26
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p031:text:0",
+            "score": 0.0318,
+            "pages": [
+              31
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p027:text:1",
+            "score": 0.0296,
+            "pages": [
+              27
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p066:text:0",
+            "score": 0.0284,
+            "pages": [
+              66
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p066:text:0",
+          "bdds2025:p066:table:0",
+          "bdds2025:p065:text:0",
+          "bdds2025:p230:text:0",
+          "bdds2025:p026:text:0",
+          "bdds2025:p031:text:0",
+          "bdds2025:p027:text:1"
+        ],
+        "context_labels": {
+          "bdds2025:p066:text:0": "S1",
+          "bdds2025:p066:table:0": "S2",
+          "bdds2025:p065:text:0": "S3",
+          "bdds2025:p230:text:0": "S4",
+          "bdds2025:p026:text:0": "S5",
+          "bdds2025:p031:text:0": "S6",
+          "bdds2025:p027:text:1": "S7"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "answer",
+        "args": {
+          "answer": "Tại thời điểm 01/4/2025, Thành phố Hồ Chí Minh có **13,8 triệu người** [S6]. Tổng tỷ suất sinh là **1,51 con/phụ nữ** [S2].",
+          "citations": [
+            "S6",
+            "S2"
+          ]
+        },
+        "llm_ms": 1384,
+        "tokens_in": 5418,
+        "tokens_out": 73,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S6",
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p066:text:0",
+      "bdds2025:p066:table:0",
+      "bdds2025:p065:text:0",
+      "bdds2025:p230:text:0",
+      "bdds2025:p026:text:0",
+      "bdds2025:p031:text:0",
+      "bdds2025:p027:text:1"
+    ],
+    "final_context_chars": 6283,
+    "tokens_in": 9079,
+    "tokens_out": 170,
+    "cost_usd": NaN,
+    "elapsed_s": 4.7,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [
+      30,
+      65
+    ],
+    "pass_auto": false,
+    "groups_cited": [
+      false,
+      false
+    ],
+    "groups_in_context": [
+      false,
+      true
+    ]
+  },
+  {
+    "query_id": "w01",
+    "group": "thieu_bang_chung",
+    "question": "Tỷ lệ trẻ em được tiêm chủng đầy đủ năm 2025 là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong báo cáo Điều tra biến động dân số 2025 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Ấn phẩm đã truy xuất chưa có số liệu về tỷ lệ trẻ em được tiêm chủng đầy đủ. Hai truy vấn tìm kiếm cũng chưa tìm được bảng hoặc đoạn văn chứa chỉ tiêu này; không thể xác định tỷ lệ mà không suy đoán.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ trẻ em được tiêm chủng đầy đủ năm 2025; chỉ tiêu tiêm chủng đầy đủ trẻ em, bảng kết quả Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025"
+        },
+        "llm_ms": 1335,
+        "tokens_in": 956,
+        "tokens_out": 69,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ trẻ em được tiêm chủng đầy đủ năm 2025; chỉ tiêu tiêm chủng đầy đủ trẻ em, bảng kết quả Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025",
+        "filter": null,
+        "retrieval_ms": 30.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0323,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0315,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p009:table:3",
+            "score": 0.0313,
+            "pages": [
+              9
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p014:text:0",
+            "score": 0.0311,
+            "pages": [
+              14
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p009:table:3",
+          "bdds2025:p014:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p016:text:0": "S2",
+          "bdds2025:p009:table:3": "S3",
+          "bdds2025:p014:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ trẻ em được tiêm chủng đầy đủ năm 2025, chỉ tiêu tiêm chủng đầy đủ theo tỉnh hoặc toàn quốc trong kết quả Điều tra BĐDS 2025"
+        },
+        "llm_ms": 1586,
+        "tokens_in": 2494,
+        "tokens_out": 58,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ trẻ em được tiêm chủng đầy đủ năm 2025, chỉ tiêu tiêm chủng đầy đủ theo tỉnh hoặc toàn quốc trong kết quả Điều tra BĐDS 2025",
+        "filter": null,
+        "retrieval_ms": 41.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p059:text:0",
+            "score": 0.0311,
+            "pages": [
+              59
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p017:text:1",
+            "score": 0.0306,
+            "pages": [
+              17
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0301,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0299,
+            "pages": [
+              16
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p009:table:3",
+          "bdds2025:p014:text:0",
+          "bdds2025:p059:text:0",
+          "bdds2025:p017:text:1",
+          "bdds2025:p023:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p016:text:0": "S2",
+          "bdds2025:p009:table:3": "S3",
+          "bdds2025:p014:text:0": "S4",
+          "bdds2025:p059:text:0": "S5",
+          "bdds2025:p017:text:1": "S6",
+          "bdds2025:p023:text:0": "S7"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "abstain",
+        "args": {
+          "reason": "Ấn phẩm đã truy xuất chưa có số liệu về tỷ lệ trẻ em được tiêm chủng đầy đủ. Hai truy vấn tìm kiếm cũng chưa tìm được bảng hoặc đoạn văn chứa chỉ tiêu này; không thể xác định tỷ lệ mà không suy đoán."
+        },
+        "llm_ms": 1683,
+        "tokens_in": 5245,
+        "tokens_out": 70,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p016:text:0",
+      "bdds2025:p009:table:3",
+      "bdds2025:p014:text:0",
+      "bdds2025:p059:text:0",
+      "bdds2025:p017:text:1",
+      "bdds2025:p023:text:0"
+    ],
+    "final_context_chars": 7818,
+    "tokens_in": 8695,
+    "tokens_out": 197,
+    "cost_usd": NaN,
+    "elapsed_s": 4.68,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [],
+    "pass_auto": true,
+    "groups_cited": null
+  },
+  {
+    "query_id": "w02",
+    "group": "thieu_bang_chung",
+    "question": "Chi tiêu bình quân đầu người một tháng năm 2025 là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong báo cáo Điều tra biến động dân số 2025 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Ấn phẩm được tra cứu không có chỉ tiêu chi tiêu bình quân đầu người một tháng; nội dung và danh mục chỉ tiêu của Điều tra BĐDS 2025 tập trung vào dân số, hôn nhân, giáo dục, sinh, chết, kế hoạch hóa gia đình và di cư [S2][S6].",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Chi tiêu bình quân đầu người một tháng năm 2025; mức chi tiêu bình quân đầu người/tháng trong Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025"
+        },
+        "llm_ms": 1406,
+        "tokens_in": 952,
+        "tokens_out": 61,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Chi tiêu bình quân đầu người một tháng năm 2025; mức chi tiêu bình quân đầu người/tháng trong Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025",
+        "filter": null,
+        "retrieval_ms": 45.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p014:text:0",
+            "score": 0.0323,
+            "pages": [
+              14
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.032,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p009:table:3",
+            "score": 0.032,
+            "pages": [
+              9
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0317,
+            "pages": [
+              16
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p014:text:0",
+          "bdds2025:p004:text:0",
+          "bdds2025:p009:table:3",
+          "bdds2025:p016:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p014:text:0": "S1",
+          "bdds2025:p004:text:0": "S2",
+          "bdds2025:p009:table:3": "S3",
+          "bdds2025:p016:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Ấn phẩm Điều tra BĐDS 2025 có chỉ tiêu chi tiêu bình quân đầu người một tháng không; tìm bảng hoặc nội dung về chi tiêu hộ gia đình, mức sống"
+        },
+        "llm_ms": 1373,
+        "tokens_in": 2482,
+        "tokens_out": 55,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Ấn phẩm Điều tra BĐDS 2025 có chỉ tiêu chi tiêu bình quân đầu người một tháng không; tìm bảng hoặc nội dung về chi tiêu hộ gia đình, mức sống",
+        "filter": null,
+        "retrieval_ms": 65.4,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p016:text:1",
+            "score": 0.032,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.032,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p017:text:1",
+            "score": 0.0313,
+            "pages": [
+              17
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0313,
+            "pages": [
+              16
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p014:text:0",
+          "bdds2025:p004:text:0",
+          "bdds2025:p009:table:3",
+          "bdds2025:p016:text:0",
+          "bdds2025:p016:text:1",
+          "bdds2025:p023:text:0",
+          "bdds2025:p017:text:1"
+        ],
+        "context_labels": {
+          "bdds2025:p014:text:0": "S1",
+          "bdds2025:p004:text:0": "S2",
+          "bdds2025:p009:table:3": "S3",
+          "bdds2025:p016:text:0": "S4",
+          "bdds2025:p016:text:1": "S5",
+          "bdds2025:p023:text:0": "S6",
+          "bdds2025:p017:text:1": "S7"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "abstain",
+        "args": {
+          "reason": "Ấn phẩm được tra cứu không có chỉ tiêu chi tiêu bình quân đầu người một tháng; nội dung và danh mục chỉ tiêu của Điều tra BĐDS 2025 tập trung vào dân số, hôn nhân, giáo dục, sinh, chết, kế hoạch hóa gia đình và di cư [S2][S6]."
+        },
+        "llm_ms": 1828,
+        "tokens_in": 5054,
+        "tokens_out": 84,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p014:text:0",
+      "bdds2025:p004:text:0",
+      "bdds2025:p009:table:3",
+      "bdds2025:p016:text:0",
+      "bdds2025:p016:text:1",
+      "bdds2025:p023:text:0",
+      "bdds2025:p017:text:1"
+    ],
+    "final_context_chars": 7217,
+    "tokens_in": 8488,
+    "tokens_out": 200,
+    "cost_usd": NaN,
+    "elapsed_s": 4.72,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [],
+    "pass_auto": true,
+    "groups_cited": null
+  },
+  {
+    "query_id": "w03",
+    "group": "thieu_bang_chung",
+    "question": "Tỷ lệ hộ sở hữu xe máy năm 2025 là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong báo cáo Điều tra biến động dân số 2025 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Đã thử các truy vấn về tỷ lệ hộ sở hữu xe máy năm 2025 và chỉ tiêu hộ có xe máy theo toàn quốc/vùng, nhưng các đoạn truy xuất được không chứa số liệu này. Không thể xác định tỷ lệ mà không suy đoán.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ hộ sở hữu xe máy năm 2025, tỷ lệ hộ gia đình có xe máy theo kết quả Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025"
+        },
+        "llm_ms": 1362,
+        "tokens_in": 952,
+        "tokens_out": 62,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ hộ sở hữu xe máy năm 2025, tỷ lệ hộ gia đình có xe máy theo kết quả Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025",
+        "filter": null,
+        "retrieval_ms": 24.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0328,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0318,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p014:text:0",
+            "score": 0.0313,
+            "pages": [
+              14
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0302,
+            "pages": [
+              16
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p014:text:0",
+          "bdds2025:p016:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p014:text:0": "S3",
+          "bdds2025:p016:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ hộ dân cư sở hữu xe máy năm 2025; chỉ tiêu phương tiện tài sản hộ gia đình xe máy, kết quả theo toàn quốc"
+        },
+        "llm_ms": 1453,
+        "tokens_in": 2399,
+        "tokens_out": 49,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ hộ dân cư sở hữu xe máy năm 2025; chỉ tiêu phương tiện tài sản hộ gia đình xe máy, kết quả theo toàn quốc",
+        "filter": null,
+        "retrieval_ms": 36.5,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.032,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0306,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p029:text:0",
+            "score": 0.0305,
+            "pages": [
+              29
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0283,
+            "pages": [
+              4
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p014:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p029:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p014:text:0": "S3",
+          "bdds2025:p016:text:0": "S4",
+          "bdds2025:p029:text:0": "S5"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ hộ sở hữu xe máy năm 2025 theo vùng, thành thị nông thôn; hộ có xe máy trong điều tra 01/4/2025"
+        },
+        "llm_ms": 1349,
+        "tokens_in": 4247,
+        "tokens_out": 53,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ hộ sở hữu xe máy năm 2025 theo vùng, thành thị nông thôn; hộ có xe máy trong điều tra 01/4/2025",
+        "filter": null,
+        "retrieval_ms": 35.7,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p028:table:0",
+            "score": 0.0307,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p030:figure:0",
+            "score": 0.0289,
+            "pages": [
+              30
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p065:text:0",
+            "score": 0.0284,
+            "pages": [
+              65
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p198:form:0",
+            "score": 0.028,
+            "pages": [
+              198
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p014:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p029:text:0",
+          "bdds2025:p028:table:0",
+          "bdds2025:p030:figure:0",
+          "bdds2025:p065:text:0",
+          "bdds2025:p198:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p014:text:0": "S3",
+          "bdds2025:p016:text:0": "S4",
+          "bdds2025:p029:text:0": "S5",
+          "bdds2025:p028:table:0": "S6",
+          "bdds2025:p030:figure:0": "S7",
+          "bdds2025:p065:text:0": "S8",
+          "bdds2025:p198:form:0": "S9"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "abstain",
+        "args": {
+          "reason": "Đã thử các truy vấn về tỷ lệ hộ sở hữu xe máy năm 2025 và chỉ tiêu hộ có xe máy theo toàn quốc/vùng, nhưng các đoạn truy xuất được không chứa số liệu này. Không thể xác định tỷ lệ mà không suy đoán."
+        },
+        "llm_ms": 1505,
+        "tokens_in": 7880,
+        "tokens_out": 72,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 3,
+    "n_llm_calls": 4,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p023:text:0",
+      "bdds2025:p014:text:0",
+      "bdds2025:p016:text:0",
+      "bdds2025:p029:text:0",
+      "bdds2025:p028:table:0",
+      "bdds2025:p030:figure:0",
+      "bdds2025:p065:text:0",
+      "bdds2025:p198:form:0"
+    ],
+    "final_context_chars": 9016,
+    "tokens_in": 15478,
+    "tokens_out": 236,
+    "cost_usd": NaN,
+    "elapsed_s": 5.77,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [],
+    "pass_auto": true,
+    "groups_cited": null
+  },
+  {
+    "query_id": "w04",
+    "group": "thieu_bang_chung",
+    "question": "Tỷ lệ người trưởng thành hút thuốc lá năm 2025 là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong báo cáo Điều tra biến động dân số 2025 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Ấn phẩm được truy xuất chưa có số liệu về tỷ lệ người trưởng thành hút thuốc lá. Đã thử hai truy vấn khác nhau, nhưng các đoạn tìm được không chứa chỉ tiêu này; không thể xác định tỷ lệ mà không suy đoán.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ người trưởng thành hút thuốc lá năm 2025, chỉ tiêu hút thuốc lá theo giới tính hoặc chung trong Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025"
+        },
+        "llm_ms": 1620,
+        "tokens_in": 953,
+        "tokens_out": 63,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ người trưởng thành hút thuốc lá năm 2025, chỉ tiêu hút thuốc lá theo giới tính hoặc chung trong Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025",
+        "filter": null,
+        "retrieval_ms": 40.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0325,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0323,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p014:text:0",
+            "score": 0.032,
+            "pages": [
+              14
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0312,
+            "pages": [
+              23
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p014:text:0",
+          "bdds2025:p023:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p016:text:0": "S2",
+          "bdds2025:p014:text:0": "S3",
+          "bdds2025:p023:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ người trưởng thành hút thuốc lá năm 2025 trong các chỉ tiêu sức khỏe hoặc đặc trưng dân số; tìm bảng tỷ lệ hút thuốc lá theo nhóm tuổi"
+        },
+        "llm_ms": 1482,
+        "tokens_in": 2402,
+        "tokens_out": 53,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ người trưởng thành hút thuốc lá năm 2025 trong các chỉ tiêu sức khỏe hoặc đặc trưng dân số; tìm bảng tỷ lệ hút thuốc lá theo nhóm tuổi",
+        "filter": null,
+        "retrieval_ms": 41.9,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.031,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p032:text:1",
+            "score": 0.0273,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p032:text:0",
+            "score": 0.0164,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p059:text:0",
+            "score": 0.0164,
+            "pages": [
+              59
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p014:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p032:text:1",
+          "bdds2025:p032:text:0",
+          "bdds2025:p059:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p016:text:0": "S2",
+          "bdds2025:p014:text:0": "S3",
+          "bdds2025:p023:text:0": "S4",
+          "bdds2025:p032:text:1": "S5",
+          "bdds2025:p032:text:0": "S6",
+          "bdds2025:p059:text:0": "S7"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "abstain",
+        "args": {
+          "reason": "Ấn phẩm được truy xuất chưa có số liệu về tỷ lệ người trưởng thành hút thuốc lá. Đã thử hai truy vấn khác nhau, nhưng các đoạn tìm được không chứa chỉ tiêu này; không thể xác định tỷ lệ mà không suy đoán."
+        },
+        "llm_ms": 1589,
+        "tokens_in": 5026,
+        "tokens_out": 69,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p016:text:0",
+      "bdds2025:p014:text:0",
+      "bdds2025:p023:text:0",
+      "bdds2025:p032:text:1",
+      "bdds2025:p032:text:0",
+      "bdds2025:p059:text:0"
+    ],
+    "final_context_chars": 7627,
+    "tokens_in": 8381,
+    "tokens_out": 185,
+    "cost_usd": NaN,
+    "elapsed_s": 4.77,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [],
+    "pass_auto": true,
+    "groups_cited": null
+  },
+  {
+    "query_id": "w05",
+    "group": "thieu_bang_chung",
+    "question": "GDP bình quân đầu người của Việt Nam năm 2025 là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong báo cáo Điều tra biến động dân số 2025 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Ấn phẩm được tra cứu chỉ cung cấp số liệu dân số và các chỉ tiêu dân số/kế hoạch hóa gia đình; không có số liệu GDP bình quân đầu người năm 2025. Hai truy vấn về GDP/người trong tài liệu cũng không tìm thấy thông tin cần thiết, nên không thể xác định con số từ nguồn được phép sử dụng.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "GDP bình quân đầu người Việt Nam năm 2025 trong ấn phẩm Kết quả chủ yếu Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025; tìm chỉ tiêu GDP hoặc thu nhập bình quân đầu người năm 2025"
+        },
+        "llm_ms": 1571,
+        "tokens_in": 952,
+        "tokens_out": 74,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "GDP bình quân đầu người Việt Nam năm 2025 trong ấn phẩm Kết quả chủ yếu Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025; tìm chỉ tiêu GDP hoặc thu nhập bình quân đầu người năm 2025",
+        "filter": null,
+        "retrieval_ms": 42.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0325,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0318,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0313,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p014:text:0",
+            "score": 0.0306,
+            "pages": [
+              14
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p014:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p016:text:0": "S3",
+          "bdds2025:p014:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "GDP bình quân đầu người Việt Nam năm 2025 số liệu GDP/người, tổng sản phẩm trong nước bình quân đầu người trong ấn phẩm điều tra dân số 01/4/2025"
+        },
+        "llm_ms": 1473,
+        "tokens_in": 2411,
+        "tokens_out": 58,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "GDP bình quân đầu người Việt Nam năm 2025 số liệu GDP/người, tổng sản phẩm trong nước bình quân đầu người trong ấn phẩm điều tra dân số 01/4/2025",
+        "filter": null,
+        "retrieval_ms": 38.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0309,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p026:text:0",
+            "score": 0.0299,
+            "pages": [
+              26
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p026:text:1",
+            "score": 0.0296,
+            "pages": [
+              26
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p028:figure:0",
+            "score": 0.0269,
+            "pages": [
+              28
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p014:text:0",
+          "bdds2025:p026:text:0",
+          "bdds2025:p026:text:1",
+          "bdds2025:p028:figure:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p016:text:0": "S3",
+          "bdds2025:p014:text:0": "S4",
+          "bdds2025:p026:text:0": "S5",
+          "bdds2025:p026:text:1": "S6",
+          "bdds2025:p028:figure:0": "S7"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "abstain",
+        "args": {
+          "reason": "Ấn phẩm được tra cứu chỉ cung cấp số liệu dân số và các chỉ tiêu dân số/kế hoạch hóa gia đình; không có số liệu GDP bình quân đầu người năm 2025. Hai truy vấn về GDP/người trong tài liệu cũng không tìm thấy thông tin cần thiết, nên không thể xác định con số từ nguồn được phép sử dụng."
+        },
+        "llm_ms": 1658,
+        "tokens_in": 5164,
+        "tokens_out": 90,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p023:text:0",
+      "bdds2025:p016:text:0",
+      "bdds2025:p014:text:0",
+      "bdds2025:p026:text:0",
+      "bdds2025:p026:text:1",
+      "bdds2025:p028:figure:0"
+    ],
+    "final_context_chars": 7622,
+    "tokens_in": 8527,
+    "tokens_out": 222,
+    "cost_usd": NaN,
+    "elapsed_s": 4.78,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [],
+    "pass_auto": true,
+    "groups_cited": null
+  },
+  {
+    "query_id": "w06",
+    "group": "thieu_bang_chung",
+    "question": "Tỷ lệ hộ sử dụng nước sạch năm 2025 là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong báo cáo Điều tra biến động dân số 2025 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Ấn phẩm chưa cung cấp đoạn trích có số liệu về tỷ lệ hộ sử dụng nước sạch năm 2025. Đã thử hai truy vấn riêng về chỉ tiêu này nhưng kết quả chỉ trả về phần giới thiệu và phương pháp điều tra, không có bảng hoặc số liệu cần thiết; vì vậy không thể xác định tỷ lệ mà không suy đoán.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ hộ sử dụng nước sạch năm 2025 trong Kết quả chủ yếu Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025; chỉ tiêu hộ sử dụng nước sạch, toàn quốc"
+        },
+        "llm_ms": 1448,
+        "tokens_in": 952,
+        "tokens_out": 67,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ hộ sử dụng nước sạch năm 2025 trong Kết quả chủ yếu Điều tra biến động dân số và kế hoạch hóa gia đình thời điểm 01/4/2025; chỉ tiêu hộ sử dụng nước sạch, toàn quốc",
+        "filter": null,
+        "retrieval_ms": 41.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0328,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0315,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.0311,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p014:text:0",
+            "score": 0.0308,
+            "pages": [
+              14
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p014:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p016:text:0": "S3",
+          "bdds2025:p014:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "Tỷ lệ hộ dân cư sử dụng nước sạch, nước hợp vệ sinh năm 2025 toàn quốc; chỉ tiêu điều kiện nhà ở tiện nghi hộ gia đình trong ấn phẩm Điều tra BĐDS 01/4/2025"
+        },
+        "llm_ms": 2334,
+        "tokens_in": 2404,
+        "tokens_out": 66,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Tỷ lệ hộ dân cư sử dụng nước sạch, nước hợp vệ sinh năm 2025 toàn quốc; chỉ tiêu điều kiện nhà ở tiện nghi hộ gia đình trong ấn phẩm Điều tra BĐDS 01/4/2025",
+        "filter": null,
+        "retrieval_ms": 41.9,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p016:text:0",
+            "score": 0.032,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.032,
+            "pages": [
+              23
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p004:text:0",
+            "score": 0.0318,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p017:text:1",
+            "score": 0.0303,
+            "pages": [
+              17
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p004:text:0",
+          "bdds2025:p023:text:0",
+          "bdds2025:p016:text:0",
+          "bdds2025:p014:text:0",
+          "bdds2025:p017:text:1"
+        ],
+        "context_labels": {
+          "bdds2025:p004:text:0": "S1",
+          "bdds2025:p023:text:0": "S2",
+          "bdds2025:p016:text:0": "S3",
+          "bdds2025:p014:text:0": "S4",
+          "bdds2025:p017:text:1": "S5"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "abstain",
+        "args": {
+          "reason": "Ấn phẩm chưa cung cấp đoạn trích có số liệu về tỷ lệ hộ sử dụng nước sạch năm 2025. Đã thử hai truy vấn riêng về chỉ tiêu này nhưng kết quả chỉ trả về phần giới thiệu và phương pháp điều tra, không có bảng hoặc số liệu cần thiết; vì vậy không thể xác định tỷ lệ mà không suy đoán."
+        },
+        "llm_ms": 1680,
+        "tokens_in": 4242,
+        "tokens_out": 91,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p004:text:0",
+      "bdds2025:p023:text:0",
+      "bdds2025:p016:text:0",
+      "bdds2025:p014:text:0",
+      "bdds2025:p017:text:1"
+    ],
+    "final_context_chars": 5187,
+    "tokens_in": 7598,
+    "tokens_out": 224,
+    "cost_usd": NaN,
+    "elapsed_s": 5.55,
+    "model": "gpt-6-luna",
+    "cited_printed_pages": [],
+    "pass_auto": true,
+    "groups_cited": null
+  }
+]

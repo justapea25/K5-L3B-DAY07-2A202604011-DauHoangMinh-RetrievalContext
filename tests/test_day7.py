@@ -145,3 +145,31 @@ class AgentLoopTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AbstainGuardTest(unittest.TestCase):
+    def test_premature_abstain_pushed_back_once(self):
+        a = make_agent([tool_call("search_law", {"query": "x"}), tool_call("abstain", {"reason": "r"}),
+                        tool_call("search_law", {"query": "thử việc"}),
+                        tool_call("answer", {"answer": "60 ngày [a]", "citations": ["a"]})], max_searches=3)
+        a.min_searches_before_abstain = 2
+        out = a.run("Thử việc?")
+        self.assertEqual(out["status"], "answered")
+        self.assertIn("abstain_rejected", [e["event"] for e in out["events"]])
+
+
+class CalculatorTest(unittest.TestCase):
+    def test_safe_calc(self):
+        from src.agent import safe_calc
+        self.assertIn("39520.827", safe_calc("102121 * 0.387"))
+        self.assertIn("39.520,83", safe_calc("102121 * 0.387"))
+        self.assertTrue(safe_calc("__import__('os')").startswith("LỖI"))
+
+    def test_agent_uses_calculator_then_answers(self):
+        a = make_agent([tool_call("search_law", {"query": "thử việc"}),
+                        tool_call("calculator", {"expression": "60 * 2"}),
+                        tool_call("answer", {"answer": "120 ngày [a]", "citations": ["a"]})])
+        a.calculator, a.extra_search_tools = True, {}
+        out = a.run("Hai lần thời gian thử việc?")
+        self.assertEqual(out["status"], "answered")
+        self.assertIn("calculator", [e["event"] for e in out["events"]])
