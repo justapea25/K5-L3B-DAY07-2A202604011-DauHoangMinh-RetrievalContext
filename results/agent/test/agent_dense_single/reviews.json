@@ -2,83 +2,91 @@
   {
     "query_id": "q16",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng và đủ, chi tiết hơn bản hybrid: nêu đúng ngoại lệ điểm e khoản 1 Điều 36, cách tính thời gian và tiền lương (Điều 46.2–3) đều khớp văn bản.",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q17",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng và đủ (Điều 128.2).",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q18",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng: 06 + 01 = 07 tháng (Điều 139.1).",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q19",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng: 03 ngày (Điều 115.1.a).",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q20",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng nguyên văn Điều 190.1.",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q26",
     "answerable": true,
-    "status": "abstain",
-    "answer_grade": null,
+    "answer_grade": 0,
     "citation_support": [],
     "abstention_correct": null,
-    "note": ""
+    "note": "Từ chối câu có đáp án → 0. Chỉ tìm 1 lượt, context có Điều 139 nhưng thiếu Điều 140 nên không trả lời được ý thứ hai.",
+    "human_verified": true,
+    "status": "abstain"
   },
   {
     "query_id": "u03",
     "answerable": false,
-    "status": "abstain",
     "answer_grade": null,
     "citation_support": [],
-    "abstention_correct": null,
-    "note": ""
+    "abstention_correct": true,
+    "note": "Từ chối đúng, không bịa mức phạt.",
+    "human_verified": true,
+    "status": "abstain"
   },
   {
     "query_id": "u04",
     "answerable": false,
-    "status": "abstain",
     "answer_grade": null,
     "citation_support": [],
-    "abstention_correct": null,
-    "note": ""
+    "abstention_correct": true,
+    "note": "Từ chối đúng.",
+    "human_verified": true,
+    "status": "abstain"
   }
 ]

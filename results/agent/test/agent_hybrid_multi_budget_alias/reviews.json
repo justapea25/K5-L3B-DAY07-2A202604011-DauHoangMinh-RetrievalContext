@@ -2,86 +2,94 @@
   {
     "query_id": "q16",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng: một nửa tháng lương/năm, điều kiện làm thường xuyên đủ 12 tháng (Điều 46.1). Ngoại lệ 'các trường hợp khác theo quy định của pháp luật' hơi mơ hồ so với nguyên văn (điểm e khoản 1 Điều 36) nhưng không sai. Không có [id] inline, chỉ có danh sách citations.",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q17",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng và đủ: 15 ngày, đặc biệt ≤90 ngày; tạm ứng 50% lương (Điều 128.2, khớp nguyên văn).",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q18",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 0,
     "citation_support": [
-      null
+      false
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "SAI: kết luận 08 tháng, tự mâu thuẫn (có viết 06+01=07 rồi vẫn kết luận 08). Điều 139.1: sinh đôi → 06 + 01 = 07 tháng. Evidence đúng đã có trong context nhưng không hỗ trợ kết luận '08 tháng' → citation false. Citation chấm false vì đoạn trích mâu thuẫn với kết luận 08 tháng.",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q19",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng: kết hôn nghỉ 03 ngày hưởng nguyên lương (Điều 115.1.a).",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q20",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng nguyên văn Điều 190.1: 06 tháng kể từ ngày phát hiện hành vi vi phạm.",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "q26",
     "answerable": true,
-    "status": "answered",
-    "answer_grade": null,
+    "answer_grade": 2,
     "citation_support": [
-      null,
-      null
+      true,
+      true
     ],
     "abstention_correct": null,
-    "note": ""
+    "note": "Đúng đủ hai ý: 06 tháng, trước sinh ≤02 tháng (Điều 139.1) + bố trí việc khác, lương không thấp hơn (Điều 140). Có citation inline đúng từng ý. Ý thêm về sinh đôi đúng với văn bản.",
+    "human_verified": true,
+    "status": "answered"
   },
   {
     "query_id": "u03",
     "answerable": false,
-    "status": "abstain",
     "answer_grade": null,
     "citation_support": [],
-    "abstention_correct": null,
-    "note": ""
+    "abstention_correct": true,
+    "note": "Từ chối đúng sau 4 lượt tìm; không nêu con số. Context có Điều 217 (chỉ nói xử phạt hành chính), lý do từ chối hợp lý.",
+    "human_verified": true,
+    "status": "abstain"
   },
   {
     "query_id": "u04",
     "answerable": false,
-    "status": "abstain",
     "answer_grade": null,
     "citation_support": [],
-    "abstention_correct": null,
-    "note": ""
+    "abstention_correct": true,
+    "note": "Từ chối đúng; không bịa tỷ lệ phần trăm.",
+    "human_verified": true,
+    "status": "abstain"
   }
 ]

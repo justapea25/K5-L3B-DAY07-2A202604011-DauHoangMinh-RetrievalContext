@@ -22,6 +22,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--split", required=True, choices=("dev", "test"))
     ap.add_argument("--config", nargs="+", required=True)
+    ap.add_argument("--allow-draft", action="store_true",
+                    help="tổng hợp cả nhãn chưa xác nhận (chỉ để xem trước; ghi ra summary_draft.json)")
     args = ap.parse_args()
     cases = [c for c in read_json(ROOT / "benchmark/cases.json") if c["split"] == args.split]
     for name in args.config:
@@ -34,6 +36,11 @@ def main() -> None:
             any(v is None for v in r.get("citation_support", [])))]
         if missing:
             raise SystemExit(f"{name}: còn thiếu nhãn cho {missing}")
+        unverified = [r["query_id"] for r in reviews if r.get("human_verified") is False]
+        if unverified and not args.allow_draft:
+            raise SystemExit(f"{name}: nhãn chưa được người chấm xác nhận: {unverified}. "
+                             "Đọc review_sheet.md, sửa nhãn nếu cần, đặt human_verified = true "
+                             "(hoặc chạy --allow-draft để xem trước, không dùng để báo cáo).")
         report = {"split": args.split, "config": name, **aggregate(cases, traces, reviews)}
         g = report["grounded_answer"]
         report["readable"] = {
@@ -42,8 +49,10 @@ def main() -> None:
             "abstention": f"{report['abstention']['n']}/{report['abstention']['N']}",
             "false_abstention": f"{report['false_abstention']['n']}/{report['false_abstention']['N']}",
             "tool_use": f"{report['tool_use']['n']}/{report['tool_use']['N']}"}
-        write_json(d / "summary_human.json", report)
-        print(name, report["readable"])
+        report["labels"] = "chưa xác nhận" if unverified else "human-verified"
+        out = d / ("summary_draft.json" if unverified else "summary_human.json")
+        write_json(out, report)
+        print(name, report["labels"], report["readable"], "→", out.name)
 
 
 if __name__ == "__main__":
