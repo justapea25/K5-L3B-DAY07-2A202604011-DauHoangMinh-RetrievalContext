@@ -106,7 +106,7 @@
     "final_context_chars": 3286,
     "tokens_in": 3304,
     "tokens_out": 115,
-    "cost_usd": NaN,
+    "cost_usd": 0.000388,
     "elapsed_s": 4.92,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -224,7 +224,7 @@
     "final_context_chars": 2906,
     "tokens_in": 3184,
     "tokens_out": 125,
-    "cost_usd": NaN,
+    "cost_usd": 0.000381,
     "elapsed_s": 3.78,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -342,7 +342,7 @@
     "final_context_chars": 4425,
     "tokens_in": 3614,
     "tokens_out": 125,
-    "cost_usd": NaN,
+    "cost_usd": 0.000424,
     "elapsed_s": 3.57,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -460,7 +460,7 @@
     "final_context_chars": 3605,
     "tokens_in": 3379,
     "tokens_out": 101,
-    "cost_usd": NaN,
+    "cost_usd": 0.000388,
     "elapsed_s": 3.3,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -578,7 +578,7 @@
     "final_context_chars": 3160,
     "tokens_in": 3153,
     "tokens_out": 123,
-    "cost_usd": NaN,
+    "cost_usd": 0.000377,
     "elapsed_s": 3.1,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -767,7 +767,7 @@
     "final_context_chars": 6354,
     "tokens_in": 9088,
     "tokens_out": 154,
-    "cost_usd": NaN,
+    "cost_usd": 0.000986,
     "elapsed_s": 5.06,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -885,7 +885,7 @@
     "final_context_chars": 4195,
     "tokens_in": 3629,
     "tokens_out": 82,
-    "cost_usd": NaN,
+    "cost_usd": 0.000404,
     "elapsed_s": 3.15,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -1003,7 +1003,7 @@
     "final_context_chars": 4102,
     "tokens_in": 3548,
     "tokens_out": 105,
-    "cost_usd": NaN,
+    "cost_usd": 0.000407,
     "elapsed_s": 3.15,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -1124,7 +1124,7 @@
     "final_context_chars": 5082,
     "tokens_in": 3944,
     "tokens_out": 115,
-    "cost_usd": NaN,
+    "cost_usd": 0.000452,
     "elapsed_s": 2.87,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -1243,7 +1243,7 @@
     "final_context_chars": 6553,
     "tokens_in": 4569,
     "tokens_out": 113,
-    "cost_usd": NaN,
+    "cost_usd": 0.000513,
     "elapsed_s": 2.9,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -1361,7 +1361,7 @@
     "final_context_chars": 6378,
     "tokens_in": 4611,
     "tokens_out": 98,
-    "cost_usd": NaN,
+    "cost_usd": 0.00051,
     "elapsed_s": 2.85,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -1479,7 +1479,7 @@
     "final_context_chars": 5714,
     "tokens_in": 4538,
     "tokens_out": 87,
-    "cost_usd": NaN,
+    "cost_usd": 0.000497,
     "elapsed_s": 2.67,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -1662,7 +1662,7 @@
     "final_context_chars": 7942,
     "tokens_in": 13577,
     "tokens_out": 141,
-    "cost_usd": NaN,
+    "cost_usd": 0.001428,
     "elapsed_s": 4.35,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -1780,7 +1780,7 @@
     "final_context_chars": 6230,
     "tokens_in": 4879,
     "tokens_out": 96,
-    "cost_usd": NaN,
+    "cost_usd": 0.000536,
     "elapsed_s": 3.24,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -1969,7 +1969,7 @@
     "final_context_chars": 9234,
     "tokens_in": 10516,
     "tokens_out": 180,
-    "cost_usd": NaN,
+    "cost_usd": 0.001142,
     "elapsed_s": 4.72,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -2087,7 +2087,7 @@
     "final_context_chars": 4791,
     "tokens_in": 4163,
     "tokens_out": 89,
-    "cost_usd": NaN,
+    "cost_usd": 0.000461,
     "elapsed_s": 2.91,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -2205,7 +2205,7 @@
     "final_context_chars": 4615,
     "tokens_in": 3728,
     "tokens_out": 121,
-    "cost_usd": NaN,
+    "cost_usd": 0.000433,
     "elapsed_s": 2.79,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -2323,7 +2323,7 @@
     "final_context_chars": 3789,
     "tokens_in": 3402,
     "tokens_out": 125,
-    "cost_usd": NaN,
+    "cost_usd": 0.000403,
     "elapsed_s": 2.79,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -2512,7 +2512,7 @@
     "final_context_chars": 7737,
     "tokens_in": 9560,
     "tokens_out": 165,
-    "cost_usd": NaN,
+    "cost_usd": 0.001038,
     "elapsed_s": 4.39,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -2630,7 +2630,7 @@
     "final_context_chars": 4460,
     "tokens_in": 3488,
     "tokens_out": 128,
-    "cost_usd": NaN,
+    "cost_usd": 0.000413,
     "elapsed_s": 2.99,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -2825,7 +2825,7 @@
     "final_context_chars": 7874,
     "tokens_in": 9143,
     "tokens_out": 202,
-    "cost_usd": NaN,
+    "cost_usd": 0.001015,
     "elapsed_s": 4.85,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -3036,7 +3036,7 @@
     "final_context_chars": 6955,
     "tokens_in": 13771,
     "tokens_out": 257,
-    "cost_usd": NaN,
+    "cost_usd": 0.001506,
     "elapsed_s": 5.96,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -3311,7 +3311,7 @@
     "final_context_chars": 10076,
     "tokens_in": 18459,
     "tokens_out": 214,
-    "cost_usd": NaN,
+    "cost_usd": 0.001953,
     "elapsed_s": 6.16,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -3506,7 +3506,7 @@
     "final_context_chars": 6283,
     "tokens_in": 9079,
     "tokens_out": 170,
-    "cost_usd": NaN,
+    "cost_usd": 0.000993,
     "elapsed_s": 4.7,
     "model": "gpt-6-luna",
     "cited_printed_pages": [
@@ -3689,7 +3689,7 @@
     "final_context_chars": 7818,
     "tokens_in": 8695,
     "tokens_out": 197,
-    "cost_usd": NaN,
+    "cost_usd": 0.000968,
     "elapsed_s": 4.68,
     "model": "gpt-6-luna",
     "cited_printed_pages": [],
@@ -3862,7 +3862,7 @@
     "final_context_chars": 7217,
     "tokens_in": 8488,
     "tokens_out": 200,
-    "cost_usd": NaN,
+    "cost_usd": 0.000949,
     "elapsed_s": 4.72,
     "model": "gpt-6-luna",
     "cited_printed_pages": [],
@@ -4105,7 +4105,7 @@
     "final_context_chars": 9016,
     "tokens_in": 15478,
     "tokens_out": 236,
-    "cost_usd": NaN,
+    "cost_usd": 0.001666,
     "elapsed_s": 5.77,
     "model": "gpt-6-luna",
     "cited_printed_pages": [],
@@ -4278,7 +4278,7 @@
     "final_context_chars": 7627,
     "tokens_in": 8381,
     "tokens_out": 185,
-    "cost_usd": NaN,
+    "cost_usd": 0.000931,
     "elapsed_s": 4.77,
     "model": "gpt-6-luna",
     "cited_printed_pages": [],
@@ -4451,7 +4451,7 @@
     "final_context_chars": 7622,
     "tokens_in": 8527,
     "tokens_out": 222,
-    "cost_usd": NaN,
+    "cost_usd": 0.000964,
     "elapsed_s": 4.78,
     "model": "gpt-6-luna",
     "cited_printed_pages": [],
@@ -4618,7 +4618,7 @@
     "final_context_chars": 5187,
     "tokens_in": 7598,
     "tokens_out": 224,
-    "cost_usd": NaN,
+    "cost_usd": 0.000872,
     "elapsed_s": 5.55,
     "model": "gpt-6-luna",
     "cited_printed_pages": [],

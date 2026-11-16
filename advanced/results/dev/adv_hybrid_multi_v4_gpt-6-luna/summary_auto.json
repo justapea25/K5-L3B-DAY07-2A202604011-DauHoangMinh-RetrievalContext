@@ -1,0 +1,65 @@
+{
+  "config": "adv_hybrid_multi_v4_gpt-6-luna",
+  "split": "dev",
+  "method": "hybrid",
+  "system": "v4",
+  "form_tool": true,
+  "hypothesis": "Cấu hình v4 với model gpt-6-luna (reasoning_effort=none).",
+  "agent": {
+    "model": "gpt-6-luna",
+    "top_k": 4,
+    "max_searches": 4,
+    "max_steps": 10,
+    "budget_chars": 12000,
+    "policy": "best_rank",
+    "citation_mode": "alias",
+    "min_searches_before_abstain": 2,
+    "calculator": true
+  },
+  "model": "gpt-6-luna",
+  "retriever": {
+    "method": "hybrid_rrf",
+    "depth": 20,
+    "rrf_k": 60,
+    "weights": {
+      "dense": 1.0,
+      "bm25": 1.0
+    },
+    "components": [
+      {
+        "method": "dense",
+        "model": "intfloat/multilingual-e5-small",
+        "dimensions": 384,
+        "store": "NumPy matrix (exact cosine)",
+        "n": 490,
+        "embed_chars": 1500,
+        "build_seconds": 25.4
+      },
+      {
+        "method": "bm25",
+        "k1": 1.5,
+        "b": 0.75,
+        "tokenizer": "syllable unigram + bigram",
+        "index_seconds": 0.065
+      }
+    ]
+  },
+  "pass_auto": "17/18",
+  "by_group": {
+    "anh_so_do": "3/3",
+    "bang": "4/4",
+    "bieu_do": "3/3",
+    "multi_hop": "1/2",
+    "text": "3/3",
+    "thieu_bang_chung": "3/3"
+  },
+  "errors": 0,
+  "median_latency_s": 3.385,
+  "tokens_in": 148716,
+  "tokens_out": 2744,
+  "cost_usd": 0.01624,
+  "price_usd_per_1m": {
+    "in": 0.1,
+    "out": 0.5
+  }
+}

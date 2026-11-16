@@ -26,7 +26,7 @@ from typing import Any
 from .common import env
 
 # USD per 1M tokens for gpt-4o-mini (OpenAI pricing page, standard tier). Verify before reporting.
-PRICES = {"gpt-4o-mini": (0.15, 0.60)}
+PRICES = {"gpt-4o-mini": (0.15, 0.60), "gpt-6-luna": (0.10, 0.50)}  # USD / 1M token vào, ra
 
 SYSTEM = """Bạn là trợ lý tra cứu Bộ luật Lao động Việt Nam 2019 (Bộ luật số 45/2019/QH14, bản gốc khi ban hành).
 Quy tắc:

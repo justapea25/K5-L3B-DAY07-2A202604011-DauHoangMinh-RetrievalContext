@@ -25,5 +25,10 @@
     "text": "4/4",
     "thieu_bang_chung": "6/6"
   },
-  "labels": "người chấm đã xác nhận"
+  "labels": "người chấm đã xác nhận",
+  "cost_usd": 0.0234,
+  "price_usd_per_1m": {
+    "in": 0.1,
+    "out": 0.5
+  }
 }

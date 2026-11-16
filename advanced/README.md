@@ -17,11 +17,13 @@ python -m advanced.fetch      # tải PDF + kiểm tra SHA-256
 python -m advanced.ingest     # chunk text/bảng/biểu đồ/phiếu → playground/advanced_build/
 python -m advanced.index      # dựng index dense + BM25 cho 490 chunk
 python -m advanced.run --validate                                          # kiểm tra benchmark với tài liệu
+python -m advanced.run --split dev --only adv_hybrid_multi_v4_gpt-6-luna
 python -m advanced.run --split test_v2 --only adv_hybrid_multi_v4_gpt-6-luna
 ```
 
 - Benchmark: [advanced/benchmark/questions.json](benchmark/questions.json)
-- Kết quả: [advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/](results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/)
+- Kết quả dev: [advanced/results/dev/adv_hybrid_multi_v4_gpt-6-luna/](results/dev/adv_hybrid_multi_v4_gpt-6-luna/)
+- Kết quả test: [advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/](results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/)
   - Trace từng câu: [traces.json](results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/traces.json)
   - Nhãn và lý do: [labels.json](results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/labels.json)
   - Tổng hợp: [summary_auto.json](results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/summary_auto.json)
