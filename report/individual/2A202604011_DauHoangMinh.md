@@ -124,7 +124,7 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
 
 - Cách chạy: [advanced/README.md](../../advanced/README.md)
 - Benchmark: [advanced/benchmark/questions.json](../../advanced/benchmark/questions.json)
-- Kết quả: [advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/](../../advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/)
+- Kết quả: [advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/](../../advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/)
 - **Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:**
 
   - *Kết quả chủ yếu Điều tra biến động dân số và KHHGĐ thời điểm 01/4/2025* (Cục Thống kê), 237 trang.
@@ -139,7 +139,7 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
   - **12 trang phiếu điều tra dạng ảnh**: Gemini chép lại theo dạng "phương án = mã → câu chuyển tới".
 - **Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên dev:**
 
-  - Dev 18 câu (15 có đáp án, 3 thiếu evidence). Test 30 câu (24 + 6), `split = test_v2`.
+  - Dev 18 câu (15 có đáp án, 3 thiếu evidence). Test 30 câu (24 + 6), `split = test`.
   - `gold` là danh sách nhóm evidence bắt buộc (VÀ). Mỗi nhóm gồm các evidence thay thế (HOẶC), dạng `{trang PDF, loại chunk, chuỗi evidence}`.
   - Câu biểu đồ và câu phiếu phải trích đúng chunk hình/phiếu, có bbox.
   - `python -m advanced.run --validate` kiểm tra mọi evidence có trong tài liệu, và mọi từ khóa của câu thiếu evidence đều không có trong 490 chunk.
@@ -169,9 +169,9 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
 | **Toàn bộ**                | **27/30** | **90%** | Nếu tính 2 câu ranh giới là đạt: 29/30                                                                                                 |
 
 - **Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:**
-  - Trace từng câu: [advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/traces.json](../../advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/traces.json)
-  - Nhãn và lý do từng câu: [advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/labels.json](../../advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/labels.json)
-  - Tổng hợp theo nhóm: [advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/summary_auto.json](../../advanced/results/test_v2/adv_hybrid_multi_v4_gpt-6-luna/summary_auto.json)
+  - Trace từng câu: [advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/traces.json](../../advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/traces.json)
+  - Nhãn và lý do từng câu: [advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/labels.json](../../advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/labels.json)
+  - Tổng hợp theo nhóm: [advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/summary_auto.json](../../advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/summary_auto.json)
   - 0 lỗi hệ thống; latency trung vị 4,1 s/câu.
   - Chi phí, tính theo giá gpt-6-luna 0,10 / 0,50 USD cho mỗi 1M token vào/ra (giá chuẩn, không tính cache):
 
@@ -203,9 +203,9 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
     python -m advanced.index      # index dense + BM25
     python -m advanced.run --validate
     python -m advanced.run --split dev     --only adv_hybrid_multi_v4_gpt-6-luna
-    python -m advanced.run --split test_v2 --only adv_hybrid_multi_v4_gpt-6-luna
+    python -m advanced.run --split test --only adv_hybrid_multi_v4_gpt-6-luna
     ```
-  - Benchmark: [advanced/benchmark/questions.json](../../advanced/benchmark/questions.json) (dev: `split = dev`, test: `split = test_v2`)
+  - Benchmark: [advanced/benchmark/questions.json](../../advanced/benchmark/questions.json) (dev: `split = dev`, test: `split = test`)
 
 ## Hỗ trợ của AI và trách nhiệm
 

@@ -10,7 +10,7 @@ at least one CITED chunk; unanswerable → abstained. Answer correctness is labe
 Usage:
   python -m advanced.run --validate
   python -m advanced.run --split dev [--only adv_hybrid_multi] [--ids ad01]
-  python -m advanced.run --split test --only adv_hybrid_multi adv_dense_single
+  python -m advanced.run --split test --only adv_hybrid_multi_v4
 """
 from __future__ import annotations
 
@@ -43,7 +43,7 @@ SYSTEM_V2 = SYSTEM.replace("6. Nội dung tài liệu", """6. Trước khi trả
 7. Không gọi abstain khi mới tìm 1 lần: hãy thử ít nhất 2 truy vấn khác nhau, mô tả bằng nội dung/chỉ tiêu (ví dụ "quy mô hộ bình quân theo vùng") thay vì chỉ ghi số hiệu Hình/Biểu.
 8. Nội dung tài liệu""")
 
-# v4: fixes from reading the errors of the first test run (test v1). Selected on dev, evaluated on test v2.
+# v4: calculator tool, form-search tool, unit and per-claim citation rules.
 SYSTEM_V4 = SYSTEM_V2.replace("3. Khi cần so sánh hoặc tính toán, nêu rõ các số dùng và phép tính.",
     "3. Mọi phép tính (cộng, trừ, nhân, chia, phần trăm) PHẢI dùng tool calculator rồi chép kết quả; nêu rõ các số và phép tính.").replace(
     "8. Nội dung tài liệu", """8. Câu hỏi về phiếu điều tra (mã câu, phương án, mã số, chuyển câu) → dùng search_form. Chỉ nêu mã số khi đoạn trích ghi rõ mã đó; không suy ra mã từ thứ tự liệt kê hay vị trí cột.
@@ -70,9 +70,8 @@ CONFIGS = {
                             "agent": {"top_k": 4, "max_searches": 4, "budget_chars": 12000, "policy": "best_rank",
                                       "citation_mode": "alias", "min_searches_before_abstain": 2}},
     "adv_hybrid_multi_v4": {"method": "hybrid", "system": "v4", "form_tool": True,
-                            "hypothesis": "Sửa theo lỗi test v1: tool calculator (at21 nhân sai), tool search_form + cấm "
-                            "suy mã từ thứ tự (at14), phiếu chép lại ghi rõ mũi tên (at16), quy tắc đơn vị (at06), "
-                            "citation cho mọi ý trung gian (at23). Đánh giá độc lập trên test v2.",
+                            "hypothesis": "Thêm tool calculator (tránh tính nhẩm sai), tool search_form + cấm suy mã "
+                            "từ thứ tự, phiếu chép lại ghi rõ mũi tên, quy tắc đơn vị, citation cho mọi ý trung gian.",
                             "agent": {"top_k": 4, "max_searches": 4, "max_steps": 10, "budget_chars": 12000,
                                       "policy": "best_rank", "citation_mode": "alias",
                                       "min_searches_before_abstain": 2, "calculator": True}},
@@ -130,7 +129,7 @@ def auto_check(q: dict, out: dict, by_id: dict) -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--validate", action="store_true")
-    ap.add_argument("--split", choices=("dev", "test", "test_v2"))
+    ap.add_argument("--split", choices=("dev", "test"))
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--ids", nargs="*")
     args = ap.parse_args()

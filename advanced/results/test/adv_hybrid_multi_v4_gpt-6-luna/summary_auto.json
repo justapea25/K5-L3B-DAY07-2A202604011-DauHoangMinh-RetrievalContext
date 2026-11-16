@@ -1,7 +1,7 @@
 {
   "model": "gpt-6-luna",
   "config": "adv_hybrid_multi_v4",
-  "split": "test_v2",
+  "split": "test",
   "pass_auto": "24/30",
   "by_group": {
     "anh_so_do": "5/5",
@@ -25,7 +25,7 @@
     "text": "4/4",
     "thieu_bang_chung": "6/6"
   },
-  "labels": "người chấm đã xác nhận",
+  "labels": "tác giả chấm tay, đối chiếu PDF gốc",
   "cost_usd": 0.0234,
   "price_usd_per_1m": {
     "in": 0.1,

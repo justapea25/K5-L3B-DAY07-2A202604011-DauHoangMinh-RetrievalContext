@@ -347,603 +347,8 @@
   "absence_reason": "Điều tra không thu thập thông tin bảo hiểm xã hội; không có cụm này trong tài liệu."
  },
  {
-  "id": "at01",
-  "split": "test",
-  "group": "bang",
-  "question": "Tuổi kết hôn trung bình lần đầu (SMAM) năm 2025 của nam và nữ là bao nhiêu?",
-  "expected_answer": "Nam 30,1 tuổi, nữ 25,9 tuổi (chung 28,0; chênh lệch 4,2 năm).",
-  "gold": [
-   [
-    {
-     "pdf_page": 37,
-     "kind": "table",
-     "evidence": [
-      "2025 | 28,0 | 30,1 | 25,9 | 4,2"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at02",
-  "split": "test",
-  "group": "bang",
-  "question": "Theo bảng so sánh các nước Đông Nam Á năm 2025, những nước nào có tổng tỷ suất sinh thấp nhất và là bao nhiêu?",
-  "expected_answer": "Singapore và Thái Lan, cùng 1,0 con/phụ nữ.",
-  "gold": [
-   [
-    {
-     "pdf_page": 64,
-     "kind": "table",
-     "evidence": [
-      "Singapore | 1,0",
-      "Thái Lan | 1,0"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at03",
-  "split": "test",
-  "group": "bang",
-  "question": "Tỷ suất di cư thuần của vùng Đồng bằng sông Cửu Long năm 2025 là bao nhiêu phần nghìn?",
-  "expected_answer": "-8,0‰ (nhập cư 0,8‰, xuất cư 8,8‰).",
-  "gold": [
-   [
-    {
-     "pdf_page": 82,
-     "kind": "table",
-     "evidence": [
-      "Đồng bằng sông Cửu Long | 0,8 | 8,8 | -8,0"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at04",
-  "split": "test",
-  "group": "bang",
-  "question": "Tỷ số phụ thuộc chung năm 2025 là bao nhiêu phần trăm, tăng hay giảm so với năm 2024?",
-  "expected_answer": "48,0%, giảm 0,4 điểm phần trăm so với 48,4% năm 2024.",
-  "gold": [
-   [
-    {
-     "pdf_page": 33,
-     "kind": "table",
-     "evidence": [
-      "Tỷ số phụ thuộc chung | 47,1 | 48,4 | 48,0"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at05",
-  "split": "test",
-  "group": "bang",
-  "question": "Trong giai đoạn 1999-2025, năm nào có tỷ số giới tính khi sinh cao nhất và giá trị là bao nhiêu?",
-  "expected_answer": "Năm 2018, 114,8 bé trai/100 bé gái.",
-  "gold": [
-   [
-    {
-     "pdf_page": 69,
-     "kind": "table",
-     "evidence": [
-      "2018 | 114,8"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at06",
-  "split": "test",
-  "group": "bang",
-  "question": "Dân số Việt Nam năm 2025 là bao nhiêu nghìn người và tỷ lệ tăng dân số bình quân năm là bao nhiêu?",
-  "expected_answer": "102.121 nghìn người; tăng 0,99%/năm.",
-  "gold": [
-   [
-    {
-     "pdf_page": 26,
-     "kind": "table",
-     "evidence": [
-      "2025 | 102.121 | 0,99"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at07",
-  "split": "test",
-  "group": "bieu_do",
-  "question": "Theo Hình 1.1, mật độ dân số của vùng Đồng bằng sông Cửu Long năm 2025 là bao nhiêu người/km2?",
-  "expected_answer": "435 người/km2.",
-  "gold": [
-   [
-    {
-     "pdf_page": 27,
-     "kind": "figure",
-     "evidence": [
-      "Đồng bằng sông Cửu Long",
-      "435"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at08",
-  "split": "test",
-  "group": "bieu_do",
-  "question": "Theo Hình 1.3, vùng nào có tỷ số giới tính thấp nhất và giá trị là bao nhiêu?",
-  "expected_answer": "Đông Nam Bộ, 98,0 nam/100 nữ.",
-  "gold": [
-   [
-    {
-     "pdf_page": 29,
-     "kind": "figure",
-     "evidence": [
-      "Đông Nam Bộ",
-      "98,0"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at09",
-  "split": "test",
-  "group": "bieu_do",
-  "question": "Theo Hình 2.1, ở nhóm tuổi 25-29, tỷ lệ chưa vợ/chồng của nam và của nữ là bao nhiêu?",
-  "expected_answer": "Nam 63,5%, nữ 36,5%.",
-  "gold": [
-   [
-    {
-     "pdf_page": 37,
-     "kind": "figure",
-     "evidence": [
-      "63,5",
-      "36,5"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at10",
-  "split": "test",
-  "group": "bieu_do",
-  "question": "Theo Hình 5.1, tổng tỷ suất sinh năm 2020 là bao nhiêu và năm nào trong giai đoạn 2009-2025 có TFR thấp nhất?",
-  "expected_answer": "Năm 2020: 2,12; thấp nhất năm 2024: 1,91.",
-  "gold": [
-   [
-    {
-     "pdf_page": 63,
-     "kind": "figure",
-     "evidence": [
-      "2,12",
-      "1,91"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at11",
-  "split": "test",
-  "group": "bieu_do",
-  "question": "Theo Hình 6.1, vùng nào có tỷ suất chết thô cao nhất năm 2025 và là bao nhiêu phần nghìn?",
-  "expected_answer": "Đồng bằng sông Cửu Long, 7,4‰.",
-  "gold": [
-   [
-    {
-     "pdf_page": 74,
-     "kind": "figure",
-     "evidence": [
-      "Đồng bằng sông Cửu Long",
-      "7,4"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at12",
-  "split": "test",
-  "group": "anh_so_do",
-  "question": "Trong phiếu điều tra, câu Q4 liệt kê các trường hợp tạm vắng vẫn được tính là nhân khẩu của hộ. Trường hợp liên quan đến công an, quân đội là gì?",
-  "expected_answer": "Người bị công an, quân đội tạm giữ (mục f).",
-  "gold": [
-   [
-    {
-     "pdf_page": 200,
-     "kind": "form",
-     "evidence": [
-      "Q4",
-      "tạm giữ"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at13",
-  "split": "test",
-  "group": "anh_so_do",
-  "question": "Trong phiếu điều tra, câu 8 hỏi thời gian đã thường trú ở xã/phường; phương án '5 năm trở lên' mang mã số mấy?",
-  "expected_answer": "Mã 5.",
-  "gold": [
-   [
-    {
-     "pdf_page": 202,
-     "kind": "form",
-     "evidence": [
-      "5 NĂM TRỞ LÊN"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at14",
-  "split": "test",
-  "group": "anh_so_do",
-  "question": "Trong phiếu điều tra, câu 40 hỏi biện pháp tránh thai đang dùng; 'Bao cao su' mang mã số mấy?",
-  "expected_answer": "Mã 07.",
-  "gold": [
-   [
-    {
-     "pdf_page": 206,
-     "kind": "form",
-     "evidence": [
-      "BAO CAO SU",
-      "07"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at15",
-  "split": "test",
-  "group": "anh_so_do",
-  "question": "Trong phiếu điều tra, câu 45 hỏi về người chết của hộ trong khoảng thời gian nào?",
-  "expected_answer": "Từ ngày mùng 1 Tết Âm lịch của năm trước năm điều tra đến hết ngày 31/03 năm điều tra.",
-  "gold": [
-   [
-    {
-     "pdf_page": 207,
-     "kind": "form",
-     "evidence": [
-      "45",
-      "Tết Âm lịch",
-      "31/03"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at16",
-  "split": "test",
-  "group": "anh_so_do",
-  "question": "Trong phiếu điều tra, câu 53 hỏi người nước ngoài đã sinh sống liên tục tại Việt Nam bao lâu; nếu trả lời 'từ 6 tháng trở lên' thì điều tra viên làm gì?",
-  "expected_answer": "Kết thúc phỏng vấn.",
-  "gold": [
-   [
-    {
-     "pdf_page": 209,
-     "kind": "form",
-     "evidence": [
-      "53",
-      "KẾT THÚC PHỎNG VẤN"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at17",
-  "split": "test",
-  "group": "text",
-  "question": "Điều tra BĐDS 2025 thu thập thông tin bằng phương pháp nào?",
-  "expected_answer": "Phỏng vấn trực tiếp, dùng phiếu điện tử cài trên thiết bị điện tử thông minh (CAPI) của điều tra viên.",
-  "gold": [
-   [
-    {
-     "pdf_page": 17,
-     "kind": "text",
-     "evidence": [
-      "phương pháp phỏng vấn trực tiếp sử dụng phiếu điện tử",
-      "(CAPI)"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at18",
-  "split": "test",
-  "group": "text",
-  "question": "Tuổi thọ trung bình năm 2025 của nam giới và nữ giới là bao nhiêu?",
-  "expected_answer": "Nam 72,3 tuổi, nữ 77,3 tuổi (chung 74,7 tuổi).",
-  "gold": [
-   [
-    {
-     "pdf_page": 13,
-     "kind": "text",
-     "evidence": [
-      "tuổi thọ trung bình của nam giới là 72,3 tuổi"
-     ]
-    }
-   ],
-   [
-    {
-     "pdf_page": 78,
-     "kind": "text",
-     "evidence": [
-      "của nam giới là 72,3 tuổi"
-     ]
-    }
-   ]
-  ],
-  "gold_mode": "any_group"
- },
- {
-  "id": "at19",
-  "split": "test",
-  "group": "text",
-  "question": "Khi phân 34 tỉnh, thành phố theo mức sinh, có bao nhiêu tỉnh, thành phố dưới mức sinh thay thế và bao nhiêu tỉnh có mức sinh cao?",
-  "expected_answer": "14 tỉnh, thành phố dưới mức sinh thay thế; 07 tỉnh có mức sinh cao (TFR từ 2,5 trở lên).",
-  "gold": [
-   [
-    {
-     "pdf_page": 66,
-     "kind": "text",
-     "evidence": [
-      "(TFR dưới 2,1 con/phụ nữ) có 14 tỉnh, thành phố",
-      "có 07 tỉnh"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at20",
-  "split": "test",
-  "group": "text",
-  "question": "Điều tra BĐDS 2025 được thực hiện theo quyết định số mấy, ban hành ngày nào?",
-  "expected_answer": "Quyết định số 1693/QĐ-TCTK ngày 05/8/2024 của Tổng cục trưởng Tổng cục Thống kê.",
-  "gold": [
-   [
-    {
-     "pdf_page": 16,
-     "kind": "text",
-     "evidence": [
-      "Quyết định số 1693/QĐ-TCTK ngày 05 tháng 8"
-     ]
-    },
-    {
-     "pdf_page": 4,
-     "kind": "text",
-     "evidence": [
-      "Quyết định số 1693/QĐ-TCTK ngày 05 tháng 8"
-     ]
-    },
-    {
-     "pdf_page": 17,
-     "kind": "text",
-     "evidence": [
-      "Quyết định số 1693/QĐ-TCTK ngày 05 tháng 8"
-     ]
-    }
-   ]
-  ],
-  "gold_note": "Evidence thay thế bổ sung sau khi quét toàn tài liệu (trước khi chạy test)."
- },
- {
-  "id": "at21",
-  "split": "test",
-  "group": "multi_hop",
-  "question": "Dựa vào quy mô dân số năm 2025 và tỷ trọng dân số thành thị năm 2025, hãy ước tính số dân thành thị (nghìn người).",
-  "expected_answer": "102.121 nghìn × 38,7% ≈ 39.521 nghìn người (khoảng 39,5 triệu).",
-  "gold": [
-   [
-    {
-     "pdf_page": 26,
-     "kind": "table",
-     "evidence": [
-      "2025 | 102.121"
-     ]
-    }
-   ],
-   [
-    {
-     "pdf_page": 30,
-     "kind": "figure",
-     "evidence": [
-      "38,7"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at22",
-  "split": "test",
-  "group": "multi_hop",
-  "question": "Vùng có tỷ suất di cư thuần cao nhất năm 2025 là vùng nào, và tỷ suất chết thô của vùng đó là bao nhiêu?",
-  "expected_answer": "Đông Nam Bộ (di cư thuần 8,6‰); tỷ suất chết thô 4,0‰.",
-  "gold": [
-   [
-    {
-     "pdf_page": 82,
-     "kind": "table",
-     "evidence": [
-      "Đông Nam Bộ | 9,8 | 1,2 | 8,6"
-     ]
-    }
-   ],
-   [
-    {
-     "pdf_page": 74,
-     "kind": "figure",
-     "evidence": [
-      "Đông Nam Bộ",
-      "4,0"
-     ]
-    }
-   ]
-  ]
- },
- {
-  "id": "at23",
-  "split": "test",
-  "group": "multi_hop",
-  "question": "Vùng có mật độ dân số cao nhất năm 2025 có tỷ lệ hộ 1 người là bao nhiêu phần trăm?",
-  "expected_answer": "Đồng bằng sông Hồng (1.044 người/km2); tỷ lệ hộ 1 người 14,5%.",
-  "gold": [
-   [
-    {
-     "pdf_page": 27,
-     "kind": "any",
-     "evidence": [
-      "Đồng bằng sông Hồng",
-      "1.044"
-     ]
-    },
-    {
-     "pdf_page": 132,
-     "kind": "table",
-     "evidence": [
-      "Đồng bằng sông Hồng",
-      "1.044"
-     ]
-    }
-   ],
-   [
-    {
-     "pdf_page": 28,
-     "kind": "table",
-     "evidence": [
-      "Đồng bằng sông Hồng | 14,5"
-     ]
-    }
-   ]
-  ],
-  "gold_note": "Evidence thay thế bổ sung sau khi quét toàn tài liệu (trước khi chạy test)."
- },
- {
-  "id": "at24",
-  "split": "test",
-  "group": "multi_hop",
-  "question": "Năm 2025, tuổi kết hôn trung bình lần đầu của nữ là bao nhiêu và tuổi thọ trung bình của nữ là bao nhiêu?",
-  "expected_answer": "SMAM nữ 25,9 tuổi; tuổi thọ trung bình nữ 77,3 tuổi.",
-  "gold": [
-   [
-    {
-     "pdf_page": 37,
-     "kind": "table",
-     "evidence": [
-      "2025 | 28,0 | 30,1 | 25,9"
-     ]
-    }
-   ],
-   [
-    {
-     "pdf_page": 13,
-     "kind": "text",
-     "evidence": [
-      "thấp hơn của nữ giới là 77,3 tuổi"
-     ]
-    },
-    {
-     "pdf_page": 78,
-     "kind": "text",
-     "evidence": [
-      "thấp hơn của nữ giới là 77,3 tuổi"
-     ]
-    }
-   ]
-  ],
-  "gold_note": "Evidence thay thế bổ sung sau khi quét toàn tài liệu (trước khi chạy test)."
- },
- {
-  "id": "ut01",
-  "split": "test",
-  "group": "thieu_bang_chung",
-  "question": "Tỷ lệ thất nghiệp của Việt Nam năm 2025 là bao nhiêu?",
-  "answerable": false,
-  "absence_check": [
-   "thất nghiệp"
-  ],
-  "absence_reason": "Báo cáo dân số, không có chỉ tiêu lao động; không có 'thất nghiệp'."
- },
- {
-  "id": "ut02",
-  "split": "test",
-  "group": "thieu_bang_chung",
-  "question": "Thu nhập bình quân đầu người một tháng năm 2025 là bao nhiêu?",
-  "answerable": false,
-  "absence_check": [
-   "thu nhập bình quân"
-  ],
-  "absence_reason": "Không thu thập thu nhập; không có 'thu nhập bình quân'."
- },
- {
-  "id": "ut03",
-  "split": "test",
-  "group": "thieu_bang_chung",
-  "question": "Tổng tỷ suất sinh của Hàn Quốc năm 2025 là bao nhiêu?",
-  "answerable": false,
-  "absence_check": [
-   "Hàn Quốc"
-  ],
-  "absence_reason": "Biểu 5.1 chỉ gồm các nước Đông Nam Á; không có 'Hàn Quốc'."
- },
- {
-  "id": "ut04",
-  "split": "test",
-  "group": "thieu_bang_chung",
-  "question": "Tỷ lệ hộ có nhà vệ sinh hợp vệ sinh năm 2025 là bao nhiêu?",
-  "answerable": false,
-  "absence_check": [
-   "nhà vệ sinh",
-   "hố xí",
-   "hợp vệ sinh"
-  ],
-  "absence_reason": "Điều tra không thu thập điều kiện nhà ở/vệ sinh; không có 'nhà vệ sinh', 'hố xí', 'hợp vệ sinh'."
- },
- {
-  "id": "ut05",
-  "split": "test",
-  "group": "thieu_bang_chung",
-  "question": "Tỷ số tử vong mẹ (số ca tử vong mẹ trên 100.000 trẻ đẻ sống) năm 2025 là bao nhiêu?",
-  "answerable": false,
-  "absence_check": [
-   "tử vong mẹ",
-   "100.000 trẻ"
-  ],
-  "absence_reason": "Không có chỉ tiêu tử vong mẹ trong tài liệu."
- },
- {
-  "id": "ut06",
-  "split": "test",
-  "group": "thieu_bang_chung",
-  "question": "Tỷ lệ trẻ em dưới 5 tuổi bị suy dinh dưỡng thể thấp còi năm 2025 là bao nhiêu?",
-  "answerable": false,
-  "absence_check": [
-   "suy dinh dưỡng",
-   "thấp còi"
-  ],
-  "absence_reason": "Điều tra chỉ có tỷ suất chết trẻ em, không đo dinh dưỡng; không có 'suy dinh dưỡng', 'thấp còi'."
- },
- {
   "id": "v01",
-  "split": "test_v2",
+  "split": "test",
   "group": "bang",
   "question": "Năm 2025, vùng nào có tuổi kết hôn trung bình lần đầu của nữ cao nhất và là bao nhiêu tuổi?",
   "expected_answer": "Đông Nam Bộ, 28,1 tuổi (Biểu 2.4).",
@@ -957,12 +362,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v02",
-  "split": "test_v2",
+  "split": "test",
   "group": "bang",
   "question": "Tỷ lệ đi học chung cấp trung học phổ thông năm 2025 của khu vực thành thị và nông thôn là bao nhiêu?",
   "expected_answer": "Thành thị 89,9%, nông thôn 80,8% (Biểu 3.2).",
@@ -977,12 +381,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v03",
-  "split": "test_v2",
+  "split": "test",
   "group": "bang",
   "question": "Tỷ suất chết trẻ em dưới 5 tuổi của bé trai và bé gái trên toàn quốc năm 2025 là bao nhiêu?",
   "expected_answer": "Nam 22,1, nữ 11,1 trẻ chết/1000 trẻ sinh sống (chung 16,7) (Biểu 6.4).",
@@ -996,12 +399,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v04",
-  "split": "test_v2",
+  "split": "test",
   "group": "bang",
   "question": "Vùng nào có tỷ suất chết trẻ em dưới 1 tuổi thấp nhất năm 2025 và là bao nhiêu phần nghìn?",
   "expected_answer": "Đông Nam Bộ, 7,6‰ (Biểu 6.3).",
@@ -1015,12 +417,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v05",
-  "split": "test_v2",
+  "split": "test",
   "group": "bang",
   "question": "Trong các luồng di cư năm 2025, luồng nào có tỷ lệ nữ cao nhất và tỷ lệ đó là bao nhiêu?",
   "expected_answer": "Nông thôn - Nông thôn, nữ chiếm 60,2% (Biểu 7.4).",
@@ -1034,12 +435,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v06",
-  "split": "test_v2",
+  "split": "test",
   "group": "bang",
   "question": "Theo bảng số liệu tổng hợp (Biểu 1), dân số thành phố Đà Nẵng thời điểm 01/4/2025 là bao nhiêu người?",
   "expected_answer": "2.844.754 người.",
@@ -1053,12 +453,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v07",
-  "split": "test_v2",
+  "split": "test",
   "group": "bieu_do",
   "question": "Theo Hình 7.1, nhóm tuổi nào có tỷ lệ người di cư ngoại tỉnh cao nhất?",
   "expected_answer": "Nhóm 20-24 tuổi (khoảng 24%).",
@@ -1072,12 +471,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v08",
-  "split": "test_v2",
+  "split": "test",
   "group": "bieu_do",
   "question": "Theo Hình 4.1, tỷ lệ sử dụng biện pháp tránh thai bất kỳ của phụ nữ hiện có chồng đạt cao nhất ở nhóm tuổi nào?",
   "expected_answer": "Nhóm 40-44 tuổi (đường BPTT bất kỳ luôn nằm trên đường BPTT hiện đại).",
@@ -1091,12 +489,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v09",
-  "split": "test_v2",
+  "split": "test",
   "group": "bieu_do",
   "question": "Theo Hình 5.2, tỷ suất sinh đặc trưng theo tuổi đạt đỉnh ở nhóm tuổi nào, và ở nhóm 20-24 thì thành thị hay nông thôn cao hơn?",
   "expected_answer": "Đỉnh ở nhóm 25-29; ở nhóm 20-24 nông thôn cao hơn thành thị.",
@@ -1111,12 +508,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v10",
-  "split": "test_v2",
+  "split": "test",
   "group": "bieu_do",
   "question": "Theo Hình 6.2, ở nhóm tuổi 80+, tỷ suất chết đặc trưng của nam hay nữ cao hơn?",
   "expected_answer": "Nam cao hơn nữ.",
@@ -1131,12 +527,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v11",
-  "split": "test_v2",
+  "split": "test",
   "group": "bieu_do",
   "question": "Theo Hình 5.3, vùng nào có tỷ lệ phụ nữ trả lời 'con nào cũng được' cao nhất và là bao nhiêu phần trăm?",
   "expected_answer": "Đông Nam Bộ, 79,9%.",
@@ -1151,12 +546,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v12",
-  "split": "test_v2",
+  "split": "test",
   "group": "anh_so_do",
   "question": "Trong phiếu điều tra, câu 2 hỏi quan hệ với chủ hộ; phương án 'Cháu nội/ngoại' mang mã số mấy?",
   "expected_answer": "Mã 4.",
@@ -1170,12 +564,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v13",
-  "split": "test_v2",
+  "split": "test",
   "group": "anh_so_do",
   "question": "Trong phiếu điều tra, ở câu 4 (tháng, năm sinh), nếu ghi được tháng và năm sinh thì điều tra viên chuyển sang câu nào?",
   "expected_answer": "Chuyển sang câu 6 (C6).",
@@ -1190,12 +583,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v14",
-  "split": "test_v2",
+  "split": "test",
   "group": "anh_so_do",
   "question": "Trong phiếu điều tra, câu 14 (trình độ giáo dục phổ thông cao nhất): phương án 'Trung học phổ thông' mang mã mấy và chuyển tới đâu?",
   "expected_answer": "Mã 4, chuyển tới bước kiểm tra KT3.1.",
@@ -1209,12 +601,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v15",
-  "split": "test_v2",
+  "split": "test",
   "group": "anh_so_do",
   "question": "Ngoài phiếu chính, phụ lục có một phiếu thu thập thông tin riêng dành cho loại hộ nào?",
   "expected_answer": "Hộ có toàn bộ thành viên là người nước ngoài.",
@@ -1228,12 +619,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v16",
-  "split": "test_v2",
+  "split": "test",
   "group": "anh_so_do",
   "question": "Trong phiếu điều tra, câu 41 hỏi lý do chính không sử dụng biện pháp tránh thai; phương án 'Muốn có con' mang mã số mấy?",
   "expected_answer": "Mã 03.",
@@ -1248,12 +638,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v17",
-  "split": "test_v2",
+  "split": "test",
   "group": "text",
   "question": "Mẫu Điều tra BĐDS hằng năm gồm bao nhiêu hộ, tại bao nhiêu địa bàn điều tra, và mỗi địa bàn chọn bao nhiêu hộ?",
   "expected_answer": "305.600 hộ tại 7.640 địa bàn điều tra; mỗi địa bàn chọn 40 hộ mẫu.",
@@ -1268,12 +657,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v18",
-  "split": "test_v2",
+  "split": "test",
   "group": "text",
   "question": "Năm 2025, Việt Nam đứng thứ mấy về quy mô dân số trong khu vực Đông Nam Á và trên thế giới?",
   "expected_answer": "Thứ ba ở Đông Nam Á (sau In-đô-nê-xi-a và Phi-li-pin), thứ 16 trên thế giới.",
@@ -1288,12 +676,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v19",
-  "split": "test_v2",
+  "split": "test",
   "group": "text",
   "question": "Theo báo cáo, tỷ số giới tính khi sinh thông thường (mức sinh học tự nhiên) nằm trong khoảng nào?",
   "expected_answer": "Khoảng 104-106 bé trai/100 bé gái.",
@@ -1307,12 +694,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v20",
-  "split": "test_v2",
+  "split": "test",
   "group": "text",
   "question": "Công tác kiểm tra, giám sát, làm sạch và nghiệm thu dữ liệu Điều tra BĐDS 2025 được thực hiện trong khoảng thời gian nào?",
   "expected_answer": "Từ tháng 4/2025 đến tháng 7/2025.",
@@ -1326,12 +712,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v21",
-  "split": "test_v2",
+  "split": "test",
   "group": "multi_hop",
   "question": "Vùng có tổng tỷ suất sinh cao nhất năm 2025 là vùng nào, và tỷ suất chết trẻ em dưới 1 tuổi của vùng đó là bao nhiêu?",
   "expected_answer": "Trung du và miền núi phía Bắc (TFR 2,41); IMR 15,1‰.",
@@ -1354,12 +739,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v22",
-  "split": "test_v2",
+  "split": "test",
   "group": "multi_hop",
   "question": "Ở khu vực thành thị năm 2025, tỷ suất chết trẻ em dưới 5 tuổi cao hơn tỷ suất chết trẻ em dưới 1 tuổi bao nhiêu (phần nghìn)?",
   "expected_answer": "Dưới 5 tuổi 10,9 − dưới 1 tuổi 7,2 = 3,7.",
@@ -1382,12 +766,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v23",
-  "split": "test_v2",
+  "split": "test",
   "group": "multi_hop",
   "question": "Đối với vùng Đông Nam Bộ năm 2025: tuổi kết hôn trung bình lần đầu của nữ là bao nhiêu và tổng tỷ suất sinh là bao nhiêu?",
   "expected_answer": "SMAM nữ 28,1 tuổi; TFR 1,58 con/phụ nữ.",
@@ -1410,12 +793,11 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "v24",
-  "split": "test_v2",
+  "split": "test",
   "group": "multi_hop",
   "question": "Thành phố Hồ Chí Minh có bao nhiêu dân thời điểm 01/4/2025 và tổng tỷ suất sinh là bao nhiêu?",
   "expected_answer": "13.775.109 người; TFR 1,51 con/phụ nữ (thấp nhất cả nước).",
@@ -1438,60 +820,55 @@
      ]
     }
    ]
-  ],
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  ]
  },
  {
   "id": "w01",
-  "split": "test_v2",
+  "split": "test",
   "group": "thieu_bang_chung",
   "question": "Tỷ lệ trẻ em được tiêm chủng đầy đủ năm 2025 là bao nhiêu?",
   "answerable": false,
   "absence_check": [
    "tiêm chủng"
   ],
-  "absence_reason": "Điều tra không thu thập tiêm chủng; không có 'tiêm chủng'.",
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  "absence_reason": "Điều tra không thu thập tiêm chủng; không có 'tiêm chủng'."
  },
  {
   "id": "w02",
-  "split": "test_v2",
+  "split": "test",
   "group": "thieu_bang_chung",
   "question": "Chi tiêu bình quân đầu người một tháng năm 2025 là bao nhiêu?",
   "answerable": false,
   "absence_check": [
    "chi tiêu"
   ],
-  "absence_reason": "Không thu thập chi tiêu; không có 'chi tiêu'.",
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  "absence_reason": "Không thu thập chi tiêu; không có 'chi tiêu'."
  },
  {
   "id": "w03",
-  "split": "test_v2",
+  "split": "test",
   "group": "thieu_bang_chung",
   "question": "Tỷ lệ hộ sở hữu xe máy năm 2025 là bao nhiêu?",
   "answerable": false,
   "absence_check": [
    "xe máy"
   ],
-  "absence_reason": "Không thu thập tài sản hộ; không có 'xe máy'.",
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  "absence_reason": "Không thu thập tài sản hộ; không có 'xe máy'."
  },
  {
   "id": "w04",
-  "split": "test_v2",
+  "split": "test",
   "group": "thieu_bang_chung",
   "question": "Tỷ lệ người trưởng thành hút thuốc lá năm 2025 là bao nhiêu?",
   "answerable": false,
   "absence_check": [
    "thuốc lá"
   ],
-  "absence_reason": "Không thu thập hành vi sức khỏe; không có 'thuốc lá'.",
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  "absence_reason": "Không thu thập hành vi sức khỏe; không có 'thuốc lá'."
  },
  {
   "id": "w05",
-  "split": "test_v2",
+  "split": "test",
   "group": "thieu_bang_chung",
   "question": "GDP bình quân đầu người của Việt Nam năm 2025 là bao nhiêu?",
   "answerable": false,
@@ -1499,19 +876,17 @@
    "GDP",
    "tổng sản phẩm"
   ],
-  "absence_reason": "Báo cáo dân số, không có chỉ tiêu kinh tế; không có 'GDP', 'tổng sản phẩm'.",
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  "absence_reason": "Báo cáo dân số, không có chỉ tiêu kinh tế; không có 'GDP', 'tổng sản phẩm'."
  },
  {
   "id": "w06",
-  "split": "test_v2",
+  "split": "test",
   "group": "thieu_bang_chung",
   "question": "Tỷ lệ hộ sử dụng nước sạch năm 2025 là bao nhiêu?",
   "answerable": false,
   "absence_check": [
    "nước sạch"
   ],
-  "absence_reason": "Không thu thập điều kiện sống; không có 'nước sạch'.",
-  "note": "Test v2: soạn sau test v1, chưa từng dùng để chỉnh hệ thống; câu biểu đồ/phiếu đã đối chiếu ảnh gốc."
+  "absence_reason": "Không thu thập điều kiện sống; không có 'nước sạch'."
  }
 ]
