@@ -1,5 +1,13 @@
 # Day 7 — Agentic RAG
 
+> **Bài làm — Đậu Hoàng Minh (2A202604011).** Agent gpt-4o-mini tra cứu Bộ luật Lao động 2019 với 3 phương pháp retrieval (dense pgvector Day 6, BM25, hybrid RRF).
+> Hướng dẫn chạy và mô tả hệ thống: [src/README.md](src/README.md) · Benchmark và tiêu chí chọn cấu hình: [benchmark/README.md](benchmark/README.md) · Báo cáo: [report/individual/](report/individual/)
+>
+> Chạy nhanh (env `vinai`, Docker đang chạy DB Day 6, `.env` từ `.env.example`):
+> `python -m src.prepare_data && python -m src.eval_retrieval --split dev && python -m src.run_agent --split dev && python -m src.tables --split dev`
+>
+> Phần dưới đây là đề bài gốc.
+
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**
 
 Dùng embedding và vector store từ Day 6 để xây một agent biết tìm bằng chứng, trả lời có nguồn và nhận biết khi không đủ thông tin. Bạn tự chọn kiến trúc, số tool và cách tổ chức retrieval.

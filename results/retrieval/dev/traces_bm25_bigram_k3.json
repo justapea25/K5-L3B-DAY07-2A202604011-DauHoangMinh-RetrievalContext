@@ -1,0 +1,1130 @@
+[
+  {
+    "query_id": "q01",
+    "type": "truc_tiep",
+    "question": "Thời gian thử việc tối đa đối với công việc cần trình độ chuyên môn, kỹ thuật từ cao đẳng trở lên là bao lâu?",
+    "filter": null,
+    "elapsed_ms": 1.0,
+    "context_ids": [
+      "bllđ-2019:B:art025:0",
+      "bllđ-2019:B:art152:0",
+      "bllđ-2019:B:art053:0"
+    ],
+    "context_chars": 2992,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art025:0",
+        "score": 131.4891,
+        "pages": [
+          6
+        ],
+        "chapter": "III",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art152:0",
+        "score": 45.0955,
+        "pages": [
+          31
+        ],
+        "chapter": "XI",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art053:0",
+        "score": 41.1993,
+        "pages": [
+          12
+        ],
+        "chapter": "III",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q02",
+    "type": "dieu_kien",
+    "question": "Nếu tuyển người vào vị trí quản lý doanh nghiệp thì được cho thử việc tối đa bao nhiêu ngày?",
+    "filter": null,
+    "elapsed_ms": 0.8,
+    "context_ids": [
+      "bllđ-2019:B:art025:0",
+      "bllđ-2019:B:art061:0",
+      "bllđ-2019:B:art152:0"
+    ],
+    "context_chars": 3221,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art025:0",
+        "score": 40.7136,
+        "pages": [
+          6
+        ],
+        "chapter": "III",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art061:0",
+        "score": 36.3724,
+        "pages": [
+          14
+        ],
+        "chapter": "IV",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art152:0",
+        "score": 34.7244,
+        "pages": [
+          31
+        ],
+        "chapter": "XI",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q03",
+    "type": "truc_tiep",
+    "question": "Hợp đồng lao động xác định thời hạn được ký với thời hạn tối đa bao lâu?",
+    "filter": null,
+    "elapsed_ms": 0.8,
+    "context_ids": [
+      "bllđ-2019:B:art020:0",
+      "bllđ-2019:B:art155:0",
+      "bllđ-2019:B:art036:0"
+    ],
+    "context_chars": 3199,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art020:0",
+        "score": 41.4204,
+        "pages": [
+          5
+        ],
+        "chapter": "III",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art155:0",
+        "score": 40.3529,
+        "pages": [
+          32
+        ],
+        "chapter": "XI",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art036:0",
+        "score": 31.4965,
+        "pages": [
+          8,
+          9
+        ],
+        "chapter": "III",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q04",
+    "type": "dieu_kien",
+    "question": "Người lao động làm hợp đồng không xác định thời hạn muốn nghỉ việc thì phải báo trước ít nhất bao nhiêu ngày?",
+    "filter": null,
+    "elapsed_ms": 1.2,
+    "context_ids": [
+      "bllđ-2019:B:art036:1",
+      "bllđ-2019:B:art035:0"
+    ],
+    "context_chars": 2897,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art036:1",
+        "score": 57.9985,
+        "pages": [
+          8,
+          9
+        ],
+        "chapter": "III",
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art035:0",
+        "score": 57.175,
+        "pages": [
+          8
+        ],
+        "chapter": "III",
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art020:0",
+        "score": 46.8212,
+        "pages": [
+          5
+        ],
+        "chapter": "III",
+        "hit": false
+      }
+    ],
+    "hit1": false,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 0.5,
+    "first_hit_rank": 2,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q05",
+    "type": "ngoai_le",
+    "question": "Nhân viên bị quấy rối tình dục ở nơi làm việc có phải báo trước khi đơn phương nghỉ việc không?",
+    "filter": null,
+    "elapsed_ms": 0.9,
+    "context_ids": [
+      "bllđ-2019:B:art035:0",
+      "bllđ-2019:B:art118:0",
+      "bllđ-2019:B:art003:2"
+    ],
+    "context_chars": 3243,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art035:0",
+        "score": 54.5576,
+        "pages": [
+          8
+        ],
+        "chapter": "III",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art118:0",
+        "score": 42.8356,
+        "pages": [
+          25
+        ],
+        "chapter": "VIII",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art003:2",
+        "score": 42.578,
+        "pages": [
+          1,
+          2
+        ],
+        "chapter": "I",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q06",
+    "type": "dien_dat_lai",
+    "question": "Đi làm thêm vào ngày Chủ nhật (ngày nghỉ hằng tuần) thì được trả lương ít nhất bằng bao nhiêu phần trăm?",
+    "filter": null,
+    "elapsed_ms": 0.7,
+    "context_ids": [
+      "bllđ-2019:B:art098:0",
+      "bllđ-2019:B:art111:0",
+      "bllđ-2019:B:art097:0"
+    ],
+    "context_chars": 2885,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art098:0",
+        "score": 96.9209,
+        "pages": [
+          21
+        ],
+        "chapter": "VI",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art111:0",
+        "score": 87.6839,
+        "pages": [
+          23
+        ],
+        "chapter": "VII",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art097:0",
+        "score": 45.7725,
+        "pages": [
+          21
+        ],
+        "chapter": "VI",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q07",
+    "type": "truc_tiep",
+    "question": "Thời giờ làm việc bình thường tối đa là bao nhiêu giờ một ngày và một tuần?",
+    "filter": null,
+    "elapsed_ms": 0.6,
+    "context_ids": [
+      "bllđ-2019:B:art105:0",
+      "bllđ-2019:B:art107:0",
+      "bllđ-2019:B:art146:0"
+    ],
+    "context_chars": 2598,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art105:0",
+        "score": 53.0471,
+        "pages": [
+          22
+        ],
+        "chapter": "VII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art107:0",
+        "score": 40.2861,
+        "pages": [
+          22,
+          23
+        ],
+        "chapter": "VII",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art146:0",
+        "score": 35.0833,
+        "pages": [
+          30
+        ],
+        "chapter": "XI",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q08",
+    "type": "dieu_kien",
+    "question": "Mỗi năm người lao động được làm thêm tối đa bao nhiêu giờ?",
+    "filter": null,
+    "elapsed_ms": 0.6,
+    "context_ids": [
+      "bllđ-2019:B:art107:0",
+      "bllđ-2019:B:art101:0",
+      "bllđ-2019:B:art155:0"
+    ],
+    "context_chars": 2201,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art107:0",
+        "score": 22.6586,
+        "pages": [
+          22,
+          23
+        ],
+        "chapter": "VII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art101:0",
+        "score": 21.7273,
+        "pages": [
+          22
+        ],
+        "chapter": "VI",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art155:0",
+        "score": 21.6131,
+        "pages": [
+          32
+        ],
+        "chapter": "XI",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q09",
+    "type": "truc_tiep",
+    "question": "Người lao động được nghỉ Tết Âm lịch bao nhiêu ngày hưởng nguyên lương?",
+    "filter": null,
+    "elapsed_ms": 0.7,
+    "context_ids": [
+      "bllđ-2019:B:art112:0",
+      "bllđ-2019:B:art115:0",
+      "bllđ-2019:B:art113:0"
+    ],
+    "context_chars": 2949,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art112:0",
+        "score": 64.7039,
+        "pages": [
+          23,
+          24
+        ],
+        "chapter": "VII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art115:0",
+        "score": 32.751,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art113:0",
+        "score": 27.7389,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q10",
+    "type": "dieu_kien",
+    "question": "Người làm công việc nặng nhọc, độc hại, nguy hiểm được nghỉ phép năm bao nhiêu ngày?",
+    "filter": null,
+    "elapsed_ms": 0.7,
+    "context_ids": [
+      "bllđ-2019:B:art113:0",
+      "bllđ-2019:B:art137:0",
+      "bllđ-2019:B:art219:0"
+    ],
+    "context_chars": 3573,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art113:0",
+        "score": 65.1751,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art137:0",
+        "score": 56.6857,
+        "pages": [
+          28
+        ],
+        "chapter": "X",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art219:0",
+        "score": 52.1151,
+        "pages": [
+          44,
+          45
+        ],
+        "chapter": "XVII",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q11",
+    "type": "dien_dat_lai",
+    "question": "Làm lâu năm ở một công ty thì phép năm có được cộng thêm không, cứ bao nhiêu năm thì thêm một ngày?",
+    "filter": null,
+    "elapsed_ms": 0.7,
+    "context_ids": [
+      "bllđ-2019:B:art154:0",
+      "bllđ-2019:B:art107:0",
+      "bllđ-2019:B:art114:0"
+    ],
+    "context_chars": 2838,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art154:0",
+        "score": 22.3755,
+        "pages": [
+          32
+        ],
+        "chapter": "XI",
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art107:0",
+        "score": 20.6703,
+        "pages": [
+          22,
+          23
+        ],
+        "chapter": "VII",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art114:0",
+        "score": 19.8325,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "hit": true
+      }
+    ],
+    "hit1": false,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 0.3333333333333333,
+    "first_hit_rank": 3,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q12",
+    "type": "metadata_filter",
+    "question": "Trong các quy định riêng đối với lao động nữ, người đang nuôi con dưới 12 tháng tuổi được nghỉ bao nhiêu phút mỗi ngày trong thời gian làm việc?",
+    "filter": {
+      "chapter": "X"
+    },
+    "elapsed_ms": 0.1,
+    "context_ids": [
+      "bllđ-2019:B:art137:1",
+      "bllđ-2019:B:art137:0",
+      "bllđ-2019:B:art139:0"
+    ],
+    "context_chars": 3347,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art137:1",
+        "score": 106.8946,
+        "pages": [
+          28
+        ],
+        "chapter": "X",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art137:0",
+        "score": 71.512,
+        "pages": [
+          28
+        ],
+        "chapter": "X",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art139:0",
+        "score": 56.8936,
+        "pages": [
+          29
+        ],
+        "chapter": "X",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q13",
+    "type": "metadata_filter",
+    "question": "Đối với lao động chưa thành niên từ đủ 15 đến chưa đủ 18 tuổi, thời giờ làm việc tối đa là bao nhiêu?",
+    "filter": {
+      "chapter": "XI"
+    },
+    "elapsed_ms": 0.2,
+    "context_ids": [
+      "bllđ-2019:B:art146:0",
+      "bllđ-2019:B:art143:0",
+      "bllđ-2019:B:art147:0"
+    ],
+    "context_chars": 2430,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art146:0",
+        "score": 93.5516,
+        "pages": [
+          30
+        ],
+        "chapter": "XI",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art143:0",
+        "score": 91.2876,
+        "pages": [
+          29
+        ],
+        "chapter": "XI",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art147:0",
+        "score": 72.9547,
+        "pages": [
+          30
+        ],
+        "chapter": "XI",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q14",
+    "type": "metadata_filter",
+    "question": "Trong phần kỷ luật lao động, thời hiệu xử lý là bao lâu kể từ ngày xảy ra vi phạm?",
+    "filter": {
+      "chapter": "VIII"
+    },
+    "elapsed_ms": 0.1,
+    "context_ids": [
+      "bllđ-2019:B:art123:0",
+      "bllđ-2019:B:art126:0",
+      "bllđ-2019:B:art122:0"
+    ],
+    "context_chars": 2643,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art123:0",
+        "score": 88.835,
+        "pages": [
+          26
+        ],
+        "chapter": "VIII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art126:0",
+        "score": 43.9229,
+        "pages": [
+          26
+        ],
+        "chapter": "VIII",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art122:0",
+        "score": 35.8502,
+        "pages": [
+          26
+        ],
+        "chapter": "VIII",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q15",
+    "type": "truc_tiep",
+    "question": "Từ năm 2021, tuổi nghỉ hưu trong điều kiện lao động bình thường của nam và nữ là bao nhiêu?",
+    "filter": null,
+    "elapsed_ms": 1.0,
+    "context_ids": [
+      "bllđ-2019:B:art169:0",
+      "bllđ-2019:B:art219:1"
+    ],
+    "context_chars": 2856,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art169:0",
+        "score": 83.9376,
+        "pages": [
+          34
+        ],
+        "chapter": "XII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art219:1",
+        "score": 45.4412,
+        "pages": [
+          44,
+          45
+        ],
+        "chapter": "XVII",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art219:2",
+        "score": 31.7609,
+        "pages": [
+          44,
+          45
+        ],
+        "chapter": "XVII",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q21",
+    "type": "dien_dat_lai",
+    "question": "Công ty muốn cho nghỉ việc một nhân viên ký hợp đồng 2 năm vì người này thường xuyên không hoàn thành công việc. Công ty phải báo trước bao lâu?",
+    "filter": null,
+    "elapsed_ms": 1.1,
+    "context_ids": [
+      "bllđ-2019:B:art036:0",
+      "bllđ-2019:B:art035:0"
+    ],
+    "context_chars": 2913,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art036:0",
+        "score": 41.6982,
+        "pages": [
+          8,
+          9
+        ],
+        "chapter": "III",
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art035:0",
+        "score": 28.9046,
+        "pages": [
+          8
+        ],
+        "chapter": "III",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art041:0",
+        "score": 28.8292,
+        "pages": [
+          9,
+          10
+        ],
+        "chapter": "III",
+        "hit": false
+      }
+    ],
+    "hit1": false,
+    "hit3": false,
+    "full_hit3": false,
+    "rr": 0.16666666666666666,
+    "first_hit_rank": 6,
+    "context_evidence": false
+  },
+  {
+    "query_id": "q22",
+    "type": "dien_dat_lai",
+    "question": "Làm ca đêm thì được nghỉ giữa ca ít nhất bao nhiêu phút?",
+    "filter": null,
+    "elapsed_ms": 0.5,
+    "context_ids": [
+      "bllđ-2019:B:art109:0",
+      "bllđ-2019:B:art098:0",
+      "bllđ-2019:B:art110:0"
+    ],
+    "context_chars": 1816,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art109:0",
+        "score": 61.4435,
+        "pages": [
+          23
+        ],
+        "chapter": "VII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art098:0",
+        "score": 31.78,
+        "pages": [
+          21
+        ],
+        "chapter": "VI",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art110:0",
+        "score": 30.6302,
+        "pages": [
+          23
+        ],
+        "chapter": "VII",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q23",
+    "type": "dieu_kien",
+    "question": "Nhân viên tự ý bỏ việc không có lý do chính đáng bao nhiêu ngày thì có thể bị sa thải?",
+    "filter": null,
+    "elapsed_ms": 1.2,
+    "context_ids": [
+      "bllđ-2019:B:art125:0",
+      "bllđ-2019:B:art036:1"
+    ],
+    "context_chars": 2746,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art125:0",
+        "score": 74.6552,
+        "pages": [
+          26
+        ],
+        "chapter": "VIII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art036:1",
+        "score": 37.8648,
+        "pages": [
+          8,
+          9
+        ],
+        "chapter": "III",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art188:1",
+        "score": 27.6131,
+        "pages": [
+          38,
+          39
+        ],
+        "chapter": "XIV",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q24",
+    "type": "multi_hop",
+    "question": "Giờ làm việc ban đêm được tính từ mấy giờ đến mấy giờ, và người làm việc vào ban đêm được trả thêm ít nhất bao nhiêu phần trăm tiền lương?",
+    "filter": null,
+    "elapsed_ms": 1.2,
+    "context_ids": [
+      "bllđ-2019:B:art098:0",
+      "bllđ-2019:B:art106:0",
+      "bllđ-2019:B:art146:0"
+    ],
+    "context_chars": 1768,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art098:0",
+        "score": 86.1549,
+        "pages": [
+          21
+        ],
+        "chapter": "VI",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art106:0",
+        "score": 75.5521,
+        "pages": [
+          22
+        ],
+        "chapter": "VII",
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art146:0",
+        "score": 50.8861,
+        "pages": [
+          30
+        ],
+        "chapter": "XI",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q25",
+    "type": "multi_hop",
+    "question": "Hợp đồng xác định thời hạn hết hạn, người lao động vẫn làm tiếp nhưng hai bên không ký hợp đồng mới. Sau bao lâu hợp đồng thành không xác định thời hạn, và khi đó nếu người lao động muốn nghỉ thì phải báo trước ít nhất bao lâu?",
+    "filter": null,
+    "elapsed_ms": 1.5,
+    "context_ids": [
+      "bllđ-2019:B:art020:0",
+      "bllđ-2019:B:art035:0"
+    ],
+    "context_chars": 3004,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art020:0",
+        "score": 96.7613,
+        "pages": [
+          5
+        ],
+        "chapter": "III",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art035:0",
+        "score": 58.6303,
+        "pages": [
+          8
+        ],
+        "chapter": "III",
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art036:1",
+        "score": 57.6335,
+        "pages": [
+          8,
+          9
+        ],
+        "chapter": "III",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "u01",
+    "type": "thieu_bang_chung",
+    "question": "Mức lương tối thiểu vùng I hiện nay là bao nhiêu đồng một tháng?",
+    "filter": null,
+    "elapsed_ms": 0.5,
+    "context_ids": [
+      "bllđ-2019:B:art091:0",
+      "bllđ-2019:B:art090:0",
+      "bllđ-2019:B:art099:0"
+    ],
+    "context_chars": 2474,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art091:0",
+        "score": 47.0456,
+        "pages": [
+          20
+        ],
+        "chapter": "VI",
+        "hit": null
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art090:0",
+        "score": 33.9049,
+        "pages": [
+          20
+        ],
+        "chapter": "VI",
+        "hit": null
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art099:0",
+        "score": 31.2643,
+        "pages": [
+          21,
+          22
+        ],
+        "chapter": "VI",
+        "hit": null
+      }
+    ]
+  },
+  {
+    "query_id": "u02",
+    "type": "thieu_bang_chung",
+    "question": "Người lao động bị mất việc được hưởng trợ cấp thất nghiệp bằng bao nhiêu phần trăm tiền lương?",
+    "filter": null,
+    "elapsed_ms": 0.9,
+    "context_ids": [
+      "bllđ-2019:B:art047:0",
+      "bllđ-2019:B:art046:0",
+      "bllđ-2019:B:art041:0"
+    ],
+    "context_chars": 3249,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art047:0",
+        "score": 53.555,
+        "pages": [
+          11
+        ],
+        "chapter": "III",
+        "hit": null
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art046:0",
+        "score": 41.385,
+        "pages": [
+          11
+        ],
+        "chapter": "III",
+        "hit": null
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art041:0",
+        "score": 31.5749,
+        "pages": [
+          9,
+          10
+        ],
+        "chapter": "III",
+        "hit": null
+      }
+    ]
+  }
+]

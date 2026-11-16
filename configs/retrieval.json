@@ -1,0 +1,9 @@
+[
+  {"name": "dense_k3", "method": "dense", "context_k": 3, "budget_chars": 4000},
+  {"name": "bm25_unigram_k3", "method": "bm25", "params": {"bigrams": false}, "context_k": 3, "budget_chars": 4000},
+  {"name": "bm25_bigram_k3", "method": "bm25", "params": {"bigrams": true}, "context_k": 3, "budget_chars": 4000},
+  {"name": "hybrid_rrf_k3", "method": "hybrid", "params": {"bigrams": true, "depth": 20, "rrf_k": 60}, "context_k": 3, "budget_chars": 4000},
+  {"name": "dense_k5", "method": "dense", "context_k": 5, "budget_chars": 6000},
+  {"name": "hybrid_rrf_k5", "method": "hybrid", "params": {"bigrams": true, "depth": 20, "rrf_k": 60}, "context_k": 5, "budget_chars": 6000},
+  {"name": "dense_k3_nofilter", "method": "dense", "use_filter": false, "context_k": 3, "budget_chars": 4000}
+]

@@ -1,0 +1,500 @@
+[
+  {
+    "query_id": "q16",
+    "type": "dieu_kien",
+    "question": "Người lao động nghỉ việc sau nhiều năm làm việc thì được trợ cấp thôi việc mỗi năm làm việc bao nhiêu?",
+    "filter": null,
+    "elapsed_ms": 26.4,
+    "context_ids": [
+      "bllđ-2019:B:art046:0",
+      "bllđ-2019:B:art041:0",
+      "bllđ-2019:B:art047:0"
+    ],
+    "context_chars": 3249,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art046:0",
+        "score": 0.0328,
+        "pages": [
+          11
+        ],
+        "chapter": "III",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art041:0",
+        "score": 0.032,
+        "pages": [
+          9,
+          10
+        ],
+        "chapter": "III",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art047:0",
+        "score": 0.032,
+        "pages": [
+          11
+        ],
+        "chapter": "III",
+        "component_ranks": {
+          "dense": 3,
+          "bm25": 2
+        },
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q17",
+    "type": "dieu_kien",
+    "question": "Công ty được tạm đình chỉ công việc của người lao động tối đa bao lâu, và trong thời gian đó người lao động được tạm ứng bao nhiêu lương?",
+    "filter": null,
+    "elapsed_ms": 28.3,
+    "context_ids": [
+      "bllđ-2019:B:art128:0",
+      "bllđ-2019:B:art101:0",
+      "bllđ-2019:B:art029:1"
+    ],
+    "context_chars": 2539,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art128:0",
+        "score": 0.0328,
+        "pages": [
+          27
+        ],
+        "chapter": "VIII",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art101:0",
+        "score": 0.0323,
+        "pages": [
+          22
+        ],
+        "chapter": "VI",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art029:1",
+        "score": 0.0302,
+        "pages": [
+          7
+        ],
+        "chapter": "III",
+        "component_ranks": {
+          "dense": 3,
+          "bm25": 10
+        },
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q18",
+    "type": "dien_dat_lai",
+    "question": "Một người mẹ sinh đôi thì được nghỉ thai sản tổng cộng bao lâu?",
+    "filter": null,
+    "elapsed_ms": 25.6,
+    "context_ids": [
+      "bllđ-2019:B:art139:0",
+      "bllđ-2019:B:art137:1",
+      "bllđ-2019:B:art115:0"
+    ],
+    "context_chars": 3273,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art139:0",
+        "score": 0.0328,
+        "pages": [
+          29
+        ],
+        "chapter": "X",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art137:1",
+        "score": 0.032,
+        "pages": [
+          28
+        ],
+        "chapter": "X",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art115:0",
+        "score": 0.0303,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "component_ranks": {
+          "dense": 4,
+          "bm25": 8
+        },
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q19",
+    "type": "dien_dat_lai",
+    "question": "Nhân viên cưới vợ thì được nghỉ mấy ngày mà vẫn hưởng nguyên lương?",
+    "filter": null,
+    "elapsed_ms": 26.4,
+    "context_ids": [
+      "bllđ-2019:B:art115:0",
+      "bllđ-2019:B:art112:0",
+      "bllđ-2019:B:art113:0"
+    ],
+    "context_chars": 2949,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art115:0",
+        "score": 0.0328,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art112:0",
+        "score": 0.032,
+        "pages": [
+          23,
+          24
+        ],
+        "chapter": "VII",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art113:0",
+        "score": 0.0315,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "component_ranks": {
+          "dense": 5,
+          "bm25": 2
+        },
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q20",
+    "type": "metadata_filter",
+    "question": "Trong phần giải quyết tranh chấp lao động, thời hiệu để yêu cầu hòa giải viên lao động hòa giải tranh chấp cá nhân là bao lâu?",
+    "filter": {
+      "chapter": "XIV"
+    },
+    "elapsed_ms": 23.9,
+    "context_ids": [
+      "bllđ-2019:B:art190:0",
+      "bllđ-2019:B:art194:0",
+      "bllđ-2019:B:art188:2"
+    ],
+    "context_chars": 2424,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art190:0",
+        "score": 0.0328,
+        "pages": [
+          39
+        ],
+        "chapter": "XIV",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art194:0",
+        "score": 0.0323,
+        "pages": [
+          40
+        ],
+        "chapter": "XIV",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art188:2",
+        "score": 0.0315,
+        "pages": [
+          38,
+          39
+        ],
+        "chapter": "XIV",
+        "component_ranks": {
+          "dense": 4,
+          "bm25": 3
+        },
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q26",
+    "type": "multi_hop",
+    "question": "Lao động nữ sinh một con được nghỉ thai sản bao lâu, và khi quay lại làm việc mà việc làm cũ không còn thì công ty phải làm gì?",
+    "filter": null,
+    "elapsed_ms": 28.4,
+    "context_ids": [
+      "bllđ-2019:B:art139:0",
+      "bllđ-2019:B:art140:0",
+      "bllđ-2019:B:art137:1"
+    ],
+    "context_chars": 2962,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art139:0",
+        "score": 0.0325,
+        "pages": [
+          29
+        ],
+        "chapter": "X",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 2
+        },
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art140:0",
+        "score": 0.0325,
+        "pages": [
+          29
+        ],
+        "chapter": "X",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art137:1",
+        "score": 0.0317,
+        "pages": [
+          28
+        ],
+        "chapter": "X",
+        "component_ranks": {
+          "dense": 3,
+          "bm25": 3
+        },
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "u03",
+    "type": "thieu_bang_chung",
+    "question": "Doanh nghiệp không giao kết hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+    "filter": null,
+    "elapsed_ms": 26.9,
+    "context_ids": [
+      "bllđ-2019:B:art014:0",
+      "bllđ-2019:B:art018:0",
+      "bllđ-2019:B:art021:0"
+    ],
+    "context_chars": 3407,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art014:0",
+        "score": 0.0328,
+        "pages": [
+          4
+        ],
+        "chapter": "III",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "hit": null
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art018:0",
+        "score": 0.032,
+        "pages": [
+          4,
+          5
+        ],
+        "chapter": "III",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "hit": null
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art021:0",
+        "score": 0.0315,
+        "pages": [
+          5
+        ],
+        "chapter": "III",
+        "component_ranks": {
+          "dense": 3,
+          "bm25": 4
+        },
+        "hit": null
+      }
+    ]
+  },
+  {
+    "query_id": "u04",
+    "type": "thieu_bang_chung",
+    "question": "Doanh nghiệp phải đóng kinh phí công đoàn bằng bao nhiêu phần trăm quỹ tiền lương?",
+    "filter": null,
+    "elapsed_ms": 24.7,
+    "context_ids": [
+      "bllđ-2019:B:art054:0",
+      "bllđ-2019:B:art172:0",
+      "bllđ-2019:B:art174:0"
+    ],
+    "context_chars": 3058,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art054:0",
+        "score": 0.0323,
+        "pages": [
+          12
+        ],
+        "chapter": "III",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 3
+        },
+        "hit": null
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art172:0",
+        "score": 0.0305,
+        "pages": [
+          34
+        ],
+        "chapter": "XIII",
+        "component_ranks": {
+          "dense": 5,
+          "bm25": 6
+        },
+        "hit": null
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art174:0",
+        "score": 0.0286,
+        "pages": [
+          35
+        ],
+        "chapter": "XIII",
+        "component_ranks": {
+          "dense": 17,
+          "bm25": 4
+        },
+        "hit": null
+      }
+    ]
+  }
+]

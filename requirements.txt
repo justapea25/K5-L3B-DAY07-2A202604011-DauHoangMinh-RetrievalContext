@@ -1,0 +1,10 @@
+# Run env: conda env "vinai" (Python 3.12). Same embedding stack as Day 6 so query
+# embeddings match the index (intfloat/multilingual-e5-small, 384-d).
+psycopg[binary]==3.3.8
+pgvector==0.4.2
+numpy==2.5.4
+sentence-transformers==5.7.0
+torch==2.15.0
+transformers==5.23.0
+python-dotenv>=1,<2
+openai>=1.50

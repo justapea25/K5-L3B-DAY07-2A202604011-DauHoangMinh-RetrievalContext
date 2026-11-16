@@ -1,0 +1,773 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "config": "agent_dense_single",
+    "question": "Người lao động nghỉ việc sau nhiều năm làm việc thì được trợ cấp thôi việc mỗi năm làm việc bao nhiêu?",
+    "filter": null,
+    "status": "answered",
+    "answer": "Người lao động nghỉ việc sau nhiều năm làm việc sẽ được trợ cấp thôi việc mỗi năm làm việc là một nửa tháng tiền lương. Điều này áp dụng cho những người đã làm việc thường xuyên từ đủ 12 tháng trở lên và không thuộc các trường hợp đủ điều kiện hưởng lương hưu theo quy định của pháp luật về bảo hiểm xã hội hoặc các trường hợp khác theo quy định tại điểm e khoản 1 Điều 36 của Bộ luật này. Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian thực tế làm việc trừ đi thời gian tham gia bảo hiểm thất nghiệp và thời gian đã nhận trợ cấp thôi việc trước đó. Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân của 06 tháng liền kề trước khi thôi việc.",
+    "citations": [
+      "bllđ-2019:B:art046:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "trợ cấp thôi việc mỗi năm làm việc"
+        },
+        "llm_ms": 2809,
+        "tokens_in": 454,
+        "tokens_out": 23,
+        "event": "search",
+        "query": "trợ cấp thôi việc mỗi năm làm việc",
+        "filter": null,
+        "retrieval_ms": 45.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bllđ-2019:B:art046:0",
+            "score": 0.9175,
+            "pages": [
+              11
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bllđ-2019:B:art041:0",
+            "score": 0.8974,
+            "pages": [
+              9,
+              10
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bllđ-2019:B:art047:0",
+            "score": 0.8973,
+            "pages": [
+              11
+            ]
+          }
+        ],
+        "context_ids": [
+          "bllđ-2019:B:art046:0",
+          "bllđ-2019:B:art041:0",
+          "bllđ-2019:B:art047:0"
+        ],
+        "context_labels": {
+          "bllđ-2019:B:art046:0": "bllđ-2019:B:art046:0",
+          "bllđ-2019:B:art041:0": "bllđ-2019:B:art041:0",
+          "bllđ-2019:B:art047:0": "bllđ-2019:B:art047:0"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Người lao động nghỉ việc sau nhiều năm làm việc sẽ được trợ cấp thôi việc mỗi năm làm việc là một nửa tháng tiền lương. Điều này áp dụng cho những người đã làm việc thường xuyên từ đủ 12 tháng trở lên và không thuộc các trường hợp đủ điều kiện hưởng lương hưu theo quy định của pháp luật về bảo hiểm xã hội hoặc các trường hợp khác theo quy định tại điểm e khoản 1 Điều 36 của Bộ luật này. Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian thực tế làm việc trừ đi thời gian tham gia bảo hiểm thất nghiệp và thời gian đã nhận trợ cấp thôi việc trước đó. Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân của 06 tháng liền kề trước khi thôi việc.",
+          "citations": [
+            "bllđ-2019:B:art046:0"
+          ]
+        },
+        "llm_ms": 3476,
+        "tokens_in": 1357,
+        "tokens_out": 195,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "bllđ-2019:B:art046:0"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bllđ-2019:B:art046:0",
+      "bllđ-2019:B:art041:0",
+      "bllđ-2019:B:art047:0"
+    ],
+    "final_context": "[bllđ-2019:B:art046:0] (Điều 46, Chương III, trang [11])\nĐiều 46. Trợ cấp thôi việc\n1. Khi hợp đồng lao động chấm dứt theo quy định tại các khoản 1, 2, 3, 4, 6, 7, 9 và 10 Điều 34 của Bộ luật này thì người sử dụng lao động có trách nhiệm trả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên cho mình từ đủ 12 tháng trở lên, mỗi năm làm việc được trợ cấp một nửa tháng tiền lương, trừ trường hợp đủ điều kiện hưởng lương hưu theo quy định của pháp luật về bảo hiểm xã hội và trường hợp quy định tại điểm e khoản 1 Điều 36 của Bộ luật này.\n2. Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp theo quy định của pháp luật về bảo hiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm.\n3. Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi người lao động thôi việc.\n4. Chính phủ quy định chi tiết Điều này.\n\n[bllđ-2019:B:art041:0] (Điều 41, Chương III, trang [9, 10])\nĐiều 41. Nghĩa vụ của người sử dụng lao động khi đơn phương chấm dứt hợp đồng lao động trái pháp luật\n1. Phải nhận người lao động trở lại làm việc theo hợp đồng lao động đã giao kết; phải trả tiền lương, đóng bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp trong những ngày người lao động không được làm việc và phải trả thêm cho người lao động một khoản tiền ít nhất bằng 02 tháng tiền lương theo hợp đồng lao động. Sau khi được nhận lại làm việc, người lao động hoàn trả cho người sử dụng lao động các khoản tiền trợ cấp thôi việc, trợ cấp mất việc làm nếu đã nhận của người sử dụng lao động. Trường hợp không còn vị trí, công việc đã giao kết trong hợp đồng lao động mà người lao động vẫn muốn làm việc thì hai bên thỏa thuận để sửa đổi, bổ sung hợp đồng lao động. Trường hợp vi phạm quy định về thời hạn báo trước quy định tại khoản 2 Điều 36 của Bộ luật này thì phải trả một khoản tiền tương ứng với tiền lương theo hợp đồng lao động trong những ngày không báo trước.\n2. Trường hợp người lao động không muốn tiếp tục làm việc thì ngoài khoản tiền phải trả quy định tại khoản 1 Điều này người sử dụng lao động phải trả trợ cấp thôi việc theo quy định tại Điều 46 của Bộ luật này để chấm dứt hợp đồng lao động.\n\n[bllđ-2019:B:art047:0] (Điều 47, Chương III, trang [11])\nĐiều 47. Trợ cấp mất việc làm\n1. Người sử dụng lao động trả trợ cấp mất việc làm cho người lao động đã làm việc thường xuyên cho mình từ đủ 12 tháng trở lên mà bị mất việc làm theo quy định tại khoản 11 Điều 34 của Bộ luật này, cứ mỗi năm làm việc trả 01 tháng tiền lương nhưng ít nhất bằng 02 tháng tiền lương.\n2. Thời gian làm việc để tính trợ cấp mất việc làm là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp theo quy định của pháp luật về bảo hiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm.\n3. Tiền lương để tính trợ cấp mất việc làm là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi người lao động mất việc làm.\n4. Chính phủ quy định chi tiết Điều này.",
+    "final_context_chars": 3273,
+    "tokens_in": 1811,
+    "tokens_out": 218,
+    "cost_usd": 0.000402,
+    "elapsed_s": 6.33,
+    "model": "gpt-4o-mini"
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "config": "agent_dense_single",
+    "question": "Công ty được tạm đình chỉ công việc của người lao động tối đa bao lâu, và trong thời gian đó người lao động được tạm ứng bao nhiêu lương?",
+    "filter": null,
+    "status": "answered",
+    "answer": "Công ty được tạm đình chỉ công việc của người lao động tối đa 15 ngày, trong trường hợp đặc biệt không quá 90 ngày. Trong thời gian tạm đình chỉ, người lao động được tạm ứng 50% tiền lương trước khi bị đình chỉ công việc. Hết thời hạn tạm đình chỉ, người sử dụng lao động phải nhận người lao động trở lại làm việc.",
+    "citations": [
+      "bllđ-2019:B:art128:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "tạm đình chỉ công việc của người lao động tối đa bao lâu"
+        },
+        "llm_ms": 971,
+        "tokens_in": 466,
+        "tokens_out": 28,
+        "event": "search",
+        "query": "tạm đình chỉ công việc của người lao động tối đa bao lâu",
+        "filter": null,
+        "retrieval_ms": 41.3,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bllđ-2019:B:art128:0",
+            "score": 0.9253,
+            "pages": [
+              27
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bllđ-2019:B:art206:0",
+            "score": 0.9025,
+            "pages": [
+              42
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bllđ-2019:B:art031:0",
+            "score": 0.8947,
+            "pages": [
+              7
+            ]
+          }
+        ],
+        "context_ids": [
+          "bllđ-2019:B:art128:0",
+          "bllđ-2019:B:art206:0",
+          "bllđ-2019:B:art031:0"
+        ],
+        "context_labels": {
+          "bllđ-2019:B:art128:0": "bllđ-2019:B:art128:0",
+          "bllđ-2019:B:art206:0": "bllđ-2019:B:art206:0",
+          "bllđ-2019:B:art031:0": "bllđ-2019:B:art031:0"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Công ty được tạm đình chỉ công việc của người lao động tối đa 15 ngày, trong trường hợp đặc biệt không quá 90 ngày. Trong thời gian tạm đình chỉ, người lao động được tạm ứng 50% tiền lương trước khi bị đình chỉ công việc. Hết thời hạn tạm đình chỉ, người sử dụng lao động phải nhận người lao động trở lại làm việc.",
+          "citations": [
+            "bllđ-2019:B:art128:0"
+          ]
+        },
+        "llm_ms": 1933,
+        "tokens_in": 1003,
+        "tokens_out": 112,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "bllđ-2019:B:art128:0"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bllđ-2019:B:art128:0",
+      "bllđ-2019:B:art206:0",
+      "bllđ-2019:B:art031:0"
+    ],
+    "final_context": "[bllđ-2019:B:art128:0] (Điều 128, Chương VIII, trang [27])\nĐiều 128. Tạm đình chỉ công việc\n1. Người sử dụng lao động có quyền tạm đình chỉ công việc của người lao động khi vụ việc vi phạm có những tình tiết phức tạp nếu xét thấy để người lao động tiếp tục làm việc sẽ gây khó khăn cho việc xác minh. Việc tạm đình chỉ công việc của người lao động chỉ được thực hiện sau khi tham khảo ý kiến của tổ chức đại diện người lao động tại cơ sở mà người lao động đang bị xem xét tạm đình chỉ công việc là thành viên.\n2. Thời hạn tạm đình chỉ công việc không được quá 15 ngày, trường hợp đặc biệt không được quá 90 ngày. Trong thời gian bị tạm đình chỉ công việc, người lao động được tạm ứng 50% tiền lương trước khi bị đình chỉ công việc. Hết thời hạn tạm đình chỉ công việc, người sử dụng lao động phải nhận người lao động trở lại làm việc.\n3. Trường hợp người lao động bị xử lý kỷ luật lao động, người lao động cũng không phải trả lại số tiền lương đã tạm ứng.\n4. Trường hợp người lao động không bị xử lý kỷ luật lao động thì được người sử dụng lao động trả đủ tiền lương cho thời gian bị tạm đình chỉ công việc.\n\n[bllđ-2019:B:art206:0] (Điều 206, Chương XIV, trang [42])\nĐiều 206. Trường hợp cấm đóng cửa tạm thời nơi làm việc\n1. Trước 12 giờ so với thời điểm bắt đầu đình công ghi trong quyết định đình công.\n2. Sau khi người lao động ngừng đình công.\n\n[bllđ-2019:B:art031:0] (Điều 31, Chương III, trang [7])\nĐiều 31. Nhận lại người lao động hết thời hạn tạm hoãn thực hiện hợp đồng lao động\nTrong thời hạn 15 ngày kể từ ngày hết thời hạn tạm hoãn thực hiện hợp đồng lao động, người lao động phải có mặt tại nơi làm việc và người sử dụng lao động phải nhận người lao động trở lại làm công việc theo hợp đồng lao động đã giao kết nếu hợp đồng lao động còn thời hạn, trừ trường hợp hai bên có thỏa thuận hoặc pháp luật có quy định khác.",
+    "final_context_chars": 1831,
+    "tokens_in": 1469,
+    "tokens_out": 140,
+    "cost_usd": 0.000304,
+    "elapsed_s": 2.95,
+    "model": "gpt-4o-mini"
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "config": "agent_dense_single",
+    "question": "Một người mẹ sinh đôi thì được nghỉ thai sản tổng cộng bao lâu?",
+    "filter": null,
+    "status": "answered",
+    "answer": "Một người mẹ sinh đôi sẽ được nghỉ thai sản tổng cộng là 06 tháng cho con đầu tiên và thêm 01 tháng cho mỗi con từ con thứ hai trở đi. Do đó, nếu sinh đôi, tổng thời gian nghỉ thai sản sẽ là 06 tháng + 01 tháng = 07 tháng.",
+    "citations": [
+      "bllđ-2019:B:art139:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "nghỉ thai sản sinh đôi"
+        },
+        "llm_ms": 805,
+        "tokens_in": 444,
+        "tokens_out": 21,
+        "event": "search",
+        "query": "nghỉ thai sản sinh đôi",
+        "filter": null,
+        "retrieval_ms": 36.0,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bllđ-2019:B:art139:0",
+            "score": 0.8897,
+            "pages": [
+              29
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bllđ-2019:B:art137:1",
+            "score": 0.8839,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bllđ-2019:B:art137:0",
+            "score": 0.876,
+            "pages": [
+              28
+            ]
+          }
+        ],
+        "context_ids": [
+          "bllđ-2019:B:art139:0",
+          "bllđ-2019:B:art137:1",
+          "bllđ-2019:B:art137:0"
+        ],
+        "context_labels": {
+          "bllđ-2019:B:art139:0": "bllđ-2019:B:art139:0",
+          "bllđ-2019:B:art137:1": "bllđ-2019:B:art137:1",
+          "bllđ-2019:B:art137:0": "bllđ-2019:B:art137:0"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Một người mẹ sinh đôi sẽ được nghỉ thai sản tổng cộng là 06 tháng cho con đầu tiên và thêm 01 tháng cho mỗi con từ con thứ hai trở đi. Do đó, nếu sinh đôi, tổng thời gian nghỉ thai sản sẽ là 06 tháng + 01 tháng = 07 tháng.",
+          "citations": [
+            "bllđ-2019:B:art139:0"
+          ]
+        },
+        "llm_ms": 1698,
+        "tokens_in": 1390,
+        "tokens_out": 90,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "bllđ-2019:B:art139:0"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bllđ-2019:B:art139:0",
+      "bllđ-2019:B:art137:1",
+      "bllđ-2019:B:art137:0"
+    ],
+    "final_context": "[bllđ-2019:B:art139:0] (Điều 139, Chương X, trang [29])\nĐiều 139. Nghỉ thai sản\n1. Lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng; thời gian nghỉ trước khi sinh không quá 02 tháng. Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ 02 trở đi, cứ mỗi con, người mẹ được nghỉ thêm 01 tháng.\n2. Trong thời gian nghỉ thai sản, lao động nữ được hưởng chế độ thai sản theo quy định của pháp luật về bảo hiểm xã hội.\n3. Hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, nếu có nhu cầu, lao động nữ có thể nghỉ thêm một thời gian không hưởng lương sau khi thỏa thuận với người sử dụng lao động.\n4. Trước khi hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, lao động nữ có thể trở lại làm việc khi đã nghỉ ít nhất được 04 tháng nhưng người lao động phải báo trước, được người sử dụng lao động đồng ý và có xác nhận của cơ sở khám bệnh, chữa bệnh có thẩm quyền về việc đi làm sớm không có hại cho sức khỏe của người lao động. Trong trường hợp này, ngoài tiền lương của những ngày làm việc do người sử dụng lao động trả, lao động nữ vẫn tiếp tục được hưởng trợ cấp thai sản theo quy định của pháp luật về bảo hiểm xã hội.\n5. Lao động nam khi vợ sinh con, người lao động nhận nuôi con nuôi dưới 06 tháng tuổi, lao động nữ mang thai hộ và người lao động là người mẹ nhờ mang thai hộ được nghỉ việc hưởng chế độ thai sản theo quy định của pháp luật về bảo hiểm xã hội.\n\n[bllđ-2019:B:art137:1] (Điều 137, Chương X, trang [28])\nĐiều 137. Bảo vệ thai sản (tiếp theo)\n3. Người sử dụng lao động không được sa thải hoặc đơn phương chấm dứt hợp đồng lao động đối với người lao động vì lý do kết hôn, mang thai, nghỉ thai sản, nuôi con dưới 12 tháng tuổi, trừ trường hợp người sử dụng lao động là cá nhân chết, bị Tòa án tuyên bố mất năng lực hành vi dân sự, mất tích hoặc đã chết hoặc người sử dụng lao động không phải là cá nhân chấm dứt hoạt động hoặc bị cơ quan chuyên môn về đăng ký kinh doanh thuộc Ủy ban nhân dân cấp tỉnh ra thông báo không có người đại diện theo pháp luật, người được ủy quyền thực hiện quyền và nghĩa vụ của người đại diện theo pháp luật. Trường hợp hợp đồng lao động hết hạn trong thời gian lao động nữ mang thai hoặc nuôi con dưới 12 tháng tuổi thì được ưu tiên giao kết hợp đồng lao động mới.\n4. Lao động nữ trong thời gian hành kinh được nghỉ mỗi ngày 30 phút, trong thời gian nuôi con dưới 12 tháng tuổi được nghỉ mỗi ngày 60 phút trong thời gian làm việc. Thời gian nghỉ vẫn được hưởng đủ tiền lương theo hợp đồng lao động.\n\n[bllđ-2019:B:art137:0] (Điều 137, Chương X, trang [28])\nĐiều 137. Bảo vệ thai sản\n1. Người sử dụng lao động không được sử dụng người lao động làm việc ban đêm, làm thêm giờ và đi công tác xa trong trường hợp sau đây:\na) Mang thai từ tháng thứ 07 hoặc từ tháng thứ 06 nếu làm việc ở vùng cao, vùng sâu, vùng xa, biên giới, hải đảo;\nb) Đang nuôi con dưới 12 tháng tuổi, trừ trường hợp được người lao động đồng ý.\n2. Lao động nữ làm nghề, công việc nặng nhọc, độc hại, nguy hiểm hoặc đặc biệt nặng nhọc, độc hại, nguy hiểm hoặc làm nghề, công việc có ảnh hưởng xấu tới chức năng sinh sản và nuôi con khi mang thai và có thông báo cho người sử dụng lao động biết thì được người sử dụng lao động chuyển sang làm công việc nhẹ hơn, an toàn hơn hoặc giảm bớt 01 giờ làm việc hằng ngày mà không bị cắt giảm tiền lương và quyền, lợi ích cho đến hết thời gian nuôi con dưới 12 tháng tuổi.",
+    "final_context_chars": 3374,
+    "tokens_in": 1834,
+    "tokens_out": 111,
+    "cost_usd": 0.000342,
+    "elapsed_s": 2.54,
+    "model": "gpt-4o-mini"
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "config": "agent_dense_single",
+    "question": "Nhân viên cưới vợ thì được nghỉ mấy ngày mà vẫn hưởng nguyên lương?",
+    "filter": null,
+    "status": "answered",
+    "answer": "Nhân viên cưới vợ được nghỉ 03 ngày mà vẫn hưởng nguyên lương theo quy định tại Điều 115 của Bộ luật Lao động 2019.",
+    "citations": [
+      "bllđ-2019:B:art115:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "nghỉ cưới vợ"
+        },
+        "llm_ms": 900,
+        "tokens_in": 449,
+        "tokens_out": 21,
+        "event": "search",
+        "query": "nghỉ cưới vợ",
+        "filter": null,
+        "retrieval_ms": 36.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bllđ-2019:B:art115:0",
+            "score": 0.8801,
+            "pages": [
+              24
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bllđ-2019:B:art137:1",
+            "score": 0.8599,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bllđ-2019:B:art139:0",
+            "score": 0.8561,
+            "pages": [
+              29
+            ]
+          }
+        ],
+        "context_ids": [
+          "bllđ-2019:B:art115:0",
+          "bllđ-2019:B:art137:1",
+          "bllđ-2019:B:art139:0"
+        ],
+        "context_labels": {
+          "bllđ-2019:B:art115:0": "bllđ-2019:B:art115:0",
+          "bllđ-2019:B:art137:1": "bllđ-2019:B:art137:1",
+          "bllđ-2019:B:art139:0": "bllđ-2019:B:art139:0"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Nhân viên cưới vợ được nghỉ 03 ngày mà vẫn hưởng nguyên lương theo quy định tại Điều 115 của Bộ luật Lao động 2019.",
+          "citations": [
+            "bllđ-2019:B:art115:0"
+          ]
+        },
+        "llm_ms": 2215,
+        "tokens_in": 1401,
+        "tokens_out": 62,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "bllđ-2019:B:art115:0"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bllđ-2019:B:art115:0",
+      "bllđ-2019:B:art137:1",
+      "bllđ-2019:B:art139:0"
+    ],
+    "final_context": "[bllđ-2019:B:art115:0] (Điều 115, Chương VII, trang [24])\nĐiều 115. Nghỉ việc riêng, nghỉ không hưởng lương\n1. Người lao động được nghỉ việc riêng mà vẫn hưởng nguyên lương và phải thông báo với người sử dụng lao động trong trường hợp sau đây:\na) Kết hôn: nghỉ 03 ngày;\nb) Con đẻ, con nuôi kết hôn: nghỉ 01 ngày;\nc) Cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi; cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi của vợ hoặc chồng; vợ hoặc chồng; con đẻ, con nuôi chết: nghỉ 03 ngày.\n2. Người lao động được nghỉ không hưởng lương 01 ngày và phải thông báo với người sử dụng lao động khi ông nội, bà nội, ông ngoại, bà ngoại, anh, chị, em ruột chết; cha hoặc mẹ kết hôn; anh, chị, em ruột kết hôn.\n3. Ngoài quy định tại khoản 1 và khoản 2 Điều này, người lao động có thể thỏa thuận với người sử dụng lao động để nghỉ không hưởng lương.\n\n[bllđ-2019:B:art137:1] (Điều 137, Chương X, trang [28])\nĐiều 137. Bảo vệ thai sản (tiếp theo)\n3. Người sử dụng lao động không được sa thải hoặc đơn phương chấm dứt hợp đồng lao động đối với người lao động vì lý do kết hôn, mang thai, nghỉ thai sản, nuôi con dưới 12 tháng tuổi, trừ trường hợp người sử dụng lao động là cá nhân chết, bị Tòa án tuyên bố mất năng lực hành vi dân sự, mất tích hoặc đã chết hoặc người sử dụng lao động không phải là cá nhân chấm dứt hoạt động hoặc bị cơ quan chuyên môn về đăng ký kinh doanh thuộc Ủy ban nhân dân cấp tỉnh ra thông báo không có người đại diện theo pháp luật, người được ủy quyền thực hiện quyền và nghĩa vụ của người đại diện theo pháp luật. Trường hợp hợp đồng lao động hết hạn trong thời gian lao động nữ mang thai hoặc nuôi con dưới 12 tháng tuổi thì được ưu tiên giao kết hợp đồng lao động mới.\n4. Lao động nữ trong thời gian hành kinh được nghỉ mỗi ngày 30 phút, trong thời gian nuôi con dưới 12 tháng tuổi được nghỉ mỗi ngày 60 phút trong thời gian làm việc. Thời gian nghỉ vẫn được hưởng đủ tiền lương theo hợp đồng lao động.\n\n[bllđ-2019:B:art139:0] (Điều 139, Chương X, trang [29])\nĐiều 139. Nghỉ thai sản\n1. Lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng; thời gian nghỉ trước khi sinh không quá 02 tháng. Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ 02 trở đi, cứ mỗi con, người mẹ được nghỉ thêm 01 tháng.\n2. Trong thời gian nghỉ thai sản, lao động nữ được hưởng chế độ thai sản theo quy định của pháp luật về bảo hiểm xã hội.\n3. Hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, nếu có nhu cầu, lao động nữ có thể nghỉ thêm một thời gian không hưởng lương sau khi thỏa thuận với người sử dụng lao động.\n4. Trước khi hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, lao động nữ có thể trở lại làm việc khi đã nghỉ ít nhất được 04 tháng nhưng người lao động phải báo trước, được người sử dụng lao động đồng ý và có xác nhận của cơ sở khám bệnh, chữa bệnh có thẩm quyền về việc đi làm sớm không có hại cho sức khỏe của người lao động. Trong trường hợp này, ngoài tiền lương của những ngày làm việc do người sử dụng lao động trả, lao động nữ vẫn tiếp tục được hưởng trợ cấp thai sản theo quy định của pháp luật về bảo hiểm xã hội.\n5. Lao động nam khi vợ sinh con, người lao động nhận nuôi con nuôi dưới 06 tháng tuổi, lao động nữ mang thai hộ và người lao động là người mẹ nhờ mang thai hộ được nghỉ việc hưởng chế độ thai sản theo quy định của pháp luật về bảo hiểm xã hội.",
+    "final_context_chars": 3300,
+    "tokens_in": 1850,
+    "tokens_out": 83,
+    "cost_usd": 0.000327,
+    "elapsed_s": 3.15,
+    "model": "gpt-4o-mini"
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "config": "agent_dense_single",
+    "question": "Trong phần giải quyết tranh chấp lao động, thời hiệu để yêu cầu hòa giải viên lao động hòa giải tranh chấp cá nhân là bao lâu?",
+    "filter": {
+      "chapter": "XIV"
+    },
+    "status": "answered",
+    "answer": "Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao động cá nhân là 06 tháng kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm.",
+    "citations": [
+      "bllđ-2019:B:art190:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "thời hiệu yêu cầu hòa giải viên lao động hòa giải tranh chấp cá nhân"
+        },
+        "llm_ms": 1126,
+        "tokens_in": 460,
+        "tokens_out": 31,
+        "event": "search",
+        "query": "thời hiệu yêu cầu hòa giải viên lao động hòa giải tranh chấp cá nhân",
+        "filter": {
+          "chapter": "XIV"
+        },
+        "retrieval_ms": 37.9,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bllđ-2019:B:art190:0",
+            "score": 0.9437,
+            "pages": [
+              39
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bllđ-2019:B:art194:0",
+            "score": 0.9241,
+            "pages": [
+              40
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bllđ-2019:B:art188:0",
+            "score": 0.9198,
+            "pages": [
+              38,
+              39
+            ]
+          }
+        ],
+        "context_ids": [
+          "bllđ-2019:B:art190:0",
+          "bllđ-2019:B:art194:0",
+          "bllđ-2019:B:art188:0"
+        ],
+        "context_labels": {
+          "bllđ-2019:B:art190:0": "bllđ-2019:B:art190:0",
+          "bllđ-2019:B:art194:0": "bllđ-2019:B:art194:0",
+          "bllđ-2019:B:art188:0": "bllđ-2019:B:art188:0"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao động cá nhân là 06 tháng kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm.",
+          "citations": [
+            "bllđ-2019:B:art190:0"
+          ]
+        },
+        "llm_ms": 1655,
+        "tokens_in": 1400,
+        "tokens_out": 80,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "bllđ-2019:B:art190:0"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bllđ-2019:B:art190:0",
+      "bllđ-2019:B:art194:0",
+      "bllđ-2019:B:art188:0"
+    ],
+    "final_context": "[bllđ-2019:B:art190:0] (Điều 190, Chương XIV, trang [39])\nĐiều 190. Thời hiệu yêu cầu giải quyết tranh chấp lao động cá nhân\n1. Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao động cá nhân là 06 tháng kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm.\n2. Thời hiệu yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp lao động cá nhân là 09 tháng kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm.\n3. Thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là 01 năm kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm.\n4. Trường hợp người yêu cầu chứng minh được vì sự kiện bất khả kháng, trở ngại khách quan hoặc lý do khác theo quy định của pháp luật mà không thể yêu cầu đúng thời hạn quy định tại Điều này thì thời gian có sự kiện bất khả kháng, trở ngại khách quan hoặc lý do đó không tính vào thời hiệu yêu cầu giải quyết tranh chấp lao động cá nhân.\n\n[bllđ-2019:B:art194:0] (Điều 194, Chương XIV, trang [40])\nĐiều 194. Thời hiệu yêu cầu giải quyết tranh chấp lao động tập thể về quyền\n1. Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao động tập thể về quyền là 06 tháng kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền hợp pháp của mình bị vi phạm.\n2. Thời hiệu yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp lao động tập thể về quyền là 09 tháng kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền hợp pháp của mình bị vi phạm.\n3. Thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động tập thể về quyền là 01 năm kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền hợp pháp của mình bị vi phạm.\n\n[bllđ-2019:B:art188:0] (Điều 188, Chương XIV, trang [38, 39])\nĐiều 188. Trình tự, thủ tục hòa giải tranh chấp lao động cá nhân của hòa giải viên lao động\n1. Tranh chấp lao động cá nhân phải được giải quyết thông qua thủ tục hòa giải của hòa giải viên lao động trước khi yêu cầu Hội đồng trọng tài lao động hoặc Tòa án giải quyết, trừ các tranh chấp lao động sau đây không bắt buộc phải qua thủ tục hòa giải:\na) Về xử lý kỷ luật lao động theo hình thức sa thải hoặc về trường hợp bị đơn phương chấm dứt hợp đồng lao động;\nb) Về bồi thường thiệt hại, trợ cấp khi chấm dứt hợp đồng lao động;\nc) Giữa người giúp việc gia đình với người sử dụng lao động;\nd) Về bảo hiểm xã hội theo quy định của pháp luật về bảo hiểm xã hội, về bảo hiểm y tế theo quy định của pháp luật về bảo hiểm y tế, về bảo hiểm thất nghiệp theo quy định của pháp luật về việc làm, về bảo hiểm tai nạn lao động, bệnh nghề nghiệp theo quy định của pháp luật về an toàn, vệ sinh lao động;\nđ) Về bồi thường thiệt hại giữa người lao động với doanh nghiệp, tổ chức đưa người lao động đi làm việc ở nước ngoài theo hợp đồng;\ne) Giữa người lao động thuê lại với người sử dụng lao động thuê lại.\n2. Trong thời hạn 05 ngày làm việc kể từ ngày hòa giải viên lao động nhận được yêu cầu từ bên yêu cầu giải quyết tranh chấp hoặc từ cơ quan quy định tại khoản 3 Điều 181 của Bộ luật này, hòa giải viên lao động phải kết thúc việc hòa giải.\n3. Tại phiên họp hòa giải phải có mặt hai bên tranh chấp. Các bên tranh chấp có thể ủy quyền cho người khác tham gia phiên họp hòa giải.",
+    "final_context_chars": 3318,
+    "tokens_in": 1860,
+    "tokens_out": 111,
+    "cost_usd": 0.000346,
+    "elapsed_s": 2.82,
+    "model": "gpt-4o-mini"
+  },
+  {
+    "query_id": "q26",
+    "split": "test",
+    "config": "agent_dense_single",
+    "question": "Lao động nữ sinh một con được nghỉ thai sản bao lâu, và khi quay lại làm việc mà việc làm cũ không còn thì công ty phải làm gì?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong Bộ luật Lao động 2019 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Không có thông tin về nghĩa vụ của công ty khi lao động nữ quay lại làm việc mà việc làm cũ không còn.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Lao động nữ sinh con nghỉ thai sản"
+        },
+        "llm_ms": 1182,
+        "tokens_in": 463,
+        "tokens_out": 23,
+        "event": "search",
+        "query": "Lao động nữ sinh con nghỉ thai sản",
+        "filter": null,
+        "retrieval_ms": 36.3,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bllđ-2019:B:art139:0",
+            "score": 0.9104,
+            "pages": [
+              29
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bllđ-2019:B:art137:1",
+            "score": 0.906,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bllđ-2019:B:art137:0",
+            "score": 0.8888,
+            "pages": [
+              28
+            ]
+          }
+        ],
+        "context_ids": [
+          "bllđ-2019:B:art139:0",
+          "bllđ-2019:B:art137:1",
+          "bllđ-2019:B:art137:0"
+        ],
+        "context_labels": {
+          "bllđ-2019:B:art139:0": "bllđ-2019:B:art139:0",
+          "bllđ-2019:B:art137:1": "bllđ-2019:B:art137:1",
+          "bllđ-2019:B:art137:0": "bllđ-2019:B:art137:0"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "abstain",
+        "args": {
+          "reason": "Không có thông tin về nghĩa vụ của công ty khi lao động nữ quay lại làm việc mà việc làm cũ không còn."
+        },
+        "llm_ms": 1049,
+        "tokens_in": 1411,
+        "tokens_out": 40,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bllđ-2019:B:art139:0",
+      "bllđ-2019:B:art137:1",
+      "bllđ-2019:B:art137:0"
+    ],
+    "final_context": "[bllđ-2019:B:art139:0] (Điều 139, Chương X, trang [29])\nĐiều 139. Nghỉ thai sản\n1. Lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng; thời gian nghỉ trước khi sinh không quá 02 tháng. Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ 02 trở đi, cứ mỗi con, người mẹ được nghỉ thêm 01 tháng.\n2. Trong thời gian nghỉ thai sản, lao động nữ được hưởng chế độ thai sản theo quy định của pháp luật về bảo hiểm xã hội.\n3. Hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, nếu có nhu cầu, lao động nữ có thể nghỉ thêm một thời gian không hưởng lương sau khi thỏa thuận với người sử dụng lao động.\n4. Trước khi hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, lao động nữ có thể trở lại làm việc khi đã nghỉ ít nhất được 04 tháng nhưng người lao động phải báo trước, được người sử dụng lao động đồng ý và có xác nhận của cơ sở khám bệnh, chữa bệnh có thẩm quyền về việc đi làm sớm không có hại cho sức khỏe của người lao động. Trong trường hợp này, ngoài tiền lương của những ngày làm việc do người sử dụng lao động trả, lao động nữ vẫn tiếp tục được hưởng trợ cấp thai sản theo quy định của pháp luật về bảo hiểm xã hội.\n5. Lao động nam khi vợ sinh con, người lao động nhận nuôi con nuôi dưới 06 tháng tuổi, lao động nữ mang thai hộ và người lao động là người mẹ nhờ mang thai hộ được nghỉ việc hưởng chế độ thai sản theo quy định của pháp luật về bảo hiểm xã hội.\n\n[bllđ-2019:B:art137:1] (Điều 137, Chương X, trang [28])\nĐiều 137. Bảo vệ thai sản (tiếp theo)\n3. Người sử dụng lao động không được sa thải hoặc đơn phương chấm dứt hợp đồng lao động đối với người lao động vì lý do kết hôn, mang thai, nghỉ thai sản, nuôi con dưới 12 tháng tuổi, trừ trường hợp người sử dụng lao động là cá nhân chết, bị Tòa án tuyên bố mất năng lực hành vi dân sự, mất tích hoặc đã chết hoặc người sử dụng lao động không phải là cá nhân chấm dứt hoạt động hoặc bị cơ quan chuyên môn về đăng ký kinh doanh thuộc Ủy ban nhân dân cấp tỉnh ra thông báo không có người đại diện theo pháp luật, người được ủy quyền thực hiện quyền và nghĩa vụ của người đại diện theo pháp luật. Trường hợp hợp đồng lao động hết hạn trong thời gian lao động nữ mang thai hoặc nuôi con dưới 12 tháng tuổi thì được ưu tiên giao kết hợp đồng lao động mới.\n4. Lao động nữ trong thời gian hành kinh được nghỉ mỗi ngày 30 phút, trong thời gian nuôi con dưới 12 tháng tuổi được nghỉ mỗi ngày 60 phút trong thời gian làm việc. Thời gian nghỉ vẫn được hưởng đủ tiền lương theo hợp đồng lao động.\n\n[bllđ-2019:B:art137:0] (Điều 137, Chương X, trang [28])\nĐiều 137. Bảo vệ thai sản\n1. Người sử dụng lao động không được sử dụng người lao động làm việc ban đêm, làm thêm giờ và đi công tác xa trong trường hợp sau đây:\na) Mang thai từ tháng thứ 07 hoặc từ tháng thứ 06 nếu làm việc ở vùng cao, vùng sâu, vùng xa, biên giới, hải đảo;\nb) Đang nuôi con dưới 12 tháng tuổi, trừ trường hợp được người lao động đồng ý.\n2. Lao động nữ làm nghề, công việc nặng nhọc, độc hại, nguy hiểm hoặc đặc biệt nặng nhọc, độc hại, nguy hiểm hoặc làm nghề, công việc có ảnh hưởng xấu tới chức năng sinh sản và nuôi con khi mang thai và có thông báo cho người sử dụng lao động biết thì được người sử dụng lao động chuyển sang làm công việc nhẹ hơn, an toàn hơn hoặc giảm bớt 01 giờ làm việc hằng ngày mà không bị cắt giảm tiền lương và quyền, lợi ích cho đến hết thời gian nuôi con dưới 12 tháng tuổi.",
+    "final_context_chars": 3374,
+    "tokens_in": 1874,
+    "tokens_out": 63,
+    "cost_usd": 0.000319,
+    "elapsed_s": 2.27,
+    "model": "gpt-4o-mini"
+  },
+  {
+    "query_id": "u03",
+    "split": "test",
+    "config": "agent_dense_single",
+    "question": "Doanh nghiệp không giao kết hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong Bộ luật Lao động 2019 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Tài liệu không chứa thông tin về mức phạt tiền cụ thể đối với doanh nghiệp không giao kết hợp đồng lao động bằng văn bản.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "phạt tiền doanh nghiệp không giao kết hợp đồng lao động bằng văn bản"
+        },
+        "llm_ms": 943,
+        "tokens_in": 455,
+        "tokens_out": 29,
+        "event": "search",
+        "query": "phạt tiền doanh nghiệp không giao kết hợp đồng lao động bằng văn bản",
+        "filter": null,
+        "retrieval_ms": 45.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bllđ-2019:B:art014:0",
+            "score": 0.8831,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bllđ-2019:B:art017:0",
+            "score": 0.8825,
+            "pages": [
+              4
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bllđ-2019:B:art021:0",
+            "score": 0.8735,
+            "pages": [
+              5
+            ]
+          }
+        ],
+        "context_ids": [
+          "bllđ-2019:B:art014:0",
+          "bllđ-2019:B:art017:0",
+          "bllđ-2019:B:art021:0"
+        ],
+        "context_labels": {
+          "bllđ-2019:B:art014:0": "bllđ-2019:B:art014:0",
+          "bllđ-2019:B:art017:0": "bllđ-2019:B:art017:0",
+          "bllđ-2019:B:art021:0": "bllđ-2019:B:art021:0"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "abstain",
+        "args": {
+          "reason": "Tài liệu không chứa thông tin về mức phạt tiền cụ thể đối với doanh nghiệp không giao kết hợp đồng lao động bằng văn bản."
+        },
+        "llm_ms": 1287,
+        "tokens_in": 1162,
+        "tokens_out": 43,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bllđ-2019:B:art014:0",
+      "bllđ-2019:B:art017:0",
+      "bllđ-2019:B:art021:0"
+    ],
+    "final_context": "[bllđ-2019:B:art014:0] (Điều 14, Chương III, trang [4])\nĐiều 14. Hình thức hợp đồng lao động\n1. Hợp đồng lao động phải được giao kết bằng văn bản và được làm thành 02 bản, người lao động giữ 01 bản, người sử dụng lao động giữ 01 bản, trừ trường hợp quy định tại khoản 2 Điều này. Hợp đồng lao động được giao kết thông qua phương tiện điện tử dưới hình thức thông điệp dữ liệu theo quy định của pháp luật về giao dịch điện tử có giá trị như hợp đồng lao động bằng văn bản.\n2. Hai bên có thể giao kết hợp đồng lao động bằng lời nói đối với hợp đồng có thời hạn dưới 01 tháng, trừ trường hợp quy định tại khoản 2 Điều 18, điểm a khoản 1 Điều 145 và khoản 1 Điều 162 của Bộ luật này.\n\n[bllđ-2019:B:art017:0] (Điều 17, Chương III, trang [4])\nĐiều 17. Hành vi người sử dụng lao động không được làm khi giao kết, thực hiện hợp đồng lao động\n1. Giữ bản chính giấy tờ tùy thân, văn bằng, chứng chỉ của người lao động.\n2. Yêu cầu người lao động phải thực hiện biện pháp bảo đảm bằng tiền hoặc tài sản khác cho việc thực hiện hợp đồng lao động.\n3. Buộc người lao động thực hiện hợp đồng lao động để trả nợ cho người sử dụng lao động.\n\n[bllđ-2019:B:art021:0] (Điều 21, Chương III, trang [5])\nĐiều 21. Nội dung hợp đồng lao động\n1. Hợp đồng lao động phải có những nội dung chủ yếu sau đây:\na) Tên, địa chỉ của người sử dụng lao động và họ tên, chức danh của người giao kết hợp đồng lao động bên phía người sử dụng lao động;\nb) Họ tên, ngày tháng năm sinh, giới tính, nơi cư trú, số thẻ Căn cước công dân, Chứng minh nhân dân hoặc hộ chiếu của người giao kết hợp đồng lao động bên phía người lao động;\nc) Công việc và địa điểm làm việc;\nd) Thời hạn của hợp đồng lao động;\nđ) Mức lương theo công việc hoặc chức danh, hình thức trả lương, thời hạn trả lương, phụ cấp lương và các khoản bổ sung khác;\ne) Chế độ nâng bậc, nâng lương;\ng) Thời giờ làm việc, thời giờ nghỉ ngơi;\nh) Trang bị bảo hộ lao động cho người lao động;\ni) Bảo hiểm xã hội, bảo hiểm y tế và bảo hiểm thất nghiệp;\nk) Đào tạo, bồi dưỡng, nâng cao trình độ, kỹ năng nghề.\n2. Khi người lao động làm việc có liên quan trực tiếp đến bí mật kinh doanh, bí mật công nghệ theo quy định của pháp luật thì người sử dụng lao động có quyền thỏa thuận bằng văn bản với người lao động về nội dung, thời hạn bảo vệ bí mật kinh doanh, bảo vệ bí mật công nghệ, quyền lợi và việc bồi thường trong trường hợp vi phạm.",
+    "final_context_chars": 2349,
+    "tokens_in": 1617,
+    "tokens_out": 72,
+    "cost_usd": 0.000286,
+    "elapsed_s": 2.28,
+    "model": "gpt-4o-mini"
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "config": "agent_dense_single",
+    "question": "Doanh nghiệp phải đóng kinh phí công đoàn bằng bao nhiêu phần trăm quỹ tiền lương?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong Bộ luật Lao động 2019 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Không tìm thấy thông tin về tỷ lệ phần trăm kinh phí công đoàn trong quỹ tiền lương trong tài liệu.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "kinh phí công đoàn phần trăm quỹ tiền lương"
+        },
+        "llm_ms": 959,
+        "tokens_in": 451,
+        "tokens_out": 27,
+        "event": "search",
+        "query": "kinh phí công đoàn phần trăm quỹ tiền lương",
+        "filter": null,
+        "retrieval_ms": 35.9,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bllđ-2019:B:art098:0",
+            "score": 0.8552,
+            "pages": [
+              21
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bllđ-2019:B:art070:1",
+            "score": 0.8489,
+            "pages": [
+              16
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bllđ-2019:B:art029:1",
+            "score": 0.8487,
+            "pages": [
+              7
+            ]
+          }
+        ],
+        "context_ids": [
+          "bllđ-2019:B:art098:0",
+          "bllđ-2019:B:art070:1",
+          "bllđ-2019:B:art029:1"
+        ],
+        "context_labels": {
+          "bllđ-2019:B:art098:0": "bllđ-2019:B:art098:0",
+          "bllđ-2019:B:art070:1": "bllđ-2019:B:art070:1",
+          "bllđ-2019:B:art029:1": "bllđ-2019:B:art029:1"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "abstain",
+        "args": {
+          "reason": "Không tìm thấy thông tin về tỷ lệ phần trăm kinh phí công đoàn trong quỹ tiền lương trong tài liệu."
+        },
+        "llm_ms": 1071,
+        "tokens_in": 1377,
+        "tokens_out": 39,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bllđ-2019:B:art098:0",
+      "bllđ-2019:B:art070:1",
+      "bllđ-2019:B:art029:1"
+    ],
+    "final_context": "[bllđ-2019:B:art098:0] (Điều 98, Chương VI, trang [21])\nĐiều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm\n1. Người lao động làm thêm giờ được trả lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc đang làm như sau:\na) Vào ngày thường, ít nhất bằng 150%;\nb) Vào ngày nghỉ hằng tuần, ít nhất bằng 200%;\nc) Vào ngày nghỉ lễ, tết, ngày nghỉ có hưởng lương, ít nhất bằng 300% chưa kể tiền lương ngày lễ, tết, ngày nghỉ có hưởng lương đối với người lao động hưởng lương ngày.\n2. Người lao động làm việc vào ban đêm thì được trả thêm ít nhất bằng 30% tiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc của ngày làm việc bình thường.\n3. Người lao động làm thêm giờ vào ban đêm thì ngoài việc trả lương theo quy định tại khoản 1 và khoản 2 Điều này, người lao động còn được trả thêm 20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm vào ban ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của ngày nghỉ lễ, tết.\n4. Chính phủ quy định chi tiết Điều này.\n\n[bllđ-2019:B:art070:1] (Điều 70, Chương V, trang [16])\nĐiều 70. Quy trình thương lượng tập thể tại doanh nghiệp (tiếp theo)\n3. Trong quá trình thương lượng tập thể, nếu có yêu cầu của bên đại diện người lao động thì trong thời hạn 10 ngày kể từ ngày nhận được yêu cầu, bên người sử dụng lao động có trách nhiệm cung cấp thông tin về tình hình hoạt động sản xuất, kinh doanh và nội dung khác liên quan trực tiếp đến nội dung thương lượng trong phạm vi doanh nghiệp nhằm tạo điều kiện thuận lợi cho thương lượng tập thể, trừ thông tin về bí mật kinh doanh, bí mật công nghệ của người sử dụng lao động.\n4. Tổ chức đại diện người lao động tại cơ sở có quyền tổ chức thảo luận, lấy ý kiến người lao động về nội dung, cách thức tiến hành và kết quả của quá trình thương lượng tập thể. Tổ chức đại diện người lao động tại cơ sở quyết định về thời gian, địa điểm và cách thức tiến hành thảo luận, lấy ý kiến người lao động nhưng không được làm ảnh hưởng đến hoạt động sản xuất, kinh doanh bình thường của doanh nghiệp. Người sử dụng lao động không được gây khó khăn, cản trở hoặc can thiệp vào quá trình tổ chức đại diện người lao động thảo luận, lấy ý kiến người lao động.\n5. Việc thương lượng tập thể phải được lập biên bản, trong đó ghi rõ nội dung đã được các bên thống nhất, nội dung còn ý kiến khác nhau. Biên bản thương lượng tập thể phải có chữ ký của đại diện các bên thương lượng và của người ghi biên bản. Tổ chức đại diện người lao động tại cơ sở công bố rộng rãi, công khai biên bản thương lượng tập thể đến toàn bộ người lao động.\n\n[bllđ-2019:B:art029:1] (Điều 29, Chương III, trang [7])\nĐiều 29. Chuyển người lao động làm công việc khác so với hợp đồng lao động (tiếp theo)\n3. Người lao động chuyển sang làm công việc khác so với hợp đồng lao động được trả lương theo công việc mới. Nếu tiền lương của công việc mới thấp hơn tiền lương của công việc cũ thì được giữ nguyên tiền lương của công việc cũ trong thời hạn 30 ngày làm việc. Tiền lương theo công việc mới ít nhất phải bằng 85% tiền lương của công việc cũ nhưng không thấp hơn mức lương tối thiểu.\n4. Người lao động không đồng ý tạm thời làm công việc khác so với hợp đồng lao động quá 60 ngày làm việc cộng dồn trong 01 năm mà phải ngừng việc thì người sử dụng lao động phải trả lương ngừng việc theo quy định tại Điều 99 của Bộ luật này.",
+    "final_context_chars": 3357,
+    "tokens_in": 1828,
+    "tokens_out": 66,
+    "cost_usd": 0.000314,
+    "elapsed_s": 2.07,
+    "model": "gpt-4o-mini"
+  }
+]

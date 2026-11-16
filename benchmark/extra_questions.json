@@ -1,0 +1,81 @@
+[
+  {
+    "id": "q21", "split": "dev", "type": "dien_dat_lai",
+    "question": "Công ty muốn cho nghỉ việc một nhân viên ký hợp đồng 2 năm vì người này thường xuyên không hoàn thành công việc. Công ty phải báo trước bao lâu?",
+    "expected_answer": "Ít nhất 30 ngày (hợp đồng xác định thời hạn từ 12 đến 36 tháng).",
+    "gold_groups": [[{"article": 36, "evidence": "Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn từ 12 tháng đến 36 tháng"}]],
+    "filter": null
+  },
+  {
+    "id": "q22", "split": "dev", "type": "dien_dat_lai",
+    "question": "Làm ca đêm thì được nghỉ giữa ca ít nhất bao nhiêu phút?",
+    "expected_answer": "Ít nhất 45 phút liên tục.",
+    "gold_groups": [[{"article": 109, "evidence": "làm việc ban đêm thì được nghỉ giữa giờ ít nhất 45 phút liên tục"}]],
+    "filter": null
+  },
+  {
+    "id": "q23", "split": "dev", "type": "dieu_kien",
+    "question": "Nhân viên tự ý bỏ việc không có lý do chính đáng bao nhiêu ngày thì có thể bị sa thải?",
+    "expected_answer": "05 ngày cộng dồn trong 30 ngày, hoặc 20 ngày cộng dồn trong 365 ngày, tính từ ngày đầu tiên tự ý bỏ việc.",
+    "gold_groups": [[{"article": 125, "evidence": "Người lao động tự ý bỏ việc 05 ngày cộng dồn trong thời hạn 30 ngày hoặc 20 ngày cộng dồn trong thời hạn 365 ngày"}]],
+    "filter": null
+  },
+  {
+    "id": "q24", "split": "dev", "type": "multi_hop",
+    "question": "Giờ làm việc ban đêm được tính từ mấy giờ đến mấy giờ, và người làm việc vào ban đêm được trả thêm ít nhất bao nhiêu phần trăm tiền lương?",
+    "expected_answer": "Từ 22 giờ đến 06 giờ sáng hôm sau; được trả thêm ít nhất 30% tiền lương của ngày làm việc bình thường.",
+    "gold_groups": [
+      [{"article": 106, "evidence": "Giờ làm việc ban đêm được tính từ 22 giờ đến 06 giờ sáng ngày hôm sau"}],
+      [{"article": 98, "evidence": "Người lao động làm việc vào ban đêm thì được trả thêm ít nhất bằng 30% tiền lương"}]
+    ],
+    "filter": null
+  },
+  {
+    "id": "q25", "split": "dev", "type": "multi_hop",
+    "question": "Hợp đồng xác định thời hạn hết hạn, người lao động vẫn làm tiếp nhưng hai bên không ký hợp đồng mới. Sau bao lâu hợp đồng thành không xác định thời hạn, và khi đó nếu người lao động muốn nghỉ thì phải báo trước ít nhất bao lâu?",
+    "expected_answer": "Hết 30 ngày kể từ ngày hợp đồng hết hạn thì trở thành hợp đồng không xác định thời hạn; khi đó người lao động phải báo trước ít nhất 45 ngày.",
+    "gold_groups": [
+      [{"article": 20, "evidence": "Nếu hết thời hạn 30 ngày kể từ ngày hợp đồng lao động hết hạn mà hai bên không ký kết hợp đồng lao động mới thì hợp đồng đã giao kết theo quy định tại điểm b khoản 1 Điều này trở thành hợp đồng lao động không xác định thời hạn"}],
+      [{"article": 35, "evidence": "Ít nhất 45 ngày nếu làm việc theo hợp đồng lao động không xác định thời hạn"}]
+    ],
+    "filter": null
+  },
+  {
+    "id": "u01", "split": "dev", "type": "thieu_bang_chung",
+    "question": "Mức lương tối thiểu vùng I hiện nay là bao nhiêu đồng một tháng?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "Điều 91 chỉ định nghĩa mức lương tối thiểu theo vùng và giao Chính phủ quyết định, công bố; Bộ luật không ghi con số. Kiểm tra: tìm 'lương tối thiểu vùng', 'đồng/tháng' trong toàn văn bản = 0 kết quả.",
+    "filter": null
+  },
+  {
+    "id": "u02", "split": "dev", "type": "thieu_bang_chung",
+    "question": "Người lao động bị mất việc được hưởng trợ cấp thất nghiệp bằng bao nhiêu phần trăm tiền lương?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "Bộ luật chỉ nhắc nghĩa vụ tham gia bảo hiểm thất nghiệp; mức hưởng thuộc Luật Việc làm. Kiểm tra: 'trợ cấp thất nghiệp' = 0 kết quả; 'bảo hiểm thất nghiệp' chỉ xuất hiện trong các câu liệt kê nghĩa vụ.",
+    "filter": null
+  },
+  {
+    "id": "q26", "split": "test", "type": "multi_hop",
+    "question": "Lao động nữ sinh một con được nghỉ thai sản bao lâu, và khi quay lại làm việc mà việc làm cũ không còn thì công ty phải làm gì?",
+    "expected_answer": "Nghỉ 06 tháng (trước sinh không quá 02 tháng); nếu việc làm cũ không còn, công ty phải bố trí việc làm khác với mức lương không thấp hơn mức lương trước khi nghỉ thai sản.",
+    "gold_groups": [
+      [{"article": 139, "evidence": "Lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng"}],
+      [{"article": 140, "evidence": "trường hợp việc làm cũ không còn thì người sử dụng lao động phải bố trí việc làm khác cho họ với mức lương không thấp hơn mức lương trước khi nghỉ thai sản"}]
+    ],
+    "filter": null
+  },
+  {
+    "id": "u03", "split": "test", "type": "thieu_bang_chung",
+    "question": "Doanh nghiệp không giao kết hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "Điều 217 chỉ nói vi phạm bị xử phạt vi phạm hành chính; mức phạt nằm ở nghị định xử phạt, không có trong Bộ luật. Kiểm tra: 'phạt tiền' không đi kèm số tiền nào.",
+    "filter": null
+  },
+  {
+    "id": "u04", "split": "test", "type": "thieu_bang_chung",
+    "question": "Doanh nghiệp phải đóng kinh phí công đoàn bằng bao nhiêu phần trăm quỹ tiền lương?",
+    "answerable": false, "expected_behavior": "search_and_abstain",
+    "absence_reason": "Mức đóng kinh phí công đoàn quy định trong Luật Công đoàn. Kiểm tra: 'kinh phí công đoàn' = 0 kết quả trong Bộ luật.",
+    "filter": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "config": {
+    "name": "agent_dense_single",
+    "method": "dense",
+    "hypothesis": "Baseline: RAG một lượt tìm (dense top-3, budget 4000 ký tự) — giống pipeline Day 6 + LLM.",
+    "agent": {
+      "top_k": 3,
+      "max_searches": 1,
+      "budget_chars": 4000,
+      "policy": "first_come"
+    }
+  },
+  "split": "dev",
+  "model": "gpt-4o-mini",
+  "retriever": {
+    "method": "dense",
+    "model": "intfloat/multilingual-e5-small",
+    "dimensions": 384,
+    "store": "PostgreSQL 16 + pgvector 0.8.7 (Day 6), table chunks, strategy B",
+    "metric": "cosine (exact scan)",
+    "query_prefix": "query: "
+  },
+  "runs": 22,
+  "errors": 0,
+  "tool_use": "22/22 = 1.00",
+  "searches_distribution": {
+    "1": 22
+  },
+  "answered_on_answerable": "16/20 = 0.80",
+  "false_abstention": "4/20 = 0.20",
+  "abstention_on_unanswerable": "2/2 = 1.00",
+  "agent_context_evidence_rate": "17/20 = 0.85",
+  "citation_gold_hit_proxy": "16/18 = 0.89",
+  "mean_searches": 1,
+  "median_latency_s": 2.98,
+  "total_tokens_in": 40627,
+  "total_tokens_out": 2637,
+  "total_cost_usd": 0.00768
+}

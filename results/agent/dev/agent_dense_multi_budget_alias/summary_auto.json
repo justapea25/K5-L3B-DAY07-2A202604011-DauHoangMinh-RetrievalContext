@@ -1,0 +1,42 @@
+{
+  "config": {
+    "name": "agent_dense_multi_budget_alias",
+    "method": "dense",
+    "hypothesis": "Kiểm soát: cùng cấu hình context/citation nhưng dense thay hybrid, để tách tác động của phương pháp retrieval.",
+    "agent": {
+      "top_k": 3,
+      "max_searches": 4,
+      "budget_chars": 8000,
+      "policy": "best_rank",
+      "citation_mode": "alias"
+    }
+  },
+  "split": "dev",
+  "model": "gpt-4o-mini",
+  "retriever": {
+    "method": "dense",
+    "model": "intfloat/multilingual-e5-small",
+    "dimensions": 384,
+    "store": "PostgreSQL 16 + pgvector 0.8.7 (Day 6), table chunks, strategy B",
+    "metric": "cosine (exact scan)",
+    "query_prefix": "query: "
+  },
+  "runs": 22,
+  "errors": 0,
+  "tool_use": "22/22 = 1.00",
+  "searches_distribution": {
+    "1": 17,
+    "2": 3,
+    "3": 2
+  },
+  "answered_on_answerable": "20/20 = 1.00",
+  "false_abstention": "0/20 = 0.00",
+  "abstention_on_unanswerable": "2/2 = 1.00",
+  "agent_context_evidence_rate": "19/20 = 0.95",
+  "citation_gold_hit_proxy": "21/23 = 0.91",
+  "mean_searches": 1.32,
+  "median_latency_s": 2.7,
+  "total_tokens_in": 61122,
+  "total_tokens_out": 2318,
+  "total_cost_usd": 0.01056
+}

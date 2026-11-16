@@ -1,0 +1,63 @@
+{
+  "config": {
+    "name": "agent_hybrid_multi",
+    "method": "hybrid",
+    "retriever_params": {
+      "bigrams": true,
+      "depth": 20,
+      "rrf_k": 60
+    },
+    "hypothesis": "Hybrid RRF bổ sung khớp từ khóa (số Điều, thuật ngữ) cho câu diễn đạt lại; giữ 4 lượt tìm.",
+    "agent": {
+      "top_k": 3,
+      "max_searches": 4,
+      "budget_chars": 4000,
+      "policy": "first_come"
+    }
+  },
+  "split": "dev",
+  "model": "gpt-4o-mini",
+  "retriever": {
+    "method": "hybrid_rrf",
+    "depth": 20,
+    "rrf_k": 60,
+    "weights": {
+      "dense": 1.0,
+      "bm25": 1.0
+    },
+    "components": [
+      {
+        "method": "dense",
+        "model": "intfloat/multilingual-e5-small",
+        "dimensions": 384,
+        "store": "PostgreSQL 16 + pgvector 0.8.7 (Day 6), table chunks, strategy B",
+        "metric": "cosine (exact scan)",
+        "query_prefix": "query: "
+      },
+      {
+        "method": "bm25",
+        "k1": 1.5,
+        "b": 0.75,
+        "tokenizer": "syllable unigram + bigram",
+        "index_seconds": 0.037
+      }
+    ]
+  },
+  "runs": 22,
+  "errors": 0,
+  "tool_use": "22/22 = 1.00",
+  "searches_distribution": {
+    "1": 21,
+    "2": 1
+  },
+  "answered_on_answerable": "19/20 = 0.95",
+  "false_abstention": "1/20 = 0.05",
+  "abstention_on_unanswerable": "2/2 = 1.00",
+  "agent_context_evidence_rate": "19/20 = 0.95",
+  "citation_gold_hit_proxy": "20/22 = 0.91",
+  "mean_searches": 1.05,
+  "median_latency_s": 2.56,
+  "total_tokens_in": 42920,
+  "total_tokens_out": 2632,
+  "total_cost_usd": 0.00802
+}

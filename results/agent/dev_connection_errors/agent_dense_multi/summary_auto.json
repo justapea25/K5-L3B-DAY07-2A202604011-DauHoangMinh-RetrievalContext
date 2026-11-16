@@ -1,0 +1,37 @@
+{
+  "config": {
+    "name": "agent_dense_multi",
+    "method": "dense",
+    "hypothesis": "Cho phép tối đa 4 lượt tìm để agent tách câu multi-hop và diễn đạt lại → tăng context evidence cho q24/q25.",
+    "agent": {
+      "top_k": 3,
+      "max_searches": 4,
+      "budget_chars": 4000,
+      "policy": "first_come"
+    }
+  },
+  "split": "dev",
+  "model": "gpt-4o-mini",
+  "retriever": {
+    "method": "dense",
+    "model": "intfloat/multilingual-e5-small",
+    "dimensions": 384,
+    "store": "PostgreSQL 16 + pgvector 0.8.7 (Day 6), table chunks, strategy B",
+    "metric": "cosine (exact scan)",
+    "query_prefix": "query: "
+  },
+  "runs": 22,
+  "errors": 22,
+  "tool_use": "0/0 (không áp dụng)",
+  "searches_distribution": {},
+  "answered_on_answerable": "0/0 (không áp dụng)",
+  "false_abstention": "0/0 (không áp dụng)",
+  "abstention_on_unanswerable": "0/0 (không áp dụng)",
+  "agent_context_evidence_rate": "0/0 (không áp dụng)",
+  "citation_gold_hit_proxy": "0/0 (không áp dụng)",
+  "mean_searches": null,
+  "median_latency_s": null,
+  "total_tokens_in": 0,
+  "total_tokens_out": 0,
+  "total_cost_usd": 0
+}

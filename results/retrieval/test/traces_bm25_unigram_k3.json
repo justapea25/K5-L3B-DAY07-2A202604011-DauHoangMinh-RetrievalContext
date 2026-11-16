@@ -1,0 +1,401 @@
+[
+  {
+    "query_id": "q16",
+    "type": "dieu_kien",
+    "question": "Người lao động nghỉ việc sau nhiều năm làm việc thì được trợ cấp thôi việc mỗi năm làm việc bao nhiêu?",
+    "filter": null,
+    "elapsed_ms": 1.0,
+    "context_ids": [
+      "bllđ-2019:B:art046:0",
+      "bllđ-2019:B:art113:0",
+      "bllđ-2019:B:art047:0"
+    ],
+    "context_chars": 3276,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art046:0",
+        "score": 19.6219,
+        "pages": [
+          11
+        ],
+        "chapter": "III",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art113:0",
+        "score": 17.4968,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art047:0",
+        "score": 16.5086,
+        "pages": [
+          11
+        ],
+        "chapter": "III",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q17",
+    "type": "dieu_kien",
+    "question": "Công ty được tạm đình chỉ công việc của người lao động tối đa bao lâu, và trong thời gian đó người lao động được tạm ứng bao nhiêu lương?",
+    "filter": null,
+    "elapsed_ms": 1.1,
+    "context_ids": [
+      "bllđ-2019:B:art128:0",
+      "bllđ-2019:B:art101:0",
+      "bllđ-2019:B:art053:0"
+    ],
+    "context_chars": 3060,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art128:0",
+        "score": 26.157,
+        "pages": [
+          27
+        ],
+        "chapter": "VIII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art101:0",
+        "score": 23.4432,
+        "pages": [
+          22
+        ],
+        "chapter": "VI",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art053:0",
+        "score": 16.9721,
+        "pages": [
+          12
+        ],
+        "chapter": "III",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q18",
+    "type": "dien_dat_lai",
+    "question": "Một người mẹ sinh đôi thì được nghỉ thai sản tổng cộng bao lâu?",
+    "filter": null,
+    "elapsed_ms": 0.5,
+    "context_ids": [
+      "bllđ-2019:B:art139:0",
+      "bllđ-2019:B:art140:0",
+      "bllđ-2019:B:art115:0"
+    ],
+    "context_chars": 2688,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art139:0",
+        "score": 26.8239,
+        "pages": [
+          29
+        ],
+        "chapter": "X",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art140:0",
+        "score": 14.094,
+        "pages": [
+          29
+        ],
+        "chapter": "X",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art115:0",
+        "score": 12.7751,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q19",
+    "type": "dien_dat_lai",
+    "question": "Nhân viên cưới vợ thì được nghỉ mấy ngày mà vẫn hưởng nguyên lương?",
+    "filter": null,
+    "elapsed_ms": 0.5,
+    "context_ids": [
+      "bllđ-2019:B:art115:0",
+      "bllđ-2019:B:art139:0",
+      "bllđ-2019:B:art113:0"
+    ],
+    "context_chars": 3501,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art115:0",
+        "score": 26.5387,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art139:0",
+        "score": 16.3051,
+        "pages": [
+          29
+        ],
+        "chapter": "X",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art113:0",
+        "score": 15.4995,
+        "pages": [
+          24
+        ],
+        "chapter": "VII",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q20",
+    "type": "metadata_filter",
+    "question": "Trong phần giải quyết tranh chấp lao động, thời hiệu để yêu cầu hòa giải viên lao động hòa giải tranh chấp cá nhân là bao lâu?",
+    "filter": {
+      "chapter": "XIV"
+    },
+    "elapsed_ms": 0.2,
+    "context_ids": [
+      "bllđ-2019:B:art190:0",
+      "bllđ-2019:B:art191:0",
+      "bllđ-2019:B:art194:0"
+    ],
+    "context_chars": 2252,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art190:0",
+        "score": 34.105,
+        "pages": [
+          39
+        ],
+        "chapter": "XIV",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art191:0",
+        "score": 29.0952,
+        "pages": [
+          39
+        ],
+        "chapter": "XIV",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art194:0",
+        "score": 28.945,
+        "pages": [
+          40
+        ],
+        "chapter": "XIV",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "q26",
+    "type": "multi_hop",
+    "question": "Lao động nữ sinh một con được nghỉ thai sản bao lâu, và khi quay lại làm việc mà việc làm cũ không còn thì công ty phải làm gì?",
+    "filter": null,
+    "elapsed_ms": 1.1,
+    "context_ids": [
+      "bllđ-2019:B:art139:0",
+      "bllđ-2019:B:art140:0",
+      "bllđ-2019:B:art137:0"
+    ],
+    "context_chars": 2762,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art139:0",
+        "score": 34.7533,
+        "pages": [
+          29
+        ],
+        "chapter": "X",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art140:0",
+        "score": 34.4333,
+        "pages": [
+          29
+        ],
+        "chapter": "X",
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art137:0",
+        "score": 24.6217,
+        "pages": [
+          28
+        ],
+        "chapter": "X",
+        "hit": false
+      }
+    ],
+    "hit1": true,
+    "hit3": true,
+    "full_hit3": true,
+    "rr": 1.0,
+    "first_hit_rank": 1,
+    "context_evidence": true
+  },
+  {
+    "query_id": "u03",
+    "type": "thieu_bang_chung",
+    "question": "Doanh nghiệp không giao kết hợp đồng lao động bằng văn bản với người lao động thì bị phạt tiền bao nhiêu?",
+    "filter": null,
+    "elapsed_ms": 0.9,
+    "context_ids": [
+      "bllđ-2019:B:art014:0",
+      "bllđ-2019:B:art018:0",
+      "bllđ-2019:B:art017:0"
+    ],
+    "context_chars": 2623,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art014:0",
+        "score": 19.1751,
+        "pages": [
+          4
+        ],
+        "chapter": "III",
+        "hit": null
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art018:0",
+        "score": 18.4254,
+        "pages": [
+          4,
+          5
+        ],
+        "chapter": "III",
+        "hit": null
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art017:0",
+        "score": 17.9262,
+        "pages": [
+          4
+        ],
+        "chapter": "III",
+        "hit": null
+      }
+    ]
+  },
+  {
+    "query_id": "u04",
+    "type": "thieu_bang_chung",
+    "question": "Doanh nghiệp phải đóng kinh phí công đoàn bằng bao nhiêu phần trăm quỹ tiền lương?",
+    "filter": null,
+    "elapsed_ms": 0.5,
+    "context_ids": [
+      "bllđ-2019:B:art062:0",
+      "bllđ-2019:B:art054:0",
+      "bllđ-2019:B:art048:0"
+    ],
+    "context_chars": 3073,
+    "results": [
+      {
+        "rank": 1,
+        "id": "bllđ-2019:B:art062:0",
+        "score": 19.8882,
+        "pages": [
+          14
+        ],
+        "chapter": "IV",
+        "hit": null
+      },
+      {
+        "rank": 2,
+        "id": "bllđ-2019:B:art054:0",
+        "score": 15.346,
+        "pages": [
+          12
+        ],
+        "chapter": "III",
+        "hit": null
+      },
+      {
+        "rank": 3,
+        "id": "bllđ-2019:B:art048:0",
+        "score": 13.8838,
+        "pages": [
+          11
+        ],
+        "chapter": "III",
+        "hit": null
+      }
+    ]
+  }
+]

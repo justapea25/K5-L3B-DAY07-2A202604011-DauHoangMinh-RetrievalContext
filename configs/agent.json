@@ -1,0 +1,20 @@
+[
+  {"name": "agent_dense_single", "method": "dense",
+   "hypothesis": "Baseline: RAG một lượt tìm (dense top-3, budget 4000 ký tự) — giống pipeline Day 6 + LLM.",
+   "agent": {"top_k": 3, "max_searches": 1, "budget_chars": 4000, "policy": "first_come"}},
+  {"name": "agent_dense_multi", "method": "dense",
+   "hypothesis": "Cho phép tối đa 4 lượt tìm để agent tách câu multi-hop và diễn đạt lại → tăng context evidence cho q24/q25.",
+   "agent": {"top_k": 3, "max_searches": 4, "budget_chars": 4000, "policy": "first_come"}},
+  {"name": "agent_hybrid_multi", "method": "hybrid", "retriever_params": {"bigrams": true, "depth": 20, "rrf_k": 60},
+   "hypothesis": "Hybrid RRF bổ sung khớp từ khóa (số Điều, thuật ngữ) cho câu diễn đạt lại; giữ 4 lượt tìm.",
+   "agent": {"top_k": 3, "max_searches": 4, "budget_chars": 4000, "policy": "first_come"}},
+  {"name": "agent_hybrid_multi_budget", "method": "hybrid", "retriever_params": {"bigrams": true, "depth": 20, "rrf_k": 60},
+   "hypothesis": "Lỗi dev q21/q25: evidence có trong top-3 nhưng bị loại do budget. Tăng budget 8000 + ưu tiên chunk rank cao của mọi lượt (best_rank).",
+   "agent": {"top_k": 3, "max_searches": 4, "budget_chars": 8000, "policy": "best_rank"}},
+  {"name": "agent_hybrid_multi_budget_alias", "method": "hybrid", "retriever_params": {"bigrams": true, "depth": 20, "rrf_k": 60},
+   "hypothesis": "Lỗi dev vòng 1 q12/q21/q15: trả lời đúng nhưng bịa chunk ID theo số khoản (art137:4, art036:2b) → bị từ chối. Nhãn ngắn [S1] + liệt kê nhãn hợp lệ khi sửa sẽ giảm false abstention.",
+   "agent": {"top_k": 3, "max_searches": 4, "budget_chars": 8000, "policy": "best_rank", "citation_mode": "alias"}},
+  {"name": "agent_dense_multi_budget_alias", "method": "dense",
+   "hypothesis": "Kiểm soát: cùng cấu hình context/citation nhưng dense thay hybrid, để tách tác động của phương pháp retrieval.",
+   "agent": {"top_k": 3, "max_searches": 4, "budget_chars": 8000, "policy": "best_rank", "citation_mode": "alias"}}
+]

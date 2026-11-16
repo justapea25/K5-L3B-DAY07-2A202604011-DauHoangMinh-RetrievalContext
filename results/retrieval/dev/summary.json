@@ -1,0 +1,233 @@
+[
+  {
+    "config": "dense_k3",
+    "method": "dense",
+    "info": {
+      "method": "dense",
+      "model": "intfloat/multilingual-e5-small",
+      "dimensions": 384,
+      "store": "PostgreSQL 16 + pgvector 0.8.7 (Day 6), table chunks, strategy B",
+      "metric": "cosine (exact scan)",
+      "query_prefix": "query: "
+    },
+    "context_k": 3,
+    "budget_chars": 4000,
+    "use_filter": true,
+    "N_answerable": 20,
+    "hit@1": "18/20 = 0.90",
+    "evidence_hit@3": "20/20 = 1.00",
+    "full_hit@3": "20/20 = 1.00",
+    "mrr@10": 0.95,
+    "context_evidence_rate": "19/20 = 0.95",
+    "avg_context_chars": 2764,
+    "median_ms": 19.5,
+    "cost_usd": 0,
+    "misses@3": [],
+    "context_misses": [
+      "q25"
+    ]
+  },
+  {
+    "config": "bm25_unigram_k3",
+    "method": "bm25",
+    "info": {
+      "method": "bm25",
+      "k1": 1.5,
+      "b": 0.75,
+      "tokenizer": "syllable unigram",
+      "index_seconds": 0.01
+    },
+    "context_k": 3,
+    "budget_chars": 4000,
+    "use_filter": true,
+    "N_answerable": 20,
+    "hit@1": "16/20 = 0.80",
+    "evidence_hit@3": "19/20 = 0.95",
+    "full_hit@3": "18/20 = 0.90",
+    "mrr@10": 0.875,
+    "context_evidence_rate": "18/20 = 0.90",
+    "avg_context_chars": 2914,
+    "median_ms": 0.5,
+    "cost_usd": 0,
+    "misses@3": [
+      "q21"
+    ],
+    "context_misses": [
+      "q21",
+      "q24"
+    ]
+  },
+  {
+    "config": "bm25_bigram_k3",
+    "method": "bm25",
+    "info": {
+      "method": "bm25",
+      "k1": 1.5,
+      "b": 0.75,
+      "tokenizer": "syllable unigram + bigram",
+      "index_seconds": 0.019
+    },
+    "context_k": 3,
+    "budget_chars": 4000,
+    "use_filter": true,
+    "N_answerable": 20,
+    "hit@1": "17/20 = 0.85",
+    "evidence_hit@3": "19/20 = 0.95",
+    "full_hit@3": "19/20 = 0.95",
+    "mrr@10": 0.9,
+    "context_evidence_rate": "19/20 = 0.95",
+    "avg_context_chars": 2806,
+    "median_ms": 0.8,
+    "cost_usd": 0,
+    "misses@3": [
+      "q21"
+    ],
+    "context_misses": [
+      "q21"
+    ]
+  },
+  {
+    "config": "hybrid_rrf_k3",
+    "method": "hybrid",
+    "info": {
+      "method": "hybrid_rrf",
+      "depth": 20,
+      "rrf_k": 60,
+      "weights": {
+        "dense": 1.0,
+        "bm25": 1.0
+      },
+      "components": [
+        {
+          "method": "dense",
+          "model": "intfloat/multilingual-e5-small",
+          "dimensions": 384,
+          "store": "PostgreSQL 16 + pgvector 0.8.7 (Day 6), table chunks, strategy B",
+          "metric": "cosine (exact scan)",
+          "query_prefix": "query: "
+        },
+        {
+          "method": "bm25",
+          "k1": 1.5,
+          "b": 0.75,
+          "tokenizer": "syllable unigram + bigram",
+          "index_seconds": 0.019
+        }
+      ]
+    },
+    "context_k": 3,
+    "budget_chars": 4000,
+    "use_filter": true,
+    "N_answerable": 20,
+    "hit@1": "18/20 = 0.90",
+    "evidence_hit@3": "20/20 = 1.00",
+    "full_hit@3": "20/20 = 1.00",
+    "mrr@10": 0.942,
+    "context_evidence_rate": "19/20 = 0.95",
+    "avg_context_chars": 2843,
+    "median_ms": 23.4,
+    "cost_usd": 0,
+    "misses@3": [],
+    "context_misses": [
+      "q21"
+    ]
+  },
+  {
+    "config": "dense_k5",
+    "method": "dense",
+    "info": {
+      "method": "dense",
+      "model": "intfloat/multilingual-e5-small",
+      "dimensions": 384,
+      "store": "PostgreSQL 16 + pgvector 0.8.7 (Day 6), table chunks, strategy B",
+      "metric": "cosine (exact scan)",
+      "query_prefix": "query: "
+    },
+    "context_k": 5,
+    "budget_chars": 6000,
+    "use_filter": true,
+    "N_answerable": 20,
+    "hit@1": "18/20 = 0.90",
+    "evidence_hit@3": "20/20 = 1.00",
+    "full_hit@3": "20/20 = 1.00",
+    "mrr@10": 0.95,
+    "context_evidence_rate": "20/20 = 1.00",
+    "avg_context_chars": 4834,
+    "median_ms": 19.7,
+    "cost_usd": 0,
+    "misses@3": [],
+    "context_misses": []
+  },
+  {
+    "config": "hybrid_rrf_k5",
+    "method": "hybrid",
+    "info": {
+      "method": "hybrid_rrf",
+      "depth": 20,
+      "rrf_k": 60,
+      "weights": {
+        "dense": 1.0,
+        "bm25": 1.0
+      },
+      "components": [
+        {
+          "method": "dense",
+          "model": "intfloat/multilingual-e5-small",
+          "dimensions": 384,
+          "store": "PostgreSQL 16 + pgvector 0.8.7 (Day 6), table chunks, strategy B",
+          "metric": "cosine (exact scan)",
+          "query_prefix": "query: "
+        },
+        {
+          "method": "bm25",
+          "k1": 1.5,
+          "b": 0.75,
+          "tokenizer": "syllable unigram + bigram",
+          "index_seconds": 0.019
+        }
+      ]
+    },
+    "context_k": 5,
+    "budget_chars": 6000,
+    "use_filter": true,
+    "N_answerable": 20,
+    "hit@1": "18/20 = 0.90",
+    "evidence_hit@3": "20/20 = 1.00",
+    "full_hit@3": "20/20 = 1.00",
+    "mrr@10": 0.942,
+    "context_evidence_rate": "20/20 = 1.00",
+    "avg_context_chars": 4925,
+    "median_ms": 20.4,
+    "cost_usd": 0,
+    "misses@3": [],
+    "context_misses": []
+  },
+  {
+    "config": "dense_k3_nofilter",
+    "method": "dense",
+    "info": {
+      "method": "dense",
+      "model": "intfloat/multilingual-e5-small",
+      "dimensions": 384,
+      "store": "PostgreSQL 16 + pgvector 0.8.7 (Day 6), table chunks, strategy B",
+      "metric": "cosine (exact scan)",
+      "query_prefix": "query: "
+    },
+    "context_k": 3,
+    "budget_chars": 4000,
+    "use_filter": false,
+    "N_answerable": 20,
+    "hit@1": "18/20 = 0.90",
+    "evidence_hit@3": "20/20 = 1.00",
+    "full_hit@3": "20/20 = 1.00",
+    "mrr@10": 0.95,
+    "context_evidence_rate": "19/20 = 0.95",
+    "avg_context_chars": 2764,
+    "median_ms": 18.8,
+    "cost_usd": 0,
+    "misses@3": [],
+    "context_misses": [
+      "q25"
+    ]
+  }
+]
