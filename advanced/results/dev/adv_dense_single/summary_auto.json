@@ -1,0 +1,37 @@
+{
+  "config": "adv_dense_single",
+  "split": "dev",
+  "method": "dense",
+  "hypothesis": "Baseline: dense top-3, 1 lượt tìm, budget 6000.",
+  "agent": {
+    "top_k": 3,
+    "max_searches": 1,
+    "budget_chars": 6000,
+    "policy": "first_come",
+    "citation_mode": "alias"
+  },
+  "model": "gpt-4o-mini",
+  "retriever": {
+    "method": "dense",
+    "model": "intfloat/multilingual-e5-small",
+    "dimensions": 384,
+    "store": "NumPy matrix (exact cosine)",
+    "n": 490,
+    "embed_chars": 1500,
+    "build_seconds": 25.4
+  },
+  "pass_auto": "13/18",
+  "by_group": {
+    "anh_so_do": "3/3",
+    "bang": "3/4",
+    "bieu_do": "2/3",
+    "multi_hop": "1/2",
+    "text": "2/3",
+    "thieu_bang_chung": "2/3"
+  },
+  "errors": 0,
+  "median_latency_s": 3.26,
+  "tokens_in": 39885,
+  "tokens_out": 1606,
+  "cost_usd": 0.00695
+}

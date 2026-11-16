@@ -22,7 +22,7 @@ python -m advanced.run --split test --only adv_hybrid_multi_v4_gpt-6-luna
 ```
 
 - Benchmark: [advanced/benchmark/questions.json](benchmark/questions.json)
-- Kết quả dev: [advanced/results/dev/adv_hybrid_multi_v4_gpt-6-luna/](results/dev/adv_hybrid_multi_v4_gpt-6-luna/)
+- Kết quả dev (6 cấu hình, gồm cấu hình chốt `adv_hybrid_multi_v4_gpt-6-luna`): [advanced/results/dev/](results/dev/)
 - Kết quả test: [advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/](results/test/adv_hybrid_multi_v4_gpt-6-luna/)
   - Trace từng câu: [traces.json](results/test/adv_hybrid_multi_v4_gpt-6-luna/traces.json)
   - Nhãn và lý do: [labels.json](results/test/adv_hybrid_multi_v4_gpt-6-luna/labels.json)

@@ -1,0 +1,2459 @@
+[
+  {
+    "query_id": "ad01",
+    "split": "dev",
+    "group": "bang",
+    "question": "Theo Biểu 1.2, tỷ lệ hộ chỉ có 1 người ở vùng Đông Nam Bộ là bao nhiêu phần trăm (thời điểm 01/4/2025)?",
+    "status": "answered",
+    "answer": "Tỷ lệ hộ chỉ có 1 người ở vùng Đông Nam Bộ là 17,5% (thời điểm 01/4/2025).",
+    "citations": [
+      "bdds2025:p028:table:0",
+      "bdds2025:p028:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Biểu 1.2 tỷ lệ hộ chỉ có 1 người vùng Đông Nam Bộ"
+        },
+        "llm_ms": 1346,
+        "tokens_in": 891,
+        "tokens_out": 32,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Biểu 1.2 tỷ lệ hộ chỉ có 1 người vùng Đông Nam Bộ",
+        "filter": null,
+        "retrieval_ms": 22.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p028:table:0",
+            "score": 0.0325,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p029:text:0",
+            "score": 0.0312,
+            "pages": [
+              29
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p028:text:0",
+            "score": 0.0311,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p030:text:0",
+            "score": 0.0311,
+            "pages": [
+              30
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p028:table:0",
+          "bdds2025:p029:text:0",
+          "bdds2025:p028:text:0",
+          "bdds2025:p030:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p028:table:0": "S1",
+          "bdds2025:p029:text:0": "S2",
+          "bdds2025:p028:text:0": "S3",
+          "bdds2025:p030:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Tỷ lệ hộ chỉ có 1 người ở vùng Đông Nam Bộ là 17,5% (thời điểm 01/4/2025).",
+          "citations": [
+            "S1",
+            "S3"
+          ]
+        },
+        "llm_ms": 1599,
+        "tokens_in": 2239,
+        "tokens_out": 54,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1",
+          "S3"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p028:table:0",
+      "bdds2025:p029:text:0",
+      "bdds2025:p028:text:0",
+      "bdds2025:p030:text:0"
+    ],
+    "final_context_chars": 3438,
+    "tokens_in": 3130,
+    "tokens_out": 86,
+    "cost_usd": 0.000521,
+    "elapsed_s": 2.97,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      27
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad02",
+    "split": "dev",
+    "group": "bang",
+    "question": "Tỷ suất chết trẻ em dưới 1 tuổi ở khu vực thành thị năm 2009 là bao nhiêu phần nghìn?",
+    "status": "answered",
+    "answer": "Tỷ suất chết trẻ em dưới 1 tuổi ở khu vực thành thị năm 2009 là 9,4 phần nghìn.",
+    "citations": [
+      "bdds2025:p075:text:0",
+      "bdds2025:p075:table:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ suất chết trẻ em dưới 1 tuổi khu vực thành thị năm 2009"
+        },
+        "llm_ms": 1311,
+        "tokens_in": 878,
+        "tokens_out": 32,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ suất chết trẻ em dưới 1 tuổi khu vực thành thị năm 2009",
+        "filter": null,
+        "retrieval_ms": 34.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p075:text:0",
+            "score": 0.0328,
+            "pages": [
+              75
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p076:text:0",
+            "score": 0.0313,
+            "pages": [
+              76
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p077:text:0",
+            "score": 0.0313,
+            "pages": [
+              77
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p075:table:0",
+            "score": 0.031,
+            "pages": [
+              75
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p075:text:0",
+          "bdds2025:p076:text:0",
+          "bdds2025:p077:text:0",
+          "bdds2025:p075:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p075:text:0": "S1",
+          "bdds2025:p076:text:0": "S2",
+          "bdds2025:p077:text:0": "S3",
+          "bdds2025:p075:table:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Tỷ suất chết trẻ em dưới 1 tuổi ở khu vực thành thị năm 2009 là 9,4 phần nghìn.",
+          "citations": [
+            "S1",
+            "S4"
+          ]
+        },
+        "llm_ms": 1480,
+        "tokens_in": 2364,
+        "tokens_out": 49,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1",
+          "S4"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p075:text:0",
+      "bdds2025:p076:text:0",
+      "bdds2025:p077:text:0",
+      "bdds2025:p075:table:0"
+    ],
+    "final_context_chars": 3621,
+    "tokens_in": 3242,
+    "tokens_out": 81,
+    "cost_usd": 0.000535,
+    "elapsed_s": 2.83,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      74
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad03",
+    "split": "dev",
+    "group": "bang",
+    "question": "Tỷ trọng dân số dưới 15 tuổi năm 2025 là bao nhiêu phần trăm và giảm bao nhiêu điểm phần trăm so với năm 2019?",
+    "status": "answered",
+    "answer": "Tỷ trọng dân số dưới 15 tuổi năm 2025 là 22,8%. So với năm 2019, tỷ trọng này giảm 1,5 điểm phần trăm.",
+    "citations": [
+      "bdds2025:p032:table:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ trọng dân số dưới 15 tuổi năm 2025"
+        },
+        "llm_ms": 1196,
+        "tokens_in": 887,
+        "tokens_out": 27,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ trọng dân số dưới 15 tuổi năm 2025",
+        "filter": null,
+        "retrieval_ms": 31.7,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p032:table:0",
+            "score": 0.0325,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p032:text:0",
+            "score": 0.0325,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p032:text:1",
+            "score": 0.0317,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p012:text:0",
+            "score": 0.0301,
+            "pages": [
+              12
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p032:table:0",
+          "bdds2025:p032:text:0",
+          "bdds2025:p032:text:1",
+          "bdds2025:p012:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p032:table:0": "S1",
+          "bdds2025:p032:text:0": "S2",
+          "bdds2025:p032:text:1": "S3",
+          "bdds2025:p012:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "calculator",
+        "args": {
+          "expression": "24.3 - 22.8"
+        },
+        "llm_ms": 1130,
+        "tokens_in": 2420,
+        "tokens_out": 21,
+        "event": "calculator",
+        "expression": "24.3 - 22.8",
+        "result": "24.3 - 22.8 = 1.5  (định dạng Việt Nam: 1,50)"
+      },
+      {
+        "step": 2,
+        "tool": "answer",
+        "args": {
+          "answer": "Tỷ trọng dân số dưới 15 tuổi năm 2025 là 22,8%. So với năm 2019, tỷ trọng này giảm 1,5 điểm phần trăm.",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1658,
+        "tokens_in": 2474,
+        "tokens_out": 57,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p032:table:0",
+      "bdds2025:p032:text:0",
+      "bdds2025:p032:text:1",
+      "bdds2025:p012:text:0"
+    ],
+    "final_context_chars": 4052,
+    "tokens_in": 5781,
+    "tokens_out": 105,
+    "cost_usd": 0.00093,
+    "elapsed_s": 4.02,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      31
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad04",
+    "split": "dev",
+    "group": "bieu_do",
+    "question": "Theo Hình 1.2, vùng nào có quy mô hộ bình quân nhỏ nhất và là bao nhiêu người/hộ?",
+    "status": "answered",
+    "answer": "Vùng có quy mô hộ bình quân nhỏ nhất là Đông Nam Bộ với 3,4 người/hộ.",
+    "citations": [
+      "bdds2025:p028:figure:0",
+      "bdds2025:p027:text:1"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "quy mô hộ bình quân theo vùng"
+        },
+        "llm_ms": 1188,
+        "tokens_in": 878,
+        "tokens_out": 22,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "quy mô hộ bình quân theo vùng",
+        "filter": null,
+        "retrieval_ms": 31.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p028:figure:0",
+            "score": 0.0325,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p028:text:0",
+            "score": 0.0323,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p027:text:1",
+            "score": 0.032,
+            "pages": [
+              27
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p028:table:0",
+            "score": 0.0308,
+            "pages": [
+              28
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p028:figure:0",
+          "bdds2025:p028:text:0",
+          "bdds2025:p027:text:1",
+          "bdds2025:p028:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p028:figure:0": "S1",
+          "bdds2025:p028:text:0": "S2",
+          "bdds2025:p027:text:1": "S3",
+          "bdds2025:p028:table:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Vùng có quy mô hộ bình quân nhỏ nhất là Đông Nam Bộ với 3,4 người/hộ.",
+          "citations": [
+            "S1",
+            "S3"
+          ]
+        },
+        "llm_ms": 1391,
+        "tokens_in": 2645,
+        "tokens_out": 44,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1",
+          "S3"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p028:figure:0",
+      "bdds2025:p028:text:0",
+      "bdds2025:p027:text:1",
+      "bdds2025:p028:table:0"
+    ],
+    "final_context_chars": 4564,
+    "tokens_in": 3523,
+    "tokens_out": 66,
+    "cost_usd": 0.000568,
+    "elapsed_s": 2.61,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      26,
+      27
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad05",
+    "split": "dev",
+    "group": "bieu_do",
+    "question": "Theo hình cơ cấu dân số thành thị và nông thôn, tỷ trọng dân số thành thị năm 2025 là bao nhiêu phần trăm?",
+    "status": "answered",
+    "answer": "Tỷ trọng dân số thành thị năm 2025 là 38,7%.",
+    "citations": [
+      "bdds2025:p030:figure:0",
+      "bdds2025:p029:text:1"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "cơ cấu dân số thành thị và nông thôn tỷ trọng dân số thành thị năm 2025"
+        },
+        "llm_ms": 1659,
+        "tokens_in": 883,
+        "tokens_out": 36,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "cơ cấu dân số thành thị và nông thôn tỷ trọng dân số thành thị năm 2025",
+        "filter": null,
+        "retrieval_ms": 32.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p030:figure:0",
+            "score": 0.0328,
+            "pages": [
+              30
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p029:text:1",
+            "score": 0.0304,
+            "pages": [
+              29
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p032:text:1",
+            "score": 0.029,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p023:text:0",
+            "score": 0.0283,
+            "pages": [
+              23
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p030:figure:0",
+          "bdds2025:p029:text:1",
+          "bdds2025:p032:text:1",
+          "bdds2025:p023:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p030:figure:0": "S1",
+          "bdds2025:p029:text:1": "S2",
+          "bdds2025:p032:text:1": "S3",
+          "bdds2025:p023:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Tỷ trọng dân số thành thị năm 2025 là 38,7%.",
+          "citations": [
+            "S1",
+            "S2"
+          ]
+        },
+        "llm_ms": 1264,
+        "tokens_in": 2357,
+        "tokens_out": 39,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p030:figure:0",
+      "bdds2025:p029:text:1",
+      "bdds2025:p032:text:1",
+      "bdds2025:p023:text:0"
+    ],
+    "final_context_chars": 3692,
+    "tokens_in": 3240,
+    "tokens_out": 75,
+    "cost_usd": 0.000531,
+    "elapsed_s": 2.96,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      28,
+      29
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad06",
+    "split": "dev",
+    "group": "bieu_do",
+    "question": "Theo Hình 5.3, vùng nào có tỷ lệ phụ nữ muốn sinh con trai cao nhất và tỷ lệ là bao nhiêu?",
+    "status": "answered",
+    "answer": "Vùng có tỷ lệ phụ nữ muốn sinh con trai cao nhất là Bắc Trung Bộ với tỷ lệ 24,3%.",
+    "citations": [
+      "bdds2025:p070:figure:0",
+      "bdds2025:p070:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Hình 5.3 tỷ lệ phụ nữ muốn sinh con trai"
+        },
+        "llm_ms": 1311,
+        "tokens_in": 880,
+        "tokens_out": 28,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Hình 5.3 tỷ lệ phụ nữ muốn sinh con trai",
+        "filter": null,
+        "retrieval_ms": 34.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p070:figure:0",
+            "score": 0.0325,
+            "pages": [
+              70
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p070:text:0",
+            "score": 0.0325,
+            "pages": [
+              70
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p012:text:1",
+            "score": 0.0315,
+            "pages": [
+              12
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p204:form:0",
+            "score": 0.0159,
+            "pages": [
+              204
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p070:figure:0",
+          "bdds2025:p070:text:0",
+          "bdds2025:p012:text:1",
+          "bdds2025:p204:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p070:figure:0": "S1",
+          "bdds2025:p070:text:0": "S2",
+          "bdds2025:p012:text:1": "S3",
+          "bdds2025:p204:form:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Vùng có tỷ lệ phụ nữ muốn sinh con trai cao nhất là Bắc Trung Bộ với tỷ lệ 24,3%.",
+          "citations": [
+            "S1",
+            "S2"
+          ]
+        },
+        "llm_ms": 1514,
+        "tokens_in": 3898,
+        "tokens_out": 47,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p070:figure:0",
+      "bdds2025:p070:text:0",
+      "bdds2025:p012:text:1",
+      "bdds2025:p204:form:0"
+    ],
+    "final_context_chars": 7222,
+    "tokens_in": 4778,
+    "tokens_out": 75,
+    "cost_usd": 0.000762,
+    "elapsed_s": 2.86,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      69
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad07",
+    "split": "dev",
+    "group": "anh_so_do",
+    "question": "Trong phiếu điều tra, câu Q1 xác định nhân khẩu thực tế thường trú là những người thường xuyên ăn, ở tại hộ được bao lâu trở lên?",
+    "status": "answered",
+    "answer": "Câu Q1 xác định nhân khẩu thực tế thường trú là những người thường xuyên ăn, ở tại hộ được 6 tháng trở lên, bao gồm cả những người nước ngoài tính đến 0 giờ ngày 01/4/[NĂM ĐIỀU TRA].",
+    "citations": [
+      "bdds2025:p199:form:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_form",
+        "args": {
+          "query": "câu Q1 xác định nhân khẩu thực tế thường trú"
+        },
+        "llm_ms": 1091,
+        "tokens_in": 884,
+        "tokens_out": 25,
+        "event": "search",
+        "search_tool": "search_form",
+        "query": "câu Q1 xác định nhân khẩu thực tế thường trú",
+        "filter": null,
+        "retrieval_ms": 29.7,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p199:form:0",
+            "score": 0.0328,
+            "pages": [
+              199
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p200:form:0",
+            "score": 0.032,
+            "pages": [
+              200
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p202:form:0",
+            "score": 0.0311,
+            "pages": [
+              202
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p201:form:0",
+            "score": 0.0305,
+            "pages": [
+              201
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p199:form:0",
+          "bdds2025:p200:form:0",
+          "bdds2025:p202:form:0",
+          "bdds2025:p201:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p199:form:0": "S1",
+          "bdds2025:p200:form:0": "S2",
+          "bdds2025:p202:form:0": "S3",
+          "bdds2025:p201:form:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Câu Q1 xác định nhân khẩu thực tế thường trú là những người thường xuyên ăn, ở tại hộ được 6 tháng trở lên, bao gồm cả những người nước ngoài tính đến 0 giờ ngày 01/4/[NĂM ĐIỀU TRA].",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1920,
+        "tokens_in": 3616,
+        "tokens_out": 75,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p199:form:0",
+      "bdds2025:p200:form:0",
+      "bdds2025:p202:form:0",
+      "bdds2025:p201:form:0"
+    ],
+    "final_context_chars": 5631,
+    "tokens_in": 4500,
+    "tokens_out": 100,
+    "cost_usd": 0.000735,
+    "elapsed_s": 3.04,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      198
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad08",
+    "split": "dev",
+    "group": "anh_so_do",
+    "question": "Trong phiếu điều tra, câu 23a (tham gia hoạt động văn hóa, thể thao, cộng đồng) được hỏi cho người ở độ tuổi nào?",
+    "status": "answered",
+    "answer": "Câu 23a trong phiếu điều tra được hỏi cho người từ 16 đến 30 tuổi.",
+    "citations": [
+      "bdds2025:p204:form:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_form",
+        "args": {
+          "query": "câu 23a tham gia hoạt động văn hóa, thể thao, cộng đồng"
+        },
+        "llm_ms": 1111,
+        "tokens_in": 884,
+        "tokens_out": 30,
+        "event": "search",
+        "search_tool": "search_form",
+        "query": "câu 23a tham gia hoạt động văn hóa, thể thao, cộng đồng",
+        "filter": null,
+        "retrieval_ms": 31.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p204:form:0",
+            "score": 0.0328,
+            "pages": [
+              204
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p202:form:0",
+            "score": 0.0265,
+            "pages": [
+              202
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p203:form:0",
+            "score": 0.0145,
+            "pages": [
+              203
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p208:form:0",
+            "score": 0.0137,
+            "pages": [
+              208
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p204:form:0",
+          "bdds2025:p202:form:0",
+          "bdds2025:p203:form:0",
+          "bdds2025:p208:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p204:form:0": "S1",
+          "bdds2025:p202:form:0": "S2",
+          "bdds2025:p203:form:0": "S3",
+          "bdds2025:p208:form:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Câu 23a trong phiếu điều tra được hỏi cho người từ 16 đến 30 tuổi.",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1527,
+        "tokens_in": 4899,
+        "tokens_out": 40,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p204:form:0",
+      "bdds2025:p202:form:0",
+      "bdds2025:p203:form:0",
+      "bdds2025:p208:form:0"
+    ],
+    "final_context_chars": 7787,
+    "tokens_in": 5783,
+    "tokens_out": 70,
+    "cost_usd": 0.000909,
+    "elapsed_s": 2.67,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      203
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad09",
+    "split": "dev",
+    "group": "anh_so_do",
+    "question": "Trong phiếu điều tra, câu 34 hỏi chị biết giới tính thai nhi bằng cách nào; phương án 'Siêu âm' mang mã số mấy?",
+    "status": "answered",
+    "answer": "Phương án 'Siêu âm' trong câu 34 mang mã số 1.",
+    "citations": [
+      "bdds2025:p205:form:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_form",
+        "args": {
+          "query": "câu 34 hỏi chị biết giới tính thai nhi bằng cách nào; phương án 'Siêu âm'"
+        },
+        "llm_ms": 1170,
+        "tokens_in": 884,
+        "tokens_out": 35,
+        "event": "search",
+        "search_tool": "search_form",
+        "query": "câu 34 hỏi chị biết giới tính thai nhi bằng cách nào; phương án 'Siêu âm'",
+        "filter": null,
+        "retrieval_ms": 29.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p205:form:0",
+            "score": 0.0325,
+            "pages": [
+              205
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p208:form:0",
+            "score": 0.0299,
+            "pages": [
+              208
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p206:form:0",
+            "score": 0.0293,
+            "pages": [
+              206
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p207:form:0",
+            "score": 0.0274,
+            "pages": [
+              207
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p205:form:0",
+          "bdds2025:p208:form:0",
+          "bdds2025:p206:form:0",
+          "bdds2025:p207:form:0"
+        ],
+        "context_labels": {
+          "bdds2025:p205:form:0": "S1",
+          "bdds2025:p208:form:0": "S2",
+          "bdds2025:p206:form:0": "S3",
+          "bdds2025:p207:form:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Phương án 'Siêu âm' trong câu 34 mang mã số 1.",
+          "citations": [
+            "S1"
+          ]
+        },
+        "llm_ms": 1212,
+        "tokens_in": 3918,
+        "tokens_out": 36,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p205:form:0",
+      "bdds2025:p208:form:0",
+      "bdds2025:p206:form:0",
+      "bdds2025:p207:form:0"
+    ],
+    "final_context_chars": 6255,
+    "tokens_in": 4802,
+    "tokens_out": 71,
+    "cost_usd": 0.000763,
+    "elapsed_s": 2.41,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      204
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad10",
+    "split": "dev",
+    "group": "text",
+    "question": "Chỉ số già hóa của Việt Nam năm 2025 là bao nhiêu và được diễn giải thế nào?",
+    "status": "answered",
+    "answer": "Chỉ số già hóa của Việt Nam năm 2025 đạt 63,5%, tức là cứ 100 trẻ em dưới 15 tuổi thì có khoảng 63 người già từ 60 tuổi trở lên. Điều này cho thấy xu hướng già hóa dân số đang diễn ra nhanh tại Việt Nam, với nhóm dân số già từ 65 tuổi trở lên liên tục tăng từ 7,7% năm 2019 lên 9,3% năm 2024 và 9,6% vào năm 2025. Việt Nam vẫn đang trong thời kỳ \"Cơ cấu dân số vàng\" khi tỷ trọng dân số từ 15-64 tuổi chiếm 67,6%, nhưng tỷ trọng nhóm dân số già tiếp tục tăng, cho thấy sự thay đổi trong cơ cấu dân số và gánh nặng cho hệ thống an sinh xã hội trong tương lai.",
+    "citations": [
+      "bdds2025:p032:text:1",
+      "bdds2025:p032:table:0",
+      "bdds2025:p032:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "chỉ số già hóa Việt Nam năm 2025"
+        },
+        "llm_ms": 1001,
+        "tokens_in": 874,
+        "tokens_out": 25,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "chỉ số già hóa Việt Nam năm 2025",
+        "filter": null,
+        "retrieval_ms": 32.3,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p032:text:1",
+            "score": 0.0328,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p032:table:0",
+            "score": 0.0323,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p078:text:0",
+            "score": 0.0315,
+            "pages": [
+              78
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p032:text:0",
+            "score": 0.031,
+            "pages": [
+              32
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p032:text:1",
+          "bdds2025:p032:table:0",
+          "bdds2025:p078:text:0",
+          "bdds2025:p032:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p032:text:1": "S1",
+          "bdds2025:p032:table:0": "S2",
+          "bdds2025:p078:text:0": "S3",
+          "bdds2025:p032:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Chỉ số già hóa của Việt Nam năm 2025 đạt 63,5%, tức là cứ 100 trẻ em dưới 15 tuổi thì có khoảng 63 người già từ 60 tuổi trở lên. Điều này cho thấy xu hướng già hóa dân số đang diễn ra nhanh tại Việt Nam, với nhóm dân số già từ 65 tuổi trở lên liên tục tăng từ 7,7% năm 2019 lên 9,3% năm 2024 và 9,6% vào năm 2025. Việt Nam vẫn đang trong thời kỳ \"Cơ cấu dân số vàng\" khi tỷ trọng dân số từ 15-64 tuổi chiếm 67,6%, nhưng tỷ trọng nhóm dân số già tiếp tục tăng, cho thấy sự thay đổi trong cơ cấu dân số và gánh nặng cho hệ thống an sinh xã hội trong tương lai.",
+          "citations": [
+            "S1",
+            "S2",
+            "S4"
+          ]
+        },
+        "llm_ms": 3672,
+        "tokens_in": 2160,
+        "tokens_out": 201,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1",
+          "S2",
+          "S4"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p032:text:1",
+      "bdds2025:p032:table:0",
+      "bdds2025:p078:text:0",
+      "bdds2025:p032:text:0"
+    ],
+    "final_context_chars": 3577,
+    "tokens_in": 3034,
+    "tokens_out": 226,
+    "cost_usd": 0.000591,
+    "elapsed_s": 4.71,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      31
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad11",
+    "split": "dev",
+    "group": "text",
+    "question": "Trong số người chết 12 tháng trước điều tra, bao nhiêu phần trăm là do bệnh tật?",
+    "status": "answered",
+    "answer": "Trong số người chết 12 tháng trước điều tra, 93,6% là do bệnh tật.",
+    "citations": [
+      "bdds2025:p079:text:1",
+      "bdds2025:p013:text:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "số người chết 12 tháng trước điều tra do bệnh tật"
+        },
+        "llm_ms": 1341,
+        "tokens_in": 874,
+        "tokens_out": 28,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "số người chết 12 tháng trước điều tra do bệnh tật",
+        "filter": null,
+        "retrieval_ms": 26.2,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p079:text:1",
+            "score": 0.0325,
+            "pages": [
+              79
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p013:text:0",
+            "score": 0.0315,
+            "pages": [
+              13
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p080:table:1",
+            "score": 0.0311,
+            "pages": [
+              80
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p211:text:1",
+            "score": 0.0308,
+            "pages": [
+              211
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p079:text:1",
+          "bdds2025:p013:text:0",
+          "bdds2025:p080:table:1",
+          "bdds2025:p211:text:1"
+        ],
+        "context_labels": {
+          "bdds2025:p079:text:1": "S1",
+          "bdds2025:p013:text:0": "S2",
+          "bdds2025:p080:table:1": "S3",
+          "bdds2025:p211:text:1": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Trong số người chết 12 tháng trước điều tra, 93,6% là do bệnh tật.",
+          "citations": [
+            "S1",
+            "S2"
+          ]
+        },
+        "llm_ms": 1594,
+        "tokens_in": 2193,
+        "tokens_out": 43,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p079:text:1",
+      "bdds2025:p013:text:0",
+      "bdds2025:p080:table:1",
+      "bdds2025:p211:text:1"
+    ],
+    "final_context_chars": 3687,
+    "tokens_in": 3067,
+    "tokens_out": 71,
+    "cost_usd": 0.000503,
+    "elapsed_s": 2.96,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      12,
+      78
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ad12",
+    "split": "dev",
+    "group": "text",
+    "question": "Tỉnh nào có mật độ dân số thấp nhất cả nước năm 2025 và là bao nhiêu người/km2?",
+    "status": "answered",
+    "answer": "Tỉnh có mật độ dân số thấp nhất cả nước năm 2025 là Trung du và miền núi phía Bắc với mật độ là 137 người/km².",
+    "citations": [
+      "bdds2025:p027:figure:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "mật độ dân số thấp nhất năm 2025"
+        },
+        "llm_ms": 1398,
+        "tokens_in": 876,
+        "tokens_out": 25,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "mật độ dân số thấp nhất năm 2025",
+        "filter": null,
+        "retrieval_ms": 24.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p026:text:1",
+            "score": 0.0323,
+            "pages": [
+              26
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p027:figure:0",
+            "score": 0.0318,
+            "pages": [
+              27
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p027:text:1",
+            "score": 0.0318,
+            "pages": [
+              27
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p065:text:0",
+            "score": 0.0298,
+            "pages": [
+              65
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p026:text:1",
+          "bdds2025:p027:figure:0",
+          "bdds2025:p027:text:1",
+          "bdds2025:p065:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p026:text:1": "S1",
+          "bdds2025:p027:figure:0": "S2",
+          "bdds2025:p027:text:1": "S3",
+          "bdds2025:p065:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Tỉnh có mật độ dân số thấp nhất cả nước năm 2025 là Trung du và miền núi phía Bắc với mật độ là 137 người/km².",
+          "citations": [
+            "S2"
+          ]
+        },
+        "llm_ms": 2164,
+        "tokens_in": 2826,
+        "tokens_out": 52,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p026:text:1",
+      "bdds2025:p027:figure:0",
+      "bdds2025:p027:text:1",
+      "bdds2025:p065:text:0"
+    ],
+    "final_context_chars": 4981,
+    "tokens_in": 3702,
+    "tokens_out": 77,
+    "cost_usd": 0.000602,
+    "elapsed_s": 3.59,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      26
+    ],
+    "pass_auto": false,
+    "groups_cited": [
+      false
+    ],
+    "groups_in_context": [
+      false
+    ]
+  },
+  {
+    "query_id": "ad13",
+    "split": "dev",
+    "group": "multi_hop",
+    "question": "Năm 2025, tỷ số phụ thuộc người già là bao nhiêu và chỉ số già hóa là bao nhiêu?",
+    "status": "answered",
+    "answer": "Năm 2025, tỷ số phụ thuộc người già (từ 65 tuổi trở lên) là 13,2% và chỉ số già hóa đạt 63,5%.",
+    "citations": [
+      "bdds2025:p033:table:0",
+      "bdds2025:p032:text:1"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ số phụ thuộc người già và chỉ số già hóa năm 2025"
+        },
+        "llm_ms": 1412,
+        "tokens_in": 877,
+        "tokens_out": 30,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ số phụ thuộc người già và chỉ số già hóa năm 2025",
+        "filter": null,
+        "retrieval_ms": 32.0,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p032:text:1",
+            "score": 0.0328,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p033:table:0",
+            "score": 0.0317,
+            "pages": [
+              33
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p033:text:1",
+            "score": 0.0313,
+            "pages": [
+              33
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p032:table:0",
+            "score": 0.031,
+            "pages": [
+              32
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p032:text:1",
+          "bdds2025:p033:table:0",
+          "bdds2025:p033:text:1",
+          "bdds2025:p032:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p032:text:1": "S1",
+          "bdds2025:p033:table:0": "S2",
+          "bdds2025:p033:text:1": "S3",
+          "bdds2025:p032:table:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Năm 2025, tỷ số phụ thuộc người già (từ 65 tuổi trở lên) là 13,2% và chỉ số già hóa đạt 63,5%.",
+          "citations": [
+            "S2",
+            "S1"
+          ]
+        },
+        "llm_ms": 4067,
+        "tokens_in": 1732,
+        "tokens_out": 60,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S2",
+          "S1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p032:text:1",
+      "bdds2025:p033:table:0",
+      "bdds2025:p033:text:1",
+      "bdds2025:p032:table:0"
+    ],
+    "final_context_chars": 2036,
+    "tokens_in": 2609,
+    "tokens_out": 90,
+    "cost_usd": 0.000445,
+    "elapsed_s": 5.51,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      31,
+      32
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true,
+      true
+    ],
+    "groups_in_context": [
+      true,
+      true
+    ]
+  },
+  {
+    "query_id": "ad14",
+    "split": "dev",
+    "group": "multi_hop",
+    "question": "Vùng có quy mô hộ bình quân lớn nhất (theo Hình 1.2) có tỷ suất xuất cư là bao nhiêu phần nghìn (theo Biểu 7.1)?",
+    "status": "answered",
+    "answer": "Vùng có quy mô hộ bình quân lớn nhất là Trung du và miền núi phía Bắc với quy mô hộ bình quân là 4,0 người/hộ. Tỷ suất xuất cư của vùng này là 5,9 phần nghìn (‰) theo Biểu 7.1.",
+    "citations": [
+      "bdds2025:p028:figure:0",
+      "bdds2025:p082:table:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "quy mô hộ bình quân theo vùng"
+        },
+        "llm_ms": 1158,
+        "tokens_in": 893,
+        "tokens_out": 22,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "quy mô hộ bình quân theo vùng",
+        "filter": null,
+        "retrieval_ms": 27.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p028:figure:0",
+            "score": 0.0325,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p028:text:0",
+            "score": 0.0323,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p027:text:1",
+            "score": 0.032,
+            "pages": [
+              27
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p028:table:0",
+            "score": 0.0308,
+            "pages": [
+              28
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p028:figure:0",
+          "bdds2025:p028:text:0",
+          "bdds2025:p027:text:1",
+          "bdds2025:p028:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p028:figure:0": "S1",
+          "bdds2025:p028:text:0": "S2",
+          "bdds2025:p027:text:1": "S3",
+          "bdds2025:p028:table:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ suất xuất cư theo vùng"
+        },
+        "llm_ms": 1091,
+        "tokens_in": 2660,
+        "tokens_out": 21,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ suất xuất cư theo vùng",
+        "filter": null,
+        "retrieval_ms": 31.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p082:table:0",
+            "score": 0.0323,
+            "pages": [
+              82
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p212:text:1",
+            "score": 0.032,
+            "pages": [
+              212
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p013:text:1",
+            "score": 0.032,
+            "pages": [
+              13
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p234:text:0",
+            "score": 0.0303,
+            "pages": [
+              234
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p028:figure:0",
+          "bdds2025:p028:text:0",
+          "bdds2025:p027:text:1",
+          "bdds2025:p028:table:0",
+          "bdds2025:p082:table:0",
+          "bdds2025:p212:text:1",
+          "bdds2025:p013:text:1",
+          "bdds2025:p234:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p028:figure:0": "S1",
+          "bdds2025:p028:text:0": "S2",
+          "bdds2025:p027:text:1": "S3",
+          "bdds2025:p028:table:0": "S4",
+          "bdds2025:p082:table:0": "S5",
+          "bdds2025:p212:text:1": "S6",
+          "bdds2025:p013:text:1": "S7",
+          "bdds2025:p234:text:0": "S8"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "answer",
+        "args": {
+          "answer": "Vùng có quy mô hộ bình quân lớn nhất là Trung du và miền núi phía Bắc với quy mô hộ bình quân là 4,0 người/hộ. Tỷ suất xuất cư của vùng này là 5,9 phần nghìn (‰) theo Biểu 7.1.",
+          "citations": [
+            "S1",
+            "S5"
+          ]
+        },
+        "llm_ms": 1930,
+        "tokens_in": 6103,
+        "tokens_out": 82,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S1",
+          "S5"
+        ]
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 3,
+    "final_context_ids": [
+      "bdds2025:p028:figure:0",
+      "bdds2025:p028:text:0",
+      "bdds2025:p027:text:1",
+      "bdds2025:p028:table:0",
+      "bdds2025:p082:table:0",
+      "bdds2025:p212:text:1",
+      "bdds2025:p013:text:1",
+      "bdds2025:p234:text:0"
+    ],
+    "final_context_chars": 7855,
+    "tokens_in": 9656,
+    "tokens_out": 125,
+    "cost_usd": 0.001523,
+    "elapsed_s": 4.24,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      27,
+      81
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true,
+      true
+    ],
+    "groups_in_context": [
+      true,
+      true
+    ]
+  },
+  {
+    "query_id": "ad15",
+    "split": "dev",
+    "group": "bang",
+    "question": "Vùng Đồng bằng sông Hồng có bao nhiêu nghìn dân và chiếm bao nhiêu phần trăm dân số cả nước năm 2025?",
+    "status": "answered",
+    "answer": "Vùng Đồng bằng sông Hồng có dân số là **25.003 nghìn người** và chiếm **24,5%** dân số cả nước năm 2025.",
+    "citations": [
+      "bdds2025:p030:table:0"
+    ],
+    "stop_reason": "answered",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "Vùng Đồng bằng sông Hồng dân số năm 2025"
+        },
+        "llm_ms": 1358,
+        "tokens_in": 884,
+        "tokens_out": 28,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "Vùng Đồng bằng sông Hồng dân số năm 2025",
+        "filter": null,
+        "retrieval_ms": 32.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p027:figure:0",
+            "score": 0.0323,
+            "pages": [
+              27
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p030:table:0",
+            "score": 0.0315,
+            "pages": [
+              30
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p027:text:1",
+            "score": 0.0298,
+            "pages": [
+              27
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p065:table:0",
+            "score": 0.0294,
+            "pages": [
+              65
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p027:figure:0",
+          "bdds2025:p030:table:0",
+          "bdds2025:p027:text:1",
+          "bdds2025:p065:table:0"
+        ],
+        "context_labels": {
+          "bdds2025:p027:figure:0": "S1",
+          "bdds2025:p030:table:0": "S2",
+          "bdds2025:p027:text:1": "S3",
+          "bdds2025:p065:table:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "answer",
+        "args": {
+          "answer": "Vùng Đồng bằng sông Hồng có dân số là **25.003 nghìn người** và chiếm **24,5%** dân số cả nước năm 2025.",
+          "citations": [
+            "S2"
+          ]
+        },
+        "llm_ms": 1627,
+        "tokens_in": 2499,
+        "tokens_out": 56,
+        "event": "answer",
+        "valid": true,
+        "invalid_citations": [],
+        "citation_labels": [
+          "S2"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "n_llm_calls": 2,
+    "final_context_ids": [
+      "bdds2025:p027:figure:0",
+      "bdds2025:p030:table:0",
+      "bdds2025:p027:text:1",
+      "bdds2025:p065:table:0"
+    ],
+    "final_context_chars": 4216,
+    "tokens_in": 3383,
+    "tokens_out": 84,
+    "cost_usd": 0.000558,
+    "elapsed_s": 3.02,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [
+      29
+    ],
+    "pass_auto": true,
+    "groups_cited": [
+      true
+    ],
+    "groups_in_context": [
+      true
+    ]
+  },
+  {
+    "query_id": "ud01",
+    "split": "dev",
+    "group": "thieu_bang_chung",
+    "question": "Tỷ lệ hộ nghèo của Việt Nam năm 2025 là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong báo cáo Điều tra biến động dân số 2025 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Tài liệu không chứa thông tin về tỷ lệ hộ nghèo của Việt Nam năm 2025.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ lệ hộ nghèo năm 2025"
+        },
+        "llm_ms": 1341,
+        "tokens_in": 869,
+        "tokens_out": 24,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ lệ hộ nghèo năm 2025",
+        "filter": null,
+        "retrieval_ms": 29.5,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p028:text:0",
+            "score": 0.0325,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p028:table:0",
+            "score": 0.0323,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p029:text:0",
+            "score": 0.032,
+            "pages": [
+              29
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p030:figure:0",
+            "score": 0.0299,
+            "pages": [
+              30
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p028:text:0",
+          "bdds2025:p028:table:0",
+          "bdds2025:p029:text:0",
+          "bdds2025:p030:figure:0"
+        ],
+        "context_labels": {
+          "bdds2025:p028:text:0": "S1",
+          "bdds2025:p028:table:0": "S2",
+          "bdds2025:p029:text:0": "S3",
+          "bdds2025:p030:figure:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "abstain",
+        "args": {
+          "reason": "Tài liệu không chứa thông tin về tỷ lệ hộ nghèo của Việt Nam năm 2025."
+        },
+        "llm_ms": 6094,
+        "tokens_in": 2385,
+        "tokens_out": 35,
+        "event": "abstain_rejected",
+        "reason": "Tài liệu không chứa thông tin về tỷ lệ hộ nghèo của Việt Nam năm 2025."
+      },
+      {
+        "step": 2,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ lệ hộ nghèo Việt Nam 2025"
+        },
+        "llm_ms": 1556,
+        "tokens_in": 2470,
+        "tokens_out": 25,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ lệ hộ nghèo Việt Nam 2025",
+        "filter": null,
+        "retrieval_ms": 30.3,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p029:text:0",
+            "score": 0.0325,
+            "pages": [
+              29
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p028:text:0",
+            "score": 0.032,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p028:table:0",
+            "score": 0.032,
+            "pages": [
+              28
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p026:text:0",
+            "score": 0.0287,
+            "pages": [
+              26
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p028:text:0",
+          "bdds2025:p028:table:0",
+          "bdds2025:p029:text:0",
+          "bdds2025:p030:figure:0",
+          "bdds2025:p026:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p028:text:0": "S1",
+          "bdds2025:p028:table:0": "S2",
+          "bdds2025:p029:text:0": "S3",
+          "bdds2025:p030:figure:0": "S4",
+          "bdds2025:p026:text:0": "S5"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "abstain",
+        "args": {
+          "reason": "Tài liệu không chứa thông tin về tỷ lệ hộ nghèo của Việt Nam năm 2025."
+        },
+        "llm_ms": 1211,
+        "tokens_in": 4199,
+        "tokens_out": 35,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 4,
+    "final_context_ids": [
+      "bdds2025:p028:text:0",
+      "bdds2025:p028:table:0",
+      "bdds2025:p029:text:0",
+      "bdds2025:p030:figure:0",
+      "bdds2025:p026:text:0"
+    ],
+    "final_context_chars": 4215,
+    "tokens_in": 9923,
+    "tokens_out": 119,
+    "cost_usd": 0.00156,
+    "elapsed_s": 10.26,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [],
+    "pass_auto": true,
+    "groups_cited": null
+  },
+  {
+    "query_id": "ud02",
+    "split": "dev",
+    "group": "thieu_bang_chung",
+    "question": "Tỷ lệ sinh mổ của phụ nữ sinh con năm 2025 là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong báo cáo Điều tra biến động dân số 2025 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Tài liệu không chứa thông tin về tỷ lệ sinh mổ của phụ nữ sinh con.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ lệ sinh mổ phụ nữ sinh con năm 2025"
+        },
+        "llm_ms": 1599,
+        "tokens_in": 871,
+        "tokens_out": 28,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ lệ sinh mổ phụ nữ sinh con năm 2025",
+        "filter": null,
+        "retrieval_ms": 56.5,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p064:text:1",
+            "score": 0.0328,
+            "pages": [
+              64
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p066:text:0",
+            "score": 0.0303,
+            "pages": [
+              66
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p059:text:0",
+            "score": 0.0291,
+            "pages": [
+              59
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p012:text:1",
+            "score": 0.0285,
+            "pages": [
+              12
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p064:text:1",
+          "bdds2025:p066:text:0",
+          "bdds2025:p059:text:0",
+          "bdds2025:p012:text:1"
+        ],
+        "context_labels": {
+          "bdds2025:p064:text:1": "S1",
+          "bdds2025:p066:text:0": "S2",
+          "bdds2025:p059:text:0": "S3",
+          "bdds2025:p012:text:1": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "abstain",
+        "args": {
+          "reason": "Tài liệu không chứa thông tin về tỷ lệ sinh mổ của phụ nữ sinh con năm 2025."
+        },
+        "llm_ms": 1283,
+        "tokens_in": 2254,
+        "tokens_out": 37,
+        "event": "abstain_rejected",
+        "reason": "Tài liệu không chứa thông tin về tỷ lệ sinh mổ của phụ nữ sinh con năm 2025."
+      },
+      {
+        "step": 2,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ lệ sinh mổ phụ nữ sinh con"
+        },
+        "llm_ms": 1320,
+        "tokens_in": 2341,
+        "tokens_out": 24,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ lệ sinh mổ phụ nữ sinh con",
+        "filter": null,
+        "retrieval_ms": 22.3,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p012:text:1",
+            "score": 0.0318,
+            "pages": [
+              12
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p064:text:1",
+            "score": 0.0285,
+            "pages": [
+              64
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p009:table:0",
+            "score": 0.0164,
+            "pages": [
+              9
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p070:figure:0",
+            "score": 0.0164,
+            "pages": [
+              70
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p064:text:1",
+          "bdds2025:p066:text:0",
+          "bdds2025:p059:text:0",
+          "bdds2025:p012:text:1",
+          "bdds2025:p009:table:0",
+          "bdds2025:p070:figure:0"
+        ],
+        "context_labels": {
+          "bdds2025:p064:text:1": "S1",
+          "bdds2025:p066:text:0": "S2",
+          "bdds2025:p059:text:0": "S3",
+          "bdds2025:p012:text:1": "S4",
+          "bdds2025:p009:table:0": "S5",
+          "bdds2025:p070:figure:0": "S6"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "abstain",
+        "args": {
+          "reason": "Tài liệu không chứa thông tin về tỷ lệ sinh mổ của phụ nữ sinh con."
+        },
+        "llm_ms": 1328,
+        "tokens_in": 4868,
+        "tokens_out": 33,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 4,
+    "final_context_ids": [
+      "bdds2025:p064:text:1",
+      "bdds2025:p066:text:0",
+      "bdds2025:p059:text:0",
+      "bdds2025:p012:text:1",
+      "bdds2025:p009:table:0",
+      "bdds2025:p070:figure:0"
+    ],
+    "final_context_chars": 7186,
+    "tokens_in": 10334,
+    "tokens_out": 122,
+    "cost_usd": 0.001623,
+    "elapsed_s": 5.61,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [],
+    "pass_auto": true,
+    "groups_cited": null
+  },
+  {
+    "query_id": "ud03",
+    "split": "dev",
+    "group": "thieu_bang_chung",
+    "question": "Tỷ lệ người lao động tham gia bảo hiểm xã hội năm 2025 là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong báo cáo Điều tra biến động dân số 2025 để trả lời.",
+    "citations": [],
+    "abstain_reason": "Tài liệu không chứa thông tin về tỷ lệ người lao động tham gia bảo hiểm xã hội năm 2025.",
+    "stop_reason": "abstain",
+    "events": [
+      {
+        "step": 0,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ lệ người lao động tham gia bảo hiểm xã hội năm 2025"
+        },
+        "llm_ms": 1310,
+        "tokens_in": 872,
+        "tokens_out": 30,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ lệ người lao động tham gia bảo hiểm xã hội năm 2025",
+        "filter": null,
+        "retrieval_ms": 26.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p033:text:1",
+            "score": 0.0328,
+            "pages": [
+              33
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p032:text:1",
+            "score": 0.0317,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p032:text:0",
+            "score": 0.0313,
+            "pages": [
+              32
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p047:text:0",
+            "score": 0.0301,
+            "pages": [
+              47
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p033:text:1",
+          "bdds2025:p032:text:1",
+          "bdds2025:p032:text:0",
+          "bdds2025:p047:text:0"
+        ],
+        "context_labels": {
+          "bdds2025:p033:text:1": "S1",
+          "bdds2025:p032:text:1": "S2",
+          "bdds2025:p032:text:0": "S3",
+          "bdds2025:p047:text:0": "S4"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "abstain",
+        "args": {
+          "reason": "Tài liệu không chứa thông tin về tỷ lệ người lao động tham gia bảo hiểm xã hội năm 2025."
+        },
+        "llm_ms": 1423,
+        "tokens_in": 2331,
+        "tokens_out": 38,
+        "event": "abstain_rejected",
+        "reason": "Tài liệu không chứa thông tin về tỷ lệ người lao động tham gia bảo hiểm xã hội năm 2025."
+      },
+      {
+        "step": 2,
+        "tool": "search_law",
+        "args": {
+          "query": "tỷ lệ tham gia bảo hiểm xã hội năm 2025"
+        },
+        "llm_ms": 1262,
+        "tokens_in": 2419,
+        "tokens_out": 27,
+        "event": "search",
+        "search_tool": "search_law",
+        "query": "tỷ lệ tham gia bảo hiểm xã hội năm 2025",
+        "filter": null,
+        "retrieval_ms": 55.0,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bdds2025:p047:text:0",
+            "score": 0.0313,
+            "pages": [
+              47
+            ]
+          },
+          {
+            "rank": 2,
+            "id": "bdds2025:p065:text:0",
+            "score": 0.0296,
+            "pages": [
+              65
+            ]
+          },
+          {
+            "rank": 3,
+            "id": "bdds2025:p064:text:1",
+            "score": 0.0269,
+            "pages": [
+              64
+            ]
+          },
+          {
+            "rank": 4,
+            "id": "bdds2025:p033:text:1",
+            "score": 0.0164,
+            "pages": [
+              33
+            ]
+          }
+        ],
+        "context_ids": [
+          "bdds2025:p033:text:1",
+          "bdds2025:p032:text:1",
+          "bdds2025:p032:text:0",
+          "bdds2025:p047:text:0",
+          "bdds2025:p065:text:0",
+          "bdds2025:p064:text:1"
+        ],
+        "context_labels": {
+          "bdds2025:p033:text:1": "S1",
+          "bdds2025:p032:text:1": "S2",
+          "bdds2025:p032:text:0": "S3",
+          "bdds2025:p047:text:0": "S4",
+          "bdds2025:p065:text:0": "S5",
+          "bdds2025:p064:text:1": "S6"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "abstain",
+        "args": {
+          "reason": "Tài liệu không chứa thông tin về tỷ lệ người lao động tham gia bảo hiểm xã hội năm 2025."
+        },
+        "llm_ms": 1354,
+        "tokens_in": 4682,
+        "tokens_out": 38,
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 2,
+    "n_llm_calls": 4,
+    "final_context_ids": [
+      "bdds2025:p033:text:1",
+      "bdds2025:p032:text:1",
+      "bdds2025:p032:text:0",
+      "bdds2025:p047:text:0",
+      "bdds2025:p065:text:0",
+      "bdds2025:p064:text:1"
+    ],
+    "final_context_chars": 6069,
+    "tokens_in": 10304,
+    "tokens_out": 133,
+    "cost_usd": 0.001625,
+    "elapsed_s": 5.43,
+    "model": "gpt-4o-mini",
+    "cited_printed_pages": [],
+    "pass_auto": true,
+    "groups_cited": null
+  }
+]

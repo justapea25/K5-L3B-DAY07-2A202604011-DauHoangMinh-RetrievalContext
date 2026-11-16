@@ -157,6 +157,20 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
 
 
     - Câu duy nhất trượt auto là ad13: đáp án đúng (13,2% và 63,5%), nhưng trích Biểu 1.4 có cùng số "63,5" thay vì đoạn văn ghi trong gold.
+  - **So sánh cấu hình trên dev** (18 câu, chấm tự động, mỗi bước đổi một thay đổi; kết quả: [advanced/results/dev/](../../advanced/results/dev/)):
+
+    | Cấu hình | Model | Thay đổi | Đạt (auto) | Câu trượt | Token vào / ra | Chi phí |
+    | --- | --- | --- | ---: | --- | --- | ---: |
+    | `adv_dense_single` | gpt-4o-mini | Baseline: dense top-3, 1 lượt, budget 6000 | 13/18 | ad02, ad06, ad12, ad14, ud01 | 39.885 / 1.606 | 0,0070 USD |
+    | `adv_hybrid_multi` | gpt-4o-mini | Hybrid top-4, ≤ 4 lượt, budget 12.000 `best_rank` | 16/18 | ad12, ad14 | 47.254 / 1.524 | 0,0080 USD |
+    | `adv_hybrid_multi_v2` | gpt-4o-mini | Prompt: kiểm tra đúng đối tượng, thử ≥ 2 truy vấn trước khi từ chối | 17/18 | ad12 | 64.244 / 1.643 | 0,0106 USD |
+    | `adv_hybrid_multi_v3` | gpt-4o-mini | Ràng buộc trong code: tìm ≥ 2 lượt mới được từ chối | 17/18 | ad12 | 75.896 / 1.733 | 0,0124 USD |
+    | `adv_hybrid_multi_v4` | gpt-4o-mini | Tool `calculator`, `search_form`, quy tắc đơn vị và citation từng ý | 17/18 | ad12 | 94.791 / 1.776 | 0,0153 USD |
+    | `adv_hybrid_multi_v4_gpt-6-luna` | gpt-6-luna | Như v4, chỉ đổi model | 17/18 | ad13 (chỉ trượt proxy) | 148.716 / 2.744 | 0,0162 USD |
+
+    - Hybrid và nhiều lượt tìm là thay đổi có tác dụng lớn nhất (13 → 16/18); v2–v4 không đổi điểm dev nhưng sửa đúng loại lỗi đã thấy và tăng token.
+    - Lý do chọn gpt-6-luna: hai cấu hình v4 cùng 17/18 auto nhưng khác bản chất. gpt-4o-mini sai thật ở ad12 (trả lời vùng "Trung du và miền núi phía Bắc, 137 người/km²" thay vì tỉnh Lai Châu, 55 người/km²), lỗi tồn tại qua v2–v4. gpt-6-luna trả lời đúng ad12; ad13 đúng đáp án, chỉ trượt proxy vì trích bảng thay vì đoạn văn. Chi phí gần như ngang nhau (0,0162 so với 0,0153 USD).
+    - Mỗi cấu hình chỉ chạy một lần; chênh lệch 1 câu nằm trong mức dao động giữa các lần chạy.
 
 | Nhóm test                         | Đạt / tổng   | Tỷ lệ       | Lỗi / nhận xét                                                                                                                             |
 | ---------------------------------- | --------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -173,14 +187,15 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
   - Nhãn và lý do từng câu: [advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/labels.json](../../advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/labels.json)
   - Tổng hợp theo nhóm: [advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/summary_auto.json](../../advanced/results/test/adv_hybrid_multi_v4_gpt-6-luna/summary_auto.json)
   - 0 lỗi hệ thống; latency trung vị 4,1 s/câu.
-  - Chi phí, tính theo giá gpt-6-luna 0,10 / 0,50 USD cho mỗi 1M token vào/ra (giá chuẩn, không tính cache):
+  - Chi phí, tính theo giá gpt-6-luna 0,10 / 0,50 USD và gpt-4o-mini 0,15 / 0,60 USD cho mỗi 1M token vào/ra (giá chuẩn, không tính cache):
 
     | Bước                                                        | Token vào / ra |                               Chi phí |
     | ------------------------------------------------------------- | --------------- | -------------------------------------: |
     | Ingest: vision (Gemini) đọc 14 biểu đồ + 12 trang phiếu |                 | ~0,44 USD (chạy một lần, có cache) |
-    | Agent trên dev, 18 câu                                      | 148.716 / 2.744 |                             0,0162 USD |
+    | 5 cấu hình so sánh trên dev (gpt-4o-mini), 18 câu × 5       | 322.070 / 8.282 |                             0,0533 USD |
+    | Agent đã chốt trên dev (gpt-6-luna), 18 câu                 | 148.716 / 2.744 |                             0,0162 USD |
     | Agent trên test, 30 câu                                     | 211.493 / 4.495 |          0,0234 USD (~0,0008 USD/câu) |
-    | **Tổng**                                               |                 |                    **~0,48 USD** |
+    | **Tổng**                                               |                 |                    **~0,53 USD** |
 
 
     - Index (embedding e5-small, BM25) chạy local, 0 USD.

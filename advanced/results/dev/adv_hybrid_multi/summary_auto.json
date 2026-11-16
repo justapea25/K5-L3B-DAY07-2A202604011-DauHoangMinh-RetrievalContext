@@ -1,0 +1,55 @@
+{
+  "config": "adv_hybrid_multi",
+  "split": "dev",
+  "method": "hybrid",
+  "hypothesis": "Cấu hình chốt từ bài chính, nới cho tài liệu dài: hybrid top-4, tối đa 4 lượt, budget 12000 best_rank (chunk hình/phiếu dài 2-5k ký tự).",
+  "agent": {
+    "top_k": 4,
+    "max_searches": 4,
+    "budget_chars": 12000,
+    "policy": "best_rank",
+    "citation_mode": "alias"
+  },
+  "model": "gpt-4o-mini",
+  "retriever": {
+    "method": "hybrid_rrf",
+    "depth": 20,
+    "rrf_k": 60,
+    "weights": {
+      "dense": 1.0,
+      "bm25": 1.0
+    },
+    "components": [
+      {
+        "method": "dense",
+        "model": "intfloat/multilingual-e5-small",
+        "dimensions": 384,
+        "store": "NumPy matrix (exact cosine)",
+        "n": 490,
+        "embed_chars": 1500,
+        "build_seconds": 25.4
+      },
+      {
+        "method": "bm25",
+        "k1": 1.5,
+        "b": 0.75,
+        "tokenizer": "syllable unigram + bigram",
+        "index_seconds": 0.091
+      }
+    ]
+  },
+  "pass_auto": "16/18",
+  "by_group": {
+    "anh_so_do": "3/3",
+    "bang": "4/4",
+    "bieu_do": "3/3",
+    "multi_hop": "1/2",
+    "text": "2/3",
+    "thieu_bang_chung": "3/3"
+  },
+  "errors": 0,
+  "median_latency_s": 2.7800000000000002,
+  "tokens_in": 47254,
+  "tokens_out": 1524,
+  "cost_usd": 0.008
+}

@@ -1,0 +1,56 @@
+{
+  "config": "adv_hybrid_multi_v2",
+  "split": "dev",
+  "method": "hybrid",
+  "system": "v2",
+  "hypothesis": "Lỗi dev ad12 (trả lời vùng thay vì tỉnh) và ad14 (từ chối sau 1 lượt tìm): thêm quy tắc kiểm tra đúng đối tượng + bắt buộc thử ≥2 truy vấn trước khi abstain.",
+  "agent": {
+    "top_k": 4,
+    "max_searches": 4,
+    "budget_chars": 12000,
+    "policy": "best_rank",
+    "citation_mode": "alias"
+  },
+  "model": "gpt-4o-mini",
+  "retriever": {
+    "method": "hybrid_rrf",
+    "depth": 20,
+    "rrf_k": 60,
+    "weights": {
+      "dense": 1.0,
+      "bm25": 1.0
+    },
+    "components": [
+      {
+        "method": "dense",
+        "model": "intfloat/multilingual-e5-small",
+        "dimensions": 384,
+        "store": "NumPy matrix (exact cosine)",
+        "n": 490,
+        "embed_chars": 1500,
+        "build_seconds": 25.4
+      },
+      {
+        "method": "bm25",
+        "k1": 1.5,
+        "b": 0.75,
+        "tokenizer": "syllable unigram + bigram",
+        "index_seconds": 0.091
+      }
+    ]
+  },
+  "pass_auto": "17/18",
+  "by_group": {
+    "anh_so_do": "3/3",
+    "bang": "4/4",
+    "bieu_do": "3/3",
+    "multi_hop": "2/2",
+    "text": "2/3",
+    "thieu_bang_chung": "3/3"
+  },
+  "errors": 0,
+  "median_latency_s": 3.025,
+  "tokens_in": 64244,
+  "tokens_out": 1643,
+  "cost_usd": 0.01062
+}
