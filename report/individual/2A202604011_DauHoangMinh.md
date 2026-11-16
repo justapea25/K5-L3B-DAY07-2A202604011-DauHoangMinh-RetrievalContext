@@ -144,15 +144,17 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
   - Câu biểu đồ và câu phiếu phải trích đúng chunk hình/phiếu, có bbox.
   - `python -m advanced.run --validate` kiểm tra mọi evidence có trong tài liệu, và mọi từ khóa của câu thiếu evidence đều không có trong 490 chunk.
   - Chấm:
+
     - Tự động (proxy): đạt khi trả lời và trích đúng chunk gold → 24/30.
     - Chính thức: chấm tay từng câu, đối chiếu PDF gốc; câu ranh giới tính là trượt → **27/30**.
     - Auto thấp hơn vì v04, v21, v22 trả lời đúng nhưng trích đoạn văn có cùng số liệu, không trích chunk bảng trong gold.
   - Agent `adv_hybrid_multi_v4`: hybrid RRF top-4, tối đa 4 lượt tìm, budget 12.000 ký tự, nhãn `[S#]`, thêm tool `calculator` và `search_form`, không cho từ chối khi mới tìm dưới 2 lượt. Model **gpt-6-luna**.
   - Kết quả dev (chấm tự động): **17/18**, 0 lỗi, latency trung vị 3,4 s/câu, khoảng 149k token vào, 2,7k token ra, chi phí **0,0162 USD**/18 câu. Kết quả: [advanced/results/dev/adv_hybrid_multi_v4_gpt-6-luna/](../../advanced/results/dev/adv_hybrid_multi_v4_gpt-6-luna/)
 
-    | Nhóm dev | Bảng | Ảnh, sơ đồ | Biểu đồ | Multi-hop | Text | Thiếu bằng chứng |
-    |---|---|---|---|---|---|---|
-    | Đạt (auto) | 4/4 | 3/3 | 3/3 | 1/2 | 3/3 | 3/3 |
+    | Nhóm dev    | Bảng | Ảnh, sơ đồ | Biểu đồ | Multi-hop | Text | Thiếu bằng chứng |
+    | ------------ | ----- | -------------- | ---------- | --------- | ---- | ------------------- |
+    | Đạt (auto) | 4/4   | 3/3            | 3/3        | 1/2       | 3/3  | 3/3                 |
+
 
     - Câu duy nhất trượt auto là ad13: đáp án đúng (13,2% và 63,5%), nhưng trích Biểu 1.4 có cùng số "63,5" thay vì đoạn văn ghi trong gold.
 
@@ -173,17 +175,19 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
   - 0 lỗi hệ thống; latency trung vị 4,1 s/câu.
   - Chi phí, tính theo giá gpt-6-luna 0,10 / 0,50 USD cho mỗi 1M token vào/ra (giá chuẩn, không tính cache):
 
-    | Bước | Token vào / ra | Chi phí |
-    |---|---|---:|
-    | Ingest: vision (Gemini) đọc 14 biểu đồ + 12 trang phiếu | | ~0,44 USD (chạy một lần, có cache) |
-    | Agent trên dev, 18 câu | 148.716 / 2.744 | 0,0162 USD |
-    | Agent trên test, 30 câu | 211.493 / 4.495 | 0,0234 USD (~0,0008 USD/câu) |
-    | **Tổng** | | **~0,48 USD** |
+    | Bước                                                        | Token vào / ra |                               Chi phí |
+    | ------------------------------------------------------------- | --------------- | -------------------------------------: |
+    | Ingest: vision (Gemini) đọc 14 biểu đồ + 12 trang phiếu |                 | ~0,44 USD (chạy một lần, có cache) |
+    | Agent trên dev, 18 câu                                      | 148.716 / 2.744 |                             0,0162 USD |
+    | Agent trên test, 30 câu                                     | 211.493 / 4.495 |          0,0234 USD (~0,0008 USD/câu) |
+    | **Tổng**                                               |                 |                    **~0,48 USD** |
+
 
     - Index (embedding e5-small, BM25) chạy local, 0 USD.
     - Token vào lớn gấp khoảng 47 lần token ra, vì mỗi lượt gửi lại context tới 12.000 ký tự (chunk bảng và phiếu dài 2–5k ký tự).
 - **Giới hạn, cách tái lập và đường dẫn benchmark:**
   - Giới hạn:
+
     - **Biểu đồ là điểm yếu nhất (3/5):** 6 biểu đồ không ghi nhãn số chỉ được vision mô tả ở mức xu hướng, nên câu hỏi về đỉnh hoặc giá trị dễ sai (v08).
     - **Kết quả đúng bằng ngưỡng 90%** và phụ thuộc cách chấm 2 câu ranh giới (v07, v24); chỉ cần thêm 1 câu trượt là không đạt.
     - **Mỗi split chỉ chạy một lần:** model có dao động giữa các lần chạy, chưa đo độ lệch.
@@ -201,7 +205,8 @@ Agentic RAG tra cứu Bộ luật Lao động 2019: agent gpt-4o-mini (tool call
     python -m advanced.run --split dev     --only adv_hybrid_multi_v4_gpt-6-luna
     python -m advanced.run --split test_v2 --only adv_hybrid_multi_v4_gpt-6-luna
     ```
-
   - Benchmark: [advanced/benchmark/questions.json](../../advanced/benchmark/questions.json) (dev: `split = dev`, test: `split = test_v2`)
 
 ## Hỗ trợ của AI và trách nhiệm
+
+AI hỗ trợ viết code xây dựng luồng tra cứu tài liệu, thử nghiệm chạy các model và viết test case kiểm thử. Tác giả đảm bảo xây dựng và hiểu luồng kiến trúc, kiểm tra kết quả đối chiếu với tài liệu gốc và đưa ra phân tích.
